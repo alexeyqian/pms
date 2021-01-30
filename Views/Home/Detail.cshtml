@@ -4,6 +4,18 @@
     var index = 1;
 }
 
+<style>
+    table.dataTable tbody tr.warning {
+        background-color: #fcf8e3;
+    }
+
+    table.dataTable tbody tr.success {
+        background-color: #dff0d8;
+    }
+
+    
+</style>
+
 <h2>Detail Data</h2>
 <div class="row">
     <table class="table table-bordered" id="detailTable">
@@ -12,21 +24,27 @@
                 <th>#</th>
                 <th>NO</th>
                 <th>Status</th>
-                <th>Started Date</th>
-                <th>Completed Date</th>
+                <th>Fixed Date</th>
                 <th>Approved Date</th>
-                <th>Developer</th>
+                <th width="150">Developer</th>
                 <th>Team</th>
             </tr>
         </thead>
         <tbody>
             @foreach (var m in Model)
             {
-                <tr>
+                var rowClass = "";
+                @if(m.Status == "FixedAndWaitingForApproval")
+                {
+                    rowClass = "warning";
+                }else if(m.Status == "FixedAndApproved")
+                {
+                    rowClass = "success";
+                }
+                <tr class="@rowClass">
                     <th scope="row">@(index++)</th>
                     <td><a href="https://o365exchange.visualstudio.com/DefaultCollection/IP%20Engineering/_workitems/edit/@m.NO" target="_blank">@m.NO</a></td>
                     <td>@m.Status</td>
-                    <td>@(m.StartedDate.HasValue ? m.StartedDate.Value.ToShortDateString(): "")</td>
                     <td>@(m.FixedDate.HasValue ? m.FixedDate.Value.ToShortDateString(): "")</td>
                     <td>@(m.ApprovedDate.HasValue ? m.ApprovedDate.Value.ToShortDateString(): "")</td>
                     <td>@m.Developer</td>
