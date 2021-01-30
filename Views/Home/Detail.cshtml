@@ -1,0 +1,51 @@
+@model List<PMS.Models.Bug>
+@{
+    ViewData["Title"] = "Detail";
+    var index = 1;
+}
+
+<h2>Detail Data</h2>
+<div class="row">
+    <table class="table table-bordered" id="detailTable">
+        <thead>
+            <tr>
+                <th>#</th>
+                <th>NO</th>
+                <th>Status</th>
+                <th>Started Date</th>
+                <th>Completed Date</th>
+                <th>Approved Date</th>
+                <th>Developer</th>
+                <th>Team</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var m in Model)
+            {
+                <tr>
+                    <th scope="row">@(index++)</th>
+                    <td><a href="https://o365exchange.visualstudio.com/DefaultCollection/IP%20Engineering/_workitems/edit/@m.NO" target="_blank">@m.NO</a></td>
+                    <td>@m.Status</td>
+                    <td>@(m.StartedDate.HasValue ? m.StartedDate.Value.ToShortDateString(): "")</td>
+                    <td>@(m.FixedDate.HasValue ? m.FixedDate.Value.ToShortDateString(): "")</td>
+                    <td>@(m.ApprovedDate.HasValue ? m.ApprovedDate.Value.ToShortDateString(): "")</td>
+                    <td>@m.Developer</td>
+                    <td>@m.Team</td>
+                </tr>
+            }
+
+        </tbody>
+    </table>
+</div>
+
+@section Scripts {    
+    
+    <script src="//cdn.datatables.net/1.10.23/js/jquery.dataTables.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('#detailTable').DataTable({
+                paging: false});
+        });
+    </script>
+}
+

@@ -80,6 +80,11 @@ namespace PMS.Controllers
             ViewData["ByDeveloperValues"] = String.Join(",", valueList.ToArray());
         }
 
+        public IActionResult Detail()
+        {
+            return View(_bugs);
+        }
+
         public IActionResult Wiki()
         {
             return View();

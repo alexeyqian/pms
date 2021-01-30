@@ -8,7 +8,7 @@
     <div class="col-md-6">
         <h3>Category</h3>
         <canvas id="overviewChart"></canvas>
-    </div> 
+    </div>
     <div class="col-md-6">
         <h3>Description</h3>
         <div>
@@ -40,8 +40,8 @@
     </div>
 </div>
 
-
-<script>
+@section Scripts {
+    <script>
     // Overview
 
     function createOverviewChart() {
@@ -95,7 +95,11 @@
                 }]
             },
 
-            options: {}
+            options: {
+            legend: {
+                display: false,
+                }
+        }
         });
     }
 
@@ -114,7 +118,11 @@
                 }]
             },
 
-            options: {}
+            options: {
+            legend: {
+                display: false,
+                }
+            }
         });
     }
 
@@ -129,11 +137,16 @@
                     label: 'Quality dataset',
                     backgroundColor: 'red',
                     borderColor: 'rgb(100, 99, 132)',
+                    fill: false,
                     data: [45, 30, 20, 10, 5, 2, 0]
                 }]
             },
 
-            options: {}
+            options: {
+                legend: {
+                    display: false,
+                }
+            }
         });
     }
 
@@ -142,4 +155,5 @@
     createEfficiencyChart();
     createQualityChart();
 
-</script>
+    </script>
+}

@@ -1,4 +1,5 @@
 using System;
+using System.ComponentModel.DataAnnotations;
 
 namespace PMS.Models
 {
@@ -7,6 +8,7 @@ namespace PMS.Models
         public int NO{get;set;}
         public string Status{get;set;}
         public string StatusInVS{get;set;}
+        [DisplayFormat(DataFormatString = "{0:dd/MM/yyyy}", ApplyFormatInEditMode = true)]
         public DateTime? FixedDate{get;set;}
         public DateTime? StartedDate{get;set;}
         public DateTime? ApprovedDate{get;set;}
