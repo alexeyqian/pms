@@ -1,0 +1,145 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<h2>Overview - Total: @ViewData["OverViewTotal"]</h2>
+
+<div class="row">
+    <div class="col-md-6">
+        <h3>Category</h3>
+        <canvas id="overviewChart"></canvas>
+    </div> 
+    <div class="col-md-6">
+        <h3>Description</h3>
+        <div>
+            <ul>
+                <li>Category: How many bugs completed by category.</li>
+                <li>Productivity: How many bugs completed per week.</li>
+                <li>Quality: How many bugs completed but rejected per week.</li>
+                <li>Efficency: Average hours per bug per week.</li>
+            </ul>
+        </div>
+    </div>
+</div>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <h3>Productivity</h3>
+        <h6>Completed bugs</h6>
+        <canvas id="productivityChart"></canvas>
+    </div>
+    <div class="col-md-4">
+        <h3>Quality</h3>
+        <h6>Rejected number</h6>
+        <canvas id="qualityChart"></canvas>
+    </div>
+    <div class="col-md-4">
+        <h3>Efficiency</h3>
+        <h6>Hours per bug</h6>
+        <canvas id="efficencyChart"></canvas>
+    </div>
+</div>
+
+
+<script>
+    // Overview
+
+    function createOverviewChart() {
+        var ctx = document.getElementById('overviewChart').getContext('2d');
+        var chart = new Chart(ctx, {
+            type: 'pie',
+            data: {
+                datasets: [{
+                    data: [@ViewData["OverViewValues"]],
+                    backgroundColor: [
+                        'red',
+                        'blue',
+                        'green',
+                        'black',
+                        'red',
+                        'blue',
+                        'green'
+                    ],
+                    //borderColor: 'green'
+                }],
+
+                labels: [@Html.Raw(ViewData["OverViewLabels"])]
+            },
+            options: {
+                legend: {
+                    position: 'right'
+                },
+                plugins: {
+                    labels: {
+                        render: 'value',
+                        fontSize: 20,
+                        fontColor: 'white'
+                    }
+                }
+            }
+        });
+    }
+
+    function createProductivityChart() {
+        var ctx = document.getElementById('productivityChart').getContext('2d');
+        var chart = new Chart(ctx, {
+            type: 'line',
+
+            data: {
+                labels: ['Week 1', 'Week 2', 'Week 3', 'Week 4', 'Week 5', 'Week 6', 'Week 7'],
+                datasets: [{
+                    label: 'Productivity dataset',
+                    backgroundColor: null,
+                    borderColor: 'green',
+                    data: [1, 5, 20, 30, 34, 25, 46]
+                }]
+            },
+
+            options: {}
+        });
+    }
+
+    function createEfficiencyChart() {
+        var ctx = document.getElementById('efficencyChart').getContext('2d');
+        var chart = new Chart(ctx, {
+            type: 'line',
+
+            data: {
+                labels: ['Week 1', 'Week 2', 'Week 3', 'Week 4', 'Week 5', 'Week 6', 'Week 7'],
+                datasets: [{
+                    label: 'Efficiency dataset',
+                    backgroundColor: null,
+                    borderColor: 'blue',
+                    data: [8, 8, 7, 7, 6, 5, 4]
+                }]
+            },
+
+            options: {}
+        });
+    }
+
+    function createQualityChart() {
+        var ctx = document.getElementById('qualityChart').getContext('2d');
+        var chart = new Chart(ctx, {
+            type: 'line',
+
+            data: {
+                labels: ['Week 1', 'Week 2', 'Week 3', 'Week 4', 'Week 5', 'Week 6', 'Week 7'],
+                datasets: [{
+                    label: 'Quality dataset',
+                    backgroundColor: 'red',
+                    borderColor: 'rgb(100, 99, 132)',
+                    data: [45, 30, 20, 10, 5, 2, 0]
+                }]
+            },
+
+            options: {}
+        });
+    }
+
+    createOverviewChart();
+    createProductivityChart();
+    createEfficiencyChart();
+    createQualityChart();
+
+</script>
