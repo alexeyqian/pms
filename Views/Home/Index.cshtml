@@ -2,12 +2,12 @@
     ViewData["Title"] = "Home Page";
 }
 
-<h2>Overview - Total: @ViewData["OverViewTotal"]</h2>
+<h2>Overview - Total: @ViewData["TotalBugs"]</h2>
 
 <div class="row">
     <div class="col-md-6">
         <h3>Category</h3>
-        <canvas id="overviewChart"></canvas>
+        <canvas id="categoryChart"></canvas>
     </div>
     <div class="col-md-6">
         <h3>Description</h3>
@@ -45,12 +45,12 @@
     // Overview
 
     function createOverviewChart() {
-        var ctx = document.getElementById('overviewChart').getContext('2d');
+        var ctx = document.getElementById('categoryChart').getContext('2d');
         var chart = new Chart(ctx, {
             type: 'pie',
             data: {
                 datasets: [{
-                    data: [@ViewData["OverViewValues"]],
+                    data: [@ViewData["CategoryValues"]],
                     backgroundColor: [
                         'red',
                         'blue',
@@ -63,7 +63,7 @@
                     //borderColor: 'green'
                 }],
 
-                labels: [@Html.Raw(ViewData["OverViewLabels"])]
+                labels: [@Html.Raw(ViewData["CategoryLabels"])]
             },
             options: {
                 legend: {
@@ -86,12 +86,12 @@
             type: 'line',
 
             data: {
-                labels: ['Week 1', 'Week 2', 'Week 3', 'Week 4', 'Week 5', 'Week 6', 'Week 7'],
+                labels: [@Html.Raw(ViewData["ProductivityLabels"])],
                 datasets: [{
                     label: 'Productivity dataset',
                     backgroundColor: null,
                     borderColor: 'green',
-                    data: [1, 5, 20, 30, 34, 25, 46]
+                    data: [@ViewData["ProductivityValues"]]
                 }]
             },
 
