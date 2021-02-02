@@ -23,6 +23,9 @@ namespace PMS.Controllers
                 d => CultureInfo.CurrentCulture.Calendar.GetWeekOfYear(
                     d, CalendarWeekRule.FirstFourDayWeek, DayOfWeek.Sunday);
 
+        private int _beginYear = 2020;
+        private int _endYear = 2021;
+
         public HomeController(ILogger<HomeController> logger)
         {
             _logger = logger;
@@ -38,6 +41,7 @@ namespace PMS.Controllers
             SetCategoryChart(_bugs);
             SetProductivityChart(_bugs);
             SetQualityChart(_bugs);
+            SetEfficiencyChart(_bugs);
             return View();
         }
 
@@ -71,27 +75,16 @@ namespace PMS.Controllers
         {
             Dictionary<string, int> dict = new Dictionary<string, int>();
 
-            // TODO: replate hard code with complex algorithm
-            // cal for 2020
-            var groups2020 = from b in bugs
-                             where b.FixedDate.HasValue && b.FixedDate.Value.Year == 2020
-                             group b by weekProjector(b.FixedDate.Value);
-
-            foreach (var grp in groups2020)
-            {   
-                dict.Add("2020W" + grp.Key.ToString("00"), grp.Count());                
-            }
-
-            // calc for 2021
-            var groups2021 = from b in bugs
-                             where b.FixedDate.HasValue && b.FixedDate.Value.Year == 2021
-                             group b by weekProjector(b.FixedDate.Value);
-
-            foreach (var grp in groups2021)
+            for(int i = _beginYear; i <= _endYear; i++)
             {
-                dict.Add("2021W" + grp.Key.ToString("00"), grp.Count());
-            }
+                var groups = from b in bugs
+                                 where b.FixedDate.HasValue && b.FixedDate.Value.Year == i
+                                 group b by weekProjector(b.FixedDate.Value);
 
+                foreach (var grp in groups)
+                    dict.Add(i.ToString() +  "W" + grp.Key.ToString("00"), grp.Count());
+            }
+           
             var sortedDict = new Dictionary<string, int>();
             foreach (var item in dict.OrderBy(i => i.Key))
             {
@@ -105,7 +98,7 @@ namespace PMS.Controllers
         private void SetQualityChart(List<Bug> bugs)
         {
             Dictionary<string, int> dict = new Dictionary<string, int>();
-            for(int i = 2020; i <= 2021; i++)
+            for(int i = _beginYear; i <= _endYear; i++)
             {                
                 var groups = from b in bugs
                                  where b.FixedDate.HasValue && b.FixedDate.Value.Year == i && b.RejectedTimes > 0
@@ -123,6 +116,29 @@ namespace PMS.Controllers
 
             ViewData["QualityLabels"] = "\"" + String.Join("\",\"", sortedDict.Keys.ToArray()) + "\"";
             ViewData["QualityValues"] = String.Join(",", sortedDict.Values.ToArray());
+        }
+
+        private void SetEfficiencyChart(List<Bug> bugs)
+        {
+            Dictionary<string, decimal> dict = new Dictionary<string, decimal>();
+            for (int i = _beginYear; i <= _endYear; i++)
+            {
+                var groups = from b in bugs
+                             where b.FixedDate.HasValue && b.FixedDate.Value.Year == i && b.ActualHours > 0
+                             group b by weekProjector(b.FixedDate.Value);
+
+                foreach (var grp in groups)
+                    dict.Add(i.ToString() + "W" + grp.Key.ToString("00"), grp.Sum(s => s.ActualHours) / grp.Count());
+            }
+
+            var sortedDict = new Dictionary<string, decimal>();
+            foreach (var item in dict.OrderBy(i => i.Key))
+            {
+                sortedDict.Add(item.Key, item.Value);
+            }
+
+            ViewData["EfficiencyLabels"] = "\"" + String.Join("\",\"", sortedDict.Keys.ToArray()) + "\"";
+            ViewData["EfficiencyValues"] = String.Join(",", sortedDict.Values.ToArray());
         }
 
         private void SetByDeveloperChart(List<Bug> bugs)

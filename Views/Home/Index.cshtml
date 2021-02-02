@@ -109,12 +109,12 @@
             type: 'line',
 
             data: {
-                labels: ['Week 1', 'Week 2', 'Week 3', 'Week 4', 'Week 5', 'Week 6', 'Week 7'],
+                labels: [@Html.Raw(ViewData["EfficiencyLabels"])],
                 datasets: [{
                     label: 'Efficiency dataset',
                     backgroundColor: null,
                     borderColor: 'blue',
-                    data: [8, 8, 7, 7, 6, 5, 4]
+                    data: [@ViewData["EfficiencyValues"]]
                 }]
             },
 
