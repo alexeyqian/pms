@@ -30,13 +30,14 @@ namespace PMS.Controllers
             // get data
             string fileName = "data.json";
             string jsonString = System.IO.File.ReadAllText(fileName);
-            _bugs = JsonConvert.DeserializeObject<List<Bug>>(jsonString);
+            _bugs = JsonConvert.DeserializeObject<List<Bug>>(jsonString).Where(b => b.Status != "WorkedAndContinue").ToList();
         }
 
         public IActionResult Index()
         {
             SetCategoryChart(_bugs);
             SetProductivityChart(_bugs);
+            SetQualityChart(_bugs);
             return View();
         }
 
@@ -99,6 +100,29 @@ namespace PMS.Controllers
             
             ViewData["ProductivityLabels"] = "\"" + String.Join("\",\"", sortedDict.Keys.ToArray()) + "\"";
             ViewData["ProductivityValues"] = String.Join(",", sortedDict.Values.ToArray());
+        }
+
+        private void SetQualityChart(List<Bug> bugs)
+        {
+            Dictionary<string, int> dict = new Dictionary<string, int>();
+            for(int i = 2020; i <= 2021; i++)
+            {                
+                var groups = from b in bugs
+                                 where b.FixedDate.HasValue && b.FixedDate.Value.Year == i && b.RejectedTimes > 0
+                                 group b by weekProjector(b.FixedDate.Value);
+
+                foreach (var grp in groups)
+                    dict.Add(i.ToString() + "W" + grp.Key.ToString("00"), grp.Count());
+            }
+
+            var sortedDict = new Dictionary<string, int>();
+            foreach (var item in dict.OrderBy(i => i.Key))
+            {
+                sortedDict.Add(item.Key, item.Value);
+            }
+
+            ViewData["QualityLabels"] = "\"" + String.Join("\",\"", sortedDict.Keys.ToArray()) + "\"";
+            ViewData["QualityValues"] = String.Join(",", sortedDict.Values.ToArray());
         }
 
         private void SetByDeveloperChart(List<Bug> bugs)

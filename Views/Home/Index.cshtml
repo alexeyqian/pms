@@ -132,13 +132,13 @@
             type: 'line',
 
             data: {
-                labels: ['Week 1', 'Week 2', 'Week 3', 'Week 4', 'Week 5', 'Week 6', 'Week 7'],
+                labels: [@Html.Raw(ViewData["QualityLabels"])],
                 datasets: [{
                     label: 'Quality dataset',
                     backgroundColor: 'red',
                     borderColor: 'rgb(100, 99, 132)',
                     fill: false,
-                    data: [45, 30, 20, 10, 5, 2, 0]
+                    data: [@ViewData["QualityValues"]]
                 }]
             },
 
