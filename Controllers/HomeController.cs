@@ -36,12 +36,17 @@ namespace PMS.Controllers
             _bugs = JsonConvert.DeserializeObject<List<Bug>>(jsonString).Where(b => b.Status != "WorkedAndContinue").ToList();
         }
 
-        public IActionResult Index()
+        public IActionResult Index(DateTime? startdate, DateTime? enddate)
         {
-            SetCategoryChart(_bugs);
-            SetProductivityChart(_bugs);
-            SetQualityChart(_bugs);
-            SetEfficiencyChart(_bugs);
+            if (!startdate.HasValue) startdate = new DateTime(2020,1,1);
+            if (!enddate.HasValue) enddate = new DateTime(2030, 1, 1);
+
+            var bugs = _bugs.Where(b => b.FixedDate >= startdate && b.FixedDate <= enddate.Value.AddDays(1)).ToList();
+
+            SetCategoryChart(bugs);
+            SetProductivityChart(bugs);
+            SetQualityChart(bugs);
+            SetEfficiencyChart(bugs);
             return View();
         }
 
@@ -49,6 +54,16 @@ namespace PMS.Controllers
         {
             SetByDeveloperChart(_bugs);
             return View();
+        }
+
+        public IActionResult WeeklyReport(DateTime? startdate, DateTime? enddate)
+        {
+            if (!startdate.HasValue) startdate = new DateTime(2020, 1, 1);
+            if (!enddate.HasValue) enddate = new DateTime(2030, 1, 1);
+
+            var bugs = _bugs.Where(b => b.FixedDate >= startdate && b.FixedDate <= enddate.Value.AddDays(1)).ToList();
+            SetCategoryChart(bugs);
+            return View(bugs);
         }
 
         private void SetCategoryChart(List<Bug> bugs)

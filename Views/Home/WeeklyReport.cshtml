@@ -1,0 +1,125 @@
+@model List<PMS.Models.Bug>
+@{
+    ViewData["Title"] = "Weekly Report";
+    var index = 1;
+}
+
+<h2>Weekly Report</h2>
+
+
+<div class="row">
+    <div class="col-md-12">
+
+        @using (Html.BeginForm("WeeklyReport", "Home", FormMethod.Get))
+        {
+            <fieldset>
+                <legend>Search criteria</legend>
+                @Html.Label("StartDate", "Start Date:")
+                <input class="startdate" id="startdate" name="startdate" type="date" value="">
+                @Html.Label("enddate", "End Date:")
+                <input class="startdate" id="enddate" name="enddate" type="date" value="">
+                <input type="submit" value="Generate Weekly Report" />
+            </fieldset>
+        }
+
+    </div>
+
+</div>
+<div class="row">
+    <div class="col-md-6">
+        <canvas id="categoryChart"></canvas>
+    </div>
+    <div class="col-md-6"></div>
+</div>
+
+<div class="row">
+    <table class="table table-bordered" id="detailTable">
+        <thead>
+            <tr>
+                <th>#</th>
+                <th>NO</th>
+                <th>Status</th>
+                <th>Fixed Date</th>
+
+                <th width="150">Developer</th>
+                <th>Team</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var m in Model)
+            {
+                var rowClass = "";
+                @if (m.Status == "FixedAndWaitingForApproval")
+                {
+                    rowClass = "warning";
+                }
+                else if (m.Status == "FixedAndApproved")
+                {
+                    rowClass = "success";
+                }
+                <tr class="@rowClass">
+                    <th scope="row">@(index++)</th>
+                    <td><a href="https://o365exchange.visualstudio.com/DefaultCollection/IP%20Engineering/_workitems/edit/@m.NO" target="_blank">@m.NO</a></td>
+                    <td>@m.Status</td>
+                    <td>@(m.FixedDate.HasValue ? m.FixedDate.Value.ToShortDateString(): "")</td>
+
+                    <td>@m.Developer</td>
+                    <td>@m.Team</td>
+                </tr>
+            }
+
+        </tbody>
+    </table>
+</div>
+
+@section Scripts {
+<script>
+    function createOverviewChart() {
+        var ctx = document.getElementById('categoryChart').getContext('2d');
+        var chart = new Chart(ctx, {
+            type: 'pie',
+            data: {
+                datasets: [{
+                    data: [@ViewData["CategoryValues"]],
+                    backgroundColor: [
+                        'red',
+                        'blue',
+                        'green',
+                        'black',
+                        'grey',
+                        'orange',
+                        'purple'
+                    ],
+                    //borderColor: 'green'
+                }],
+
+                labels: [@Html.Raw(ViewData["CategoryLabels"])]
+            },
+            options: {
+                legend: {
+                    position: 'right'
+                },
+                plugins: {
+                    labels: {
+                        render: 'value',
+                        fontSize: 20,
+                        fontColor: 'white'
+                    }
+                }
+            }
+        });
+    }
+
+    createOverviewChart();
+</script>
+
+    <script src="//cdn.datatables.net/1.10.23/js/jquery.dataTables.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('#detailTable').DataTable({
+                paging: false
+            });
+        });
+    </script>
+}
+

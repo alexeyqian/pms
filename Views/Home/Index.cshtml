@@ -2,6 +2,25 @@
     ViewData["Title"] = "Home Page";
 }
 
+<div class="row">
+    <div class="col-md-12">
+
+        @using (Html.BeginForm("Index", "Home", FormMethod.Get))
+        {
+        <fieldset>
+            <legend>Search criteria</legend>
+            @Html.Label("StartDate", "Start Date:")
+            <input class="startdate" id="startdate" name="startdate" type="date" value="">
+            @Html.Label("enddate", "End Date:")
+            <input class="startdate" id="enddate" name="enddate" type="date" value="">
+            <input type="submit" value="Apply" />
+        </fieldset>
+        }
+
+    </div>
+
+</div>
+
 <h2>Overview - Total: @ViewData["TotalBugs"]</h2>
 
 <div class="row">
@@ -56,9 +75,9 @@
                         'blue',
                         'green',
                         'black',
-                        'red',
-                        'blue',
-                        'green'
+                        'grey',
+                        'orange',
+                        'purple'
                     ],
                     //borderColor: 'green'
                 }],
