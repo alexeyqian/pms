@@ -185,6 +185,11 @@ namespace PMS.Controllers
         {
             return View();
         }
+        public IActionResult Data()
+        {
+            return View();
+        }
+
 
         public IActionResult Privacy()
         {

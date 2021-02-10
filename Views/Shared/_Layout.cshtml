@@ -48,6 +48,9 @@
                             </ul>
                         </li>
                         <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Data">Data</a>
+                        </li>
+                        <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
                         </li>
                     </ul>
@@ -57,15 +60,6 @@
     </header>
     <div class="container">
         <main role="main" class="pb-3">
-            <div class="row">
-                <div class="col-md-8"></div>
-                <div class="col-md-4">
-                    <button type="button" class="btn btn-primary">By Week</button>
-                    <button type="button" class="btn btn-default">By Month</button>
-                    <button type="button" class="btn btn-default">By Year</button>
-                </div>
-            </div>
-
             @RenderBody()
         </main>
     </div>
