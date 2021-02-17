@@ -25,8 +25,7 @@
                 <th>NO</th>
                 <th>Status</th>
                 <th>Fixed Date</th>
-                <th>Approved Date</th>
-                <th width="150">Developer</th>
+                <th>Hours</th>
                 <th>Team</th>
             </tr>
         </thead>
@@ -46,8 +45,7 @@
                     <td><a href="https://o365exchange.visualstudio.com/DefaultCollection/IP%20Engineering/_workitems/edit/@m.NO" target="_blank">@m.NO</a></td>
                     <td>@m.Status</td>
                     <td>@(m.FixedDate.HasValue ? m.FixedDate.Value.ToShortDateString(): "")</td>
-                    <td>@(m.ApprovedDate.HasValue ? m.ApprovedDate.Value.ToShortDateString(): "")</td>
-                    <td>@m.Developer</td>
+                    <td>@(m.ActualHours)</td>                   
                     <td>@m.Team</td>
                 </tr>
             }

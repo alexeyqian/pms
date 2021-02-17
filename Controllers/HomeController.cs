@@ -33,7 +33,11 @@ namespace PMS.Controllers
             // get data
             string fileName = "data.json";
             string jsonString = System.IO.File.ReadAllText(fileName);
-            _bugs = JsonConvert.DeserializeObject<List<Bug>>(jsonString).Where(b => b.Status != "WorkedAndContinue").ToList();
+            _bugs = JsonConvert.DeserializeObject<List<Bug>>(jsonString, new JsonSerializerSettings { NullValueHandling = NullValueHandling.Ignore}).Where(b => b.Status != "WorkedAndContinue").ToList();
+            foreach (var b in _bugs){
+                if (b.Status.StartsWith("Fixed"))
+                    b.Status = "Fixed";
+            }
         }
 
         public IActionResult Index(DateTime? startdate, DateTime? enddate)
