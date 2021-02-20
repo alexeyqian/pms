@@ -10,6 +10,12 @@ using Microsoft.Extensions.Hosting;
 
 namespace PMS
 {
+    public class MyConfigration
+    {
+        public string VSOrg { get; set; }
+        public string PAT { get; set; }
+    }
+
     public class Startup
     {
         public Startup(IConfiguration configuration)
@@ -23,6 +29,7 @@ namespace PMS
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllersWithViews();
+            services.Configure<MyConfigration>(Configuration.GetSection("MyConfiguration"));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
