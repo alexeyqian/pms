@@ -8,6 +8,9 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 
+using PMS.Data;
+using Microsoft.EntityFrameworkCore;
+
 namespace PMS
 {
     public class MyConfigration
@@ -30,6 +33,8 @@ namespace PMS
         {
             services.AddControllersWithViews();
             services.Configure<MyConfigration>(Configuration.GetSection("MyConfiguration"));
+            services.AddDbContext<PMSDBContext>(options =>
+                options.UseSqlServer(Configuration.GetConnectionString("PMSDBContext")));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
