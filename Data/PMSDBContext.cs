@@ -11,5 +11,6 @@ namespace PMS.Data
         }
 
         public DbSet<Movie> Movie { get; set; }
+        public DbSet<Bug> Bug { get; set; }
     }
 }

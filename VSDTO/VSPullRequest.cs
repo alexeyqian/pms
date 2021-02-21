@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace PMS.VSDTO
 {
-    public class PullRequest
+    public class VSPullRequest
     {
         public Repository repository { get; set; }
         public int pullRequestId { get; set; }

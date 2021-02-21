@@ -6,6 +6,7 @@ namespace PMS.Models
 {
     public class Bug
     {
+        public int Id { get; set; }
         public int NO{get;set;}
         public string Status{get;set;}
         public string StatusInVS{get;set;}
@@ -22,6 +23,6 @@ namespace PMS.Models
         public int RejectedTimes{get;set;}
         public string Developer{get;set;}
         public string Team{get;set;}
-        public string Note{get;set;}
+        public string Note{get;set;}        
     }
 }

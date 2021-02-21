@@ -15,4 +15,8 @@ namespace PMS.VSDTO
         public Avatar avatar { get; set; }
     }
 
+    public class Href
+    {
+        public string href { get; set; }
+    }
 }

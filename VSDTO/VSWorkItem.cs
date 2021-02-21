@@ -9,7 +9,7 @@ namespace PMS.VSDTO
         public int rev { get; set; }
         public Fields fields { get; set; }
         public Relation[] relations { get; set; }
-        public _Links5 _links { get; set; }
+        public _LinksSelf _links { get; set; }
         public string url { get; set; }
     }
 
@@ -72,87 +72,48 @@ namespace PMS.VSDTO
     {
         public string displayName { get; set; }
         public string url { get; set; }
-        public _Links1 _links { get; set; }
+        public _Links _links { get; set; }
         public string id { get; set; }
         public string uniqueName { get; set; }
         public string imageUrl { get; set; }
         public string descriptor { get; set; }
-    }
-
-    public class _Links1
-    {
-        public Avatar1 avatar { get; set; }
-    }
-
-    public class Avatar1
-    {
-        public string href { get; set; }
     }
 
     public class SystemChangedby
     {
         public string displayName { get; set; }
         public string url { get; set; }
-        public _Links2 _links { get; set; }
+        public _Links _links { get; set; }
         public string id { get; set; }
         public string uniqueName { get; set; }
         public string imageUrl { get; set; }
         public string descriptor { get; set; }
     }
 
-    public class _Links2
-    {
-        public Avatar2 avatar { get; set; }
-    }
-
-    public class Avatar2
-    {
-        public string href { get; set; }
-    }
 
     public class SystemAuthorizedas
     {
         public string displayName { get; set; }
         public string url { get; set; }
-        public _Links3 _links { get; set; }
+        public _Links _links { get; set; }
         public string id { get; set; }
         public string uniqueName { get; set; }
         public string imageUrl { get; set; }
         public string descriptor { get; set; }
     }
 
-    public class _Links3
-    {
-        public Avatar3 avatar { get; set; }
-    }
-
-    public class Avatar3
-    {
-        public string href { get; set; }
-    }
-
-    public class MicrosoftVSTSCommonActivatedby
+       public class MicrosoftVSTSCommonActivatedby
     {
         public string displayName { get; set; }
         public string url { get; set; }
-        public _Links4 _links { get; set; }
+        public _Links _links { get; set; }
         public string id { get; set; }
         public string uniqueName { get; set; }
         public string imageUrl { get; set; }
         public string descriptor { get; set; }
     }
 
-    public class _Links4
-    {
-        public Avatar4 avatar { get; set; }
-    }
-
-    public class Avatar4
-    {
-        public string href { get; set; }
-    }
-
-    public class _Links5
+    public class _LinksSelf
     {
         public Self self { get; set; }
         public Workitemupdates workItemUpdates { get; set; }
@@ -163,10 +124,6 @@ namespace PMS.VSDTO
         public Fields1 fields { get; set; }
     }
 
-    public class Self
-    {
-        public string href { get; set; }
-    }
 
     public class Workitemupdates
     {
