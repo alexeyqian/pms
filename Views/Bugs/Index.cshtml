@@ -13,7 +13,7 @@
     </p>
 </form>
 
-<table class="table">
+<table class="table" id="bugTable">
     <thead>
         <tr>
             <th>
@@ -24,7 +24,7 @@
             </th>
             <th>
                 @Html.DisplayNameFor(model => model.StatusInVS)
-            </th>           
+            </th>
             <th>
                 @Html.DisplayNameFor(model => model.Developer)
             </th>
@@ -42,10 +42,10 @@
             </th>
             <th>
                 @Html.DisplayNameFor(model => model.ResovedDate)
-            </th>           
+            </th>
             <th>
                 @Html.DisplayNameFor(model => model.ActualHours)
-            </th>          
+            </th>
             <th>
                 @Html.DisplayNameFor(model => model.CommentCount)
             </th>
@@ -63,68 +63,82 @@
             </th>
             <th>
                 @Html.DisplayNameFor(model => model.FirstPullRequestCommitCount)
-            </th>           
+            </th>
             <th></th>
         </tr>
     </thead>
     <tbody>
-@foreach (var item in Model) {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.NO)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Status)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.StatusInVS)
-            </td>           
-            <td>
-                @Html.DisplayFor(modelItem => item.Developer)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.CreatedDate)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.StartedDate)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.FixedDate)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.ApprovedDate)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.ResovedDate)
-            </td>            
-            <td>
-                @Html.DisplayFor(modelItem => item.ActualHours)
-            </td>           
-            <td>
-                @Html.DisplayFor(modelItem => item.CommentCount)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.PullRequestCount)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.FirstPullRequestDate)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.FirstPullRequestStatus)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.FirstPullRequestCommentCount)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.FirstPullRequestCommitCount)
-            </td>          
-            <td>
-                @*<a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |*@
-                <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
-                <a asp-action="Sync" asp-route-id="@item.Id">Sync</a>
-                @*<a asp-action="Delete" asp-route-id="@item.Id">Delete</a>*@
-            </td>
-        </tr>
-}
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    <a href="https://o365exchange.visualstudio.com/DefaultCollection/IP%20Engineering/_workitems/edit/@item.NO" target="_blank">@item.NO</a>
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Status)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.StatusInVS)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Developer)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.CreatedDate)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.StartedDate)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.FixedDate)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.ApprovedDate)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.ResovedDate)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.ActualHours)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.CommentCount)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.PullRequestCount)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.FirstPullRequestDate)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.FirstPullRequestStatus)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.FirstPullRequestCommentCount)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.FirstPullRequestCommitCount)
+                </td>
+                <td>
+                    @*<a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |*@
+                    <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
+                    <a asp-action="Sync" asp-route-id="@item.Id">Sync</a>
+                    @*<a asp-action="Delete" asp-route-id="@item.Id">Delete</a>*@
+                </td>
+            </tr>
+        }
     </tbody>
 </table>
+
+
+@section Scripts {
+
+    <script src="//cdn.datatables.net/1.10.23/js/jquery.dataTables.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('#bugTable').DataTable({
+                paging: false});
+        });
+    </script>
+}
+
