@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Newtonsoft.Json;
+using System;
 
 // Auto generated from json file.
 namespace PMS.VSDTO
@@ -14,44 +15,24 @@ namespace PMS.VSDTO
     }
 
     public class Fields
-    {
-        public int SystemId { get; set; }
-        public int SystemAreaId { get; set; }
-        public string SystemAreaPath { get; set; }
-        public string SystemTeamProject { get; set; }
-        public string SystemNodeName { get; set; }
-        public string SystemAreaLevel1 { get; set; }
-        public string SystemAreaLevel2 { get; set; }
-        public int SystemRev { get; set; }
-        public DateTime SystemAuthorizedDate { get; set; }
-        public DateTime SystemRevisedDate { get; set; }
-        public int SystemIterationId { get; set; }
-        public string SystemIterationPath { get; set; }
-        public string SystemIterationLevel1 { get; set; }
+    {               
+        [JsonProperty(PropertyName = "System.WorkItemType")]
         public string SystemWorkItemType { get; set; }
+        [JsonProperty(PropertyName = "System.State")]
         public string SystemState { get; set; }
+        [JsonProperty(PropertyName = "System.Reason")]
         public string SystemReason { get; set; }
+        [JsonProperty(PropertyName = "System.AssignedTo")]
         public SystemAssignedto SystemAssignedTo { get; set; }
+        [JsonProperty(PropertyName = "System.CreatedDate")]
         public DateTime SystemCreatedDate { get; set; }
-        public SystemCreatedby SystemCreatedBy { get; set; }
-        public DateTime SystemChangedDate { get; set; }
-        public SystemChangedby SystemChangedBy { get; set; }
-        public SystemAuthorizedas SystemAuthorizedAs { get; set; }
-        public int SystemPersonId { get; set; }
-        public int SystemWatermark { get; set; }
+        [JsonProperty(PropertyName = "System.CommentCount")]
         public int SystemCommentCount { get; set; }
+        [JsonProperty(PropertyName = "System.Title")]
         public string SystemTitle { get; set; }
-        public DateTime MicrosoftVSTSCommonStateChangeDate { get; set; }
-        public DateTime MicrosoftVSTSCommonActivatedDate { get; set; }
-        public MicrosoftVSTSCommonActivatedby MicrosoftVSTSCommonActivatedBy { get; set; }
-        public int MicrosoftVSTSCommonPriority { get; set; }
-        public string MicrosoftVSTSCommonSeverity { get; set; }
-        public string MicrosoftVSTSCommonValueArea { get; set; }
-        public string OfficeProductStudioPSDatabase { get; set; }
-        public string MicrosoftVSTSCommonTriage { get; set; }
-        public bool O365SecurityImpact { get; set; }
-        public bool O365IsException { get; set; }
+        [JsonProperty(PropertyName = "System.Description")]
         public string SystemDescription { get; set; }
+        [JsonProperty(PropertyName = "System.Tags")]
         public string SystemTags { get; set; }
     }
 

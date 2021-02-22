@@ -1,0 +1,162 @@
+﻿@model IEnumerable<PMS.Models.Bug>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.NO)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Status)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.StatusInVS)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Title)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Tags)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Developer)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CreatedDate)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.StartedDate)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.FixedDate)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ApprovedDate)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ResovedDate)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.EstimatedHours)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ActualHours)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.RejectedTimes)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CommentCount)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.PullRequestCount)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.FirstPullRequestDate)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.FirstPullRequestStatus)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.FirstPullRequestCommentCount)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.FirstPullRequestCommitCount)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Team)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Note)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.NO)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Status)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.StatusInVS)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Title)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Tags)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Developer)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CreatedDate)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.StartedDate)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.FixedDate)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ApprovedDate)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ResovedDate)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.EstimatedHours)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ActualHours)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.RejectedTimes)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CommentCount)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PullRequestCount)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.FirstPullRequestDate)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.FirstPullRequestStatus)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.FirstPullRequestCommentCount)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.FirstPullRequestCommitCount)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Team)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Note)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
+                <a asp-action="Sync" asp-route-id="@item.Id">Sync</a> |
+                <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
