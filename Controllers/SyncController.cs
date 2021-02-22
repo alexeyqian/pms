@@ -81,6 +81,7 @@ namespace PMS.Controllers
                         int pullRequestCommentCount = 0;
                         foreach(var t in threadsOfPullRequest.value)
                         {
+                            // TODO:  filter out 'system' comments in future
                             pullRequestCommentCount += t.comments.Count();
                         }
                         bug.FirstPullRequestCommentCount = pullRequestCommentCount;

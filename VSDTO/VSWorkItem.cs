@@ -115,7 +115,7 @@ namespace PMS.VSDTO
 
     public class _LinksSelf
     {
-        public Self self { get; set; }
+        public Href self { get; set; }
         public Workitemupdates workItemUpdates { get; set; }
         public Workitemrevisions workItemRevisions { get; set; }
         public Workitemcomments workItemComments { get; set; }
