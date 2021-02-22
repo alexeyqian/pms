@@ -32,7 +32,7 @@ namespace PMS
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllersWithViews();
-            services.Configure<MyConfigration>(Configuration.GetSection("MyConfiguration"));
+            //services.Configure<MyConfigration>(Configuration.GetSection("MyConfiguration"));
             services.AddDbContext<PMSDBContext>(options =>
                 options.UseSqlServer(Configuration.GetConnectionString("PMSDBContext")));
         }

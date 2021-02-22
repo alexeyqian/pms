@@ -47,8 +47,6 @@ namespace PMS.VSDTO
         public string descriptor { get; set; }
     }
 
-    
-
     public class SystemCreatedby
     {
         public string displayName { get; set; }
