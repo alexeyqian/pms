@@ -29,9 +29,9 @@ namespace PMS.Controllers
 
         public async Task<IActionResult> Index()
         {            
-            int bugId = 1937102; // TODO: remove hardcode.
-            var syncHelper = new SyncHelper(_context);
-            await syncHelper.SyncBug(bugId);
+            //int bugId = 1937102; // TODO: remove hardcode.
+            //var syncHelper = new SyncHelper(_context);
+            //await syncHelper.SyncBug(bugId);
 
             return View();
         }

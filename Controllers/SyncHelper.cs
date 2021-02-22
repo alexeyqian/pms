@@ -1,4 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Options;
 using Newtonsoft.Json;
 using PMS.Data;
@@ -22,11 +23,11 @@ namespace PMS.Controllers
         static JsonSerializerSettings _jsonSettings = new JsonSerializerSettings { NullValueHandling = NullValueHandling.Ignore };
 
         private readonly PMSDBContext _context;
-        private readonly MyConfigration _config;
+        private readonly IConfiguration _config;
 
-        public SyncHelper(PMSDBContext context)
+        public SyncHelper(IConfiguration configuration, PMSDBContext context)
         {
-            _config = new MyConfigration();
+            _config = configuration;
             _context = context;
         }
 
@@ -155,9 +156,9 @@ namespace PMS.Controllers
                 client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Basic",
                     Convert.ToBase64String(
                         System.Text.ASCIIEncoding.ASCII.GetBytes(
-                            string.Format("{0}:{1}", "", _config.PAT))));
+                            string.Format("{0}:{1}", "", _config["MyConfiguration:PAT"]))));
 
-                string url = string.Format("https://dev.azure.com/{0}/{1}", _config.VSOrg, path);
+                string url = string.Format("https://dev.azure.com/{0}/{1}", _config["MyConfiguration:VSOrg"], path);
                 using (HttpResponseMessage response = await client.GetAsync(url))
                 {
                     response.EnsureSuccessStatusCode();

@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Configuration;
 using PMS.Data;
 using PMS.Models;
 
@@ -12,10 +13,12 @@ namespace PMS.Controllers
 {
     public class BugsController : Controller
     {
+        private readonly IConfiguration _configuration;
         private readonly PMSDBContext _context;
 
-        public BugsController(PMSDBContext context)
+        public BugsController(IConfiguration configuration, PMSDBContext context)
         {
+            _configuration = configuration;
             _context = context;
         }
 
@@ -144,8 +147,7 @@ namespace PMS.Controllers
             await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
         }
-
-        // Get: Bugs/Sync/5        
+               
         public async Task<IActionResult> Sync(int id)
         {
             if (id <= 0)
@@ -155,7 +157,7 @@ namespace PMS.Controllers
 
             try
             {
-                var syncHelper = new SyncHelper(_context);
+                var syncHelper = new SyncHelper(_configuration, _context);
                 await syncHelper.SyncBug(id);
             }
             catch (Exception ex)
