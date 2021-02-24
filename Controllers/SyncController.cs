@@ -6,6 +6,7 @@ using Microsoft.Extensions.Options;
 using Newtonsoft.Json;
 using PMS.Data;
 using PMS.Migrations;
+using PMS.Models;
 using PMS.VSDTO;
 using System;
 using System.Collections.Generic;
@@ -26,39 +27,57 @@ namespace PMS.Controllers
         public SyncController(IConfiguration configuration, PMSDBContext context)
         {
             _configuration = configuration;
-            _context = context;
-            _ids = System.IO.File.ReadAllLines("bugids.txt");
+            _context = context;            
         }
 
         public async Task<IActionResult> Index()
-        {            
-            //int bugId = 1937102; // TODO: remove hardcode.
-            //var syncHelper = new SyncHelper(_context);
-            //await syncHelper.SyncBug(bugId);
-
+        {  
             return View();
         }
 
-        public async Task<string> SyncBatch(bool syncExisting = false)
+        public async Task<string> Sync()
         {
-            var syncHelper = new SyncHelper(_configuration, _context);
+            // read data from data.json
+            string fileName = "data.json";
+            string jsonString = System.IO.File.ReadAllText(fileName);
+            var bugsPartial = JsonConvert.DeserializeObject<List<Bug>>(jsonString,
+                    new JsonSerializerSettings { NullValueHandling = NullValueHandling.Ignore }).ToList();
 
-            foreach (var id in _ids)
-            {            
-                var bug = await _context.Bug.Where(r => r.NO == int.Parse(id)).FirstOrDefaultAsync();
+            // sync data from excel/json file
+            foreach (var b in bugsPartial)
+            {
+                var bug = await _context.Bug.Where(r => r.NO == b.NO).FirstOrDefaultAsync();
                 if (bug == null) // create new record
                 {
-                    await syncHelper.SyncBug(int.Parse(id));
+                    bug = new Bug();
+                    bug.NO = b.NO;
+                    UpdateFields(b, bug);
+                    _context.Add(bug);
                 }
                 else // data already exist
                 {
-                    if (syncExisting)
-                        await syncHelper.SyncBug(int.Parse(id));
+                    UpdateFields(b, bug);
+                    _context.Update(bug);
                 }
-            }
+            }            
+            await _context.SaveChangesAsync();
+
+            // sync data from DevOps
+            var syncHelper = new SyncHelper(_configuration, _context);
+            foreach (var b in bugsPartial)
+                await syncHelper.SyncBug(b.NO);
 
             return "OK";
         }
 
+        private void UpdateFields(Bug from, Bug to)
+        {
+            to.Status = from.Status;
+            to.Developer = from.Developer;
+            to.StartedDate = from.StartedDate;
+            to.FixedDate = from.FixedDate;
+            to.ActualHours = from.ActualHours;
+            to.Note = from.Note;
+        }
     }
 }

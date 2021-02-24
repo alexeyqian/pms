@@ -3,51 +3,28 @@
 @{
     ViewData["Title"] = "Edit";
 }
-
-<h1>Edit</h1>
-
-<h4>Bug</h4>
-<hr />
+<h3>Edit @Model.NO</h3>
 <div class="row">
     <div class="col-md-4">
         <form asp-action="Edit">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-            <input type="hidden" asp-for="Id" />
-            <div class="form-group">
-                <label asp-for="NO" class="control-label"></label>
-                <input asp-for="NO" class="form-control" />
-                <span asp-validation-for="NO" class="text-danger"></span>
-            </div>
+            <input type="hidden" asp-for="Id" />           
             <div class="form-group">
                 <label asp-for="Status" class="control-label"></label>
-                <input asp-for="Status" class="form-control" />
+                <select name="Status" asp-items="@ViewBag.StatusList" class="form-control">
+                    <option value="0">Please select</option>
+                </select>
                 <span asp-validation-for="Status" class="text-danger"></span>
             </div>
-            <div class="form-group">
-                <label asp-for="StatusInVS" class="control-label"></label>
-                <input asp-for="StatusInVS" class="form-control" />
-                <span asp-validation-for="StatusInVS" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Title" class="control-label"></label>
-                <input asp-for="Title" class="form-control" />
-                <span asp-validation-for="Title" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Tags" class="control-label"></label>
-                <input asp-for="Tags" class="form-control" />
-                <span asp-validation-for="Tags" class="text-danger"></span>
-            </div>
+            
             <div class="form-group">
                 <label asp-for="Developer" class="control-label"></label>
-                <input asp-for="Developer" class="form-control" />
+                <select name="Developer" asp-items="@ViewBag.DevList" class="form-control">
+                    <option value="0">Please select</option>
+                </select>
                 <span asp-validation-for="Developer" class="text-danger"></span>
             </div>
-            <div class="form-group">
-                <label asp-for="CreatedDate" class="control-label"></label>
-                <input asp-for="CreatedDate" class="form-control" />
-                <span asp-validation-for="CreatedDate" class="text-danger"></span>
-            </div>
+           
             <div class="form-group">
                 <label asp-for="StartedDate" class="control-label"></label>
                 <input asp-for="StartedDate" class="form-control" />
@@ -58,66 +35,19 @@
                 <input asp-for="FixedDate" class="form-control" />
                 <span asp-validation-for="FixedDate" class="text-danger"></span>
             </div>
-            <div class="form-group">
-                <label asp-for="ApprovedDate" class="control-label"></label>
-                <input asp-for="ApprovedDate" class="form-control" />
-                <span asp-validation-for="ApprovedDate" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="ResovedDate" class="control-label"></label>
-                <input asp-for="ResovedDate" class="form-control" />
-                <span asp-validation-for="ResovedDate" class="text-danger"></span>
-            </div>
-            <div class="form-group">
+           
+            @*<div class="form-group">
                 <label asp-for="EstimatedHours" class="control-label"></label>
                 <input asp-for="EstimatedHours" class="form-control" />
                 <span asp-validation-for="EstimatedHours" class="text-danger"></span>
-            </div>
+            </div>*@
+
             <div class="form-group">
                 <label asp-for="ActualHours" class="control-label"></label>
                 <input asp-for="ActualHours" class="form-control" />
                 <span asp-validation-for="ActualHours" class="text-danger"></span>
             </div>
-            <div class="form-group">
-                <label asp-for="RejectedTimes" class="control-label"></label>
-                <input asp-for="RejectedTimes" class="form-control" />
-                <span asp-validation-for="RejectedTimes" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="CommentCount" class="control-label"></label>
-                <input asp-for="CommentCount" class="form-control" />
-                <span asp-validation-for="CommentCount" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="PullRequestCount" class="control-label"></label>
-                <input asp-for="PullRequestCount" class="form-control" />
-                <span asp-validation-for="PullRequestCount" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="FirstPullRequestDate" class="control-label"></label>
-                <input asp-for="FirstPullRequestDate" class="form-control" />
-                <span asp-validation-for="FirstPullRequestDate" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="FirstPullRequestStatus" class="control-label"></label>
-                <input asp-for="FirstPullRequestStatus" class="form-control" />
-                <span asp-validation-for="FirstPullRequestStatus" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="FirstPullRequestCommentCount" class="control-label"></label>
-                <input asp-for="FirstPullRequestCommentCount" class="form-control" />
-                <span asp-validation-for="FirstPullRequestCommentCount" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="FirstPullRequestCommitCount" class="control-label"></label>
-                <input asp-for="FirstPullRequestCommitCount" class="form-control" />
-                <span asp-validation-for="FirstPullRequestCommitCount" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Team" class="control-label"></label>
-                <input asp-for="Team" class="form-control" />
-                <span asp-validation-for="Team" class="text-danger"></span>
-            </div>
+          
             <div class="form-group">
                 <label asp-for="Note" class="control-label"></label>
                 <input asp-for="Note" class="form-control" />

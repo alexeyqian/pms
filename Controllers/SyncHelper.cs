@@ -15,11 +15,12 @@ using System.Web;
 namespace PMS.Controllers
 {
     public class PullRequestMeta
-    {        
+    {
         public string ProjectId { get; set; }
-        public string RepositoryId{get;set;}
+        public string RepositoryId { get; set; }
         public int PullRequestId { get; set; }
-        public PullRequestMeta(string url) {
+        public PullRequestMeta(string url)
+        {
             // url example: 
             //vstfs:///Git/PullRequestId/f2b55896-e832-438d-9220-cbc08c545713%2Fcb274bb6-3339-491a-804d-e2a4f615ad4b%2F1206724",
             var decoded = HttpUtility.UrlDecode(url);
@@ -77,6 +78,7 @@ namespace PMS.Controllers
             }
         }
 
+        // TODO: find Resolved Date
         private async Task UpdateBugFields(PMS.Models.Bug bug, VSWorkItem workitem, bool isCreate)
         {
             if (isCreate)
@@ -90,6 +92,33 @@ namespace PMS.Controllers
             bug.Tags = workitem.fields.SystemTags;
 
             bug.CommentCount = workitem.fields.SystemCommentCount;
+
+            // get workitem updates
+            var workitemUpdatesUrl = workitem._links.workItemUpdates.href;
+            string json = await GetWorkItemUpdates(workitemUpdatesUrl);
+            var workitemUpdates = JsonConvert.DeserializeObject<VSWorkItemUpdates>(json, _jsonSettings);
+            // if it's been resolved, then update the resoved date
+            if(!string.IsNullOrEmpty(bug.StatusInVS) && (bug.StatusInVS.ToLower() == "closed" || bug.StatusInVS.ToLower() == "resolved"))
+            {
+                var resolvedItem = workitemUpdates.value.Where(r => 
+                    r.fields != null    
+                    && r.fields.SystemState != null
+                    && r.fields.SystemState.newValue != null
+                    && r.fields.SystemState.newValue.ToLower() == "resolved")
+                    .FirstOrDefault();
+                if (resolvedItem != null 
+                    && resolvedItem.fields.MicrosoftVSTSCommonResolvedDate != null 
+                    && resolvedItem.fields.MicrosoftVSTSCommonResolvedDate.newValue != null)
+                {
+                    bug.ResovedDate = DateTime.Parse(resolvedItem.fields.MicrosoftVSTSCommonResolvedDate.newValue);
+                    if(resolvedItem.fields.MicrosoftVSTSCommonResolvedReason != null 
+                        && !string.IsNullOrEmpty(resolvedItem.fields.MicrosoftVSTSCommonResolvedReason.newValue))
+                    {
+                        bug.ResolvedReason = resolvedItem.fields.MicrosoftVSTSCommonResolvedReason.newValue;
+                    }
+                }
+            }            
+
             var pullRequests = workitem.relations.Where(r => r.attributes.name == "Pull Request").ToList();
             if (pullRequests == null || pullRequests.Count() == 0)
                 bug.PullRequestCount = 0;
@@ -104,8 +133,19 @@ namespace PMS.Controllers
                 if (isCreate) // only need to fill at creating
                     bug.FirstPullRequestDate = pullRequests[0].attributes.resourceCreatedDate;
 
-                string json = await GetPullRequest(pullRequestMeta);
+                // Using first PR data as fixed data if PR exists.
+                if (bug.FirstPullRequestDate.HasValue)
+                    bug.FixedDate = bug.FirstPullRequestDate;
+
+                json = await GetPullRequest(pullRequestMeta);
                 var pullrequestFullData = JsonConvert.DeserializeObject<VSPullRequest>(json, _jsonSettings);
+
+                //if(pullrequestFullData.status.ToLower() == "abandoned") // try to find non-abandend one
+                //{
+                //    string json = await GetPullRequest(pullRequestMeta);
+                //    var pullrequestFullData = JsonConvert.DeserializeObject<VSPullRequest>(json, _jsonSettings);
+                //}
+
                 bug.FirstPullRequestStatus = pullrequestFullData.status;
 
                 json = await GetCommitsOfPullRequest(pullRequestMeta);
@@ -136,6 +176,12 @@ namespace PMS.Controllers
             return await GetDataFromVS(string.Format("_apis/wit/workitems/{0}?api-version={1}&$expand=all", id, _apiVersion));
         }
 
+
+        private async Task<string> GetWorkItemUpdates(string url)
+        {
+            return await GetDataFromVSUrl(url);
+        }
+
         private async Task<string> GetPullRequest(PullRequestMeta meta)
         {
             //GET https://dev.azure.com/{organization}/{project}/_apis/git/pullrequests/{pullrequest}?api-version={apiversion}
@@ -147,7 +193,7 @@ namespace PMS.Controllers
         {
             //GET https://dev.azure.com/{organization}/{project}/_apis/git/repositories/{repositoryId}/pullRequests/{pullRequestId}/commits?api-version={apiversion}
             //EX: https://dev.azure.com/O365Exchange/f2b55896-e832-438d-9220-cbc08c545713/_apis/git/repositories/cb274bb6-3339-491a-804d-e2a4f615ad4b/pullRequests/1206724/commits
-            return await GetDataFromVS(string.Format("{0}/_apis/git/repositories/{1}/pullRequests/{2}/commits", 
+            return await GetDataFromVS(string.Format("{0}/_apis/git/repositories/{1}/pullRequests/{2}/commits",
                 meta.ProjectId, meta.RepositoryId, meta.PullRequestId));
         }
 
@@ -155,11 +201,11 @@ namespace PMS.Controllers
         {
             //GET https://dev.azure.com/{organization}/{project}/_apis/git/repositories/{repositoryId}/pullRequests/{pullRequestId}/threads?api-version={apiversion}
             //EX: https://dev.azure.com/O365Exchange/f2b55896-e832-438d-9220-cbc08c545713/_apis/git/repositories/cb274bb6-3339-491a-804d-e2a4f615ad4b/pullRequests/1206724/threads
-            return await GetDataFromVS(string.Format("{0}/_apis/git/repositories/{1}/pullRequests/{2}/threads", 
+            return await GetDataFromVS(string.Format("{0}/_apis/git/repositories/{1}/pullRequests/{2}/threads",
                 meta.ProjectId, meta.RepositoryId, meta.PullRequestId));
         }
 
-        private async Task<string> GetDataFromVS(string path)
+        private async Task<string> GetDataFromVSUrl(string url)
         {
             string result = string.Empty;
 
@@ -173,7 +219,6 @@ namespace PMS.Controllers
                         System.Text.ASCIIEncoding.ASCII.GetBytes(
                             string.Format("{0}:{1}", "", _config["MyConfiguration:PAT"]))));
 
-                string url = string.Format("https://dev.azure.com/{0}/{1}", _config["MyConfiguration:VSOrg"], path);
                 using (HttpResponseMessage response = await client.GetAsync(url))
                 {
                     response.EnsureSuccessStatusCode();
@@ -182,6 +227,13 @@ namespace PMS.Controllers
             }
 
             return result;
+        }
+
+        private async Task<string> GetDataFromVS(string path)
+        {
+            string url = string.Format("https://dev.azure.com/{0}/{1}", _config["MyConfiguration:VSOrg"], path);
+
+            return await GetDataFromVSUrl(url);
         }
     }
 }

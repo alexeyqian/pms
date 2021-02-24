@@ -12,12 +12,17 @@ using System.Text.Json.Serialization;
 using Newtonsoft.Json;
 using System.Globalization;
 using System.Collections.Immutable;
+using Microsoft.Extensions.Configuration;
+using PMS.Data;
 
 namespace PMS.Controllers
 {
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
+        private readonly IConfiguration _configuration;
+        private readonly PMSDBContext _context;
+
         private readonly List<Bug> _bugs;
         Func<DateTime, int> weekProjector =
                 d => CultureInfo.CurrentCulture.Calendar.GetWeekOfYear(
@@ -26,33 +31,37 @@ namespace PMS.Controllers
         private int _beginYear = 2020;
         private int _endYear = 2021;
 
-        public HomeController(ILogger<HomeController> logger)
+        public HomeController(ILogger<HomeController> logger, IConfiguration configration, PMSDBContext context)
         {
             _logger = logger;
-
-            // get data
-            string fileName = "data.json";
-            string jsonString = System.IO.File.ReadAllText(fileName);
-            _bugs = JsonConvert.DeserializeObject<List<Bug>>(jsonString, 
-                    new JsonSerializerSettings { NullValueHandling = NullValueHandling.Ignore})
-                .Where(b => b.Status != "WorkedAndContinue").ToList();
+            _configuration = configration;
+            _context = context;
+                    
+            _bugs = _context.Bug.ToList();
             foreach (var b in _bugs){
-                if (b.Status.StartsWith("Fixed"))
+                if (b.ResovedDate.HasValue)
+                    b.Status = "Resolved";
+                else if (b.FixedDate.HasValue)
                     b.Status = "Fixed";
+                else
+                    b.Status = "Active";
             }
         }
 
         public IActionResult Index(DateTime? startdate, DateTime? enddate)
         {
-            if (!startdate.HasValue) startdate = new DateTime(2020,1,1);
+            if (!startdate.HasValue) startdate = new DateTime(2020, 1, 1);
             if (!enddate.HasValue) enddate = new DateTime(2030, 1, 1);
 
-            var bugs = _bugs.Where(b => b.FixedDate >= startdate && b.FixedDate <= enddate.Value.AddDays(1)).ToList();
+            var bugs = _bugs.Where(b => !b.FixedDate.HasValue 
+                || ( b.FixedDate >= startdate && b.FixedDate <= enddate.Value.AddDays(1))).ToList();
 
             SetCategoryChart(bugs);
             SetProductivityChart(bugs);
             SetQualityChart(bugs);
             SetEfficiencyChart(bugs);
+            SetBugCommentsChart(bugs);
+            SetPRCommentsChart(bugs);
             return View();
         }
 
@@ -116,7 +125,7 @@ namespace PMS.Controllers
             ViewData["ProductivityValues"] = String.Join(",", sortedDict.Values.ToArray());
         }
 
-        private void SetQualityChart(List<Bug> bugs)
+        private void SetQualityChart_NOTUSED(List<Bug> bugs)
         {
             Dictionary<string, int> dict = new Dictionary<string, int>();
             for(int i = _beginYear; i <= _endYear; i++)
@@ -137,6 +146,75 @@ namespace PMS.Controllers
 
             ViewData["QualityLabels"] = "\"" + String.Join("\",\"", sortedDict.Keys.ToArray()) + "\"";
             ViewData["QualityValues"] = String.Join(",", sortedDict.Values.ToArray());
+        }
+
+        private void SetQualityChart(List<Bug> bugs)
+        {
+            Dictionary<string, int> dict = new Dictionary<string, int>();
+            for (int i = _beginYear; i <= _endYear; i++)
+            {
+                var groups = from b in bugs
+                             where b.FirstPullRequestDate.HasValue && b.FirstPullRequestDate.Value.Year == i && b.PullRequestCount > 0
+                             group b by weekProjector(b.FirstPullRequestDate.Value);
+
+                foreach (var grp in groups)
+                    dict.Add(i.ToString() + "W" + grp.Key.ToString("00"), grp.Sum(c => c.FirstPullRequestCommitCount) / grp.Sum(s => s.PullRequestCount));
+            }
+
+            var sortedDict = new Dictionary<string, int>();
+            foreach (var item in dict.OrderBy(i => i.Key))
+            {
+                sortedDict.Add(item.Key, item.Value);
+            }
+
+            ViewData["QualityLabels"] = "\"" + String.Join("\",\"", sortedDict.Keys.ToArray()) + "\"";
+            ViewData["QualityValues"] = String.Join(",", sortedDict.Values.ToArray());
+        }
+
+        private void SetBugCommentsChart(List<Bug> bugs)
+        {
+            Dictionary<string, int> dict = new Dictionary<string, int>();
+            for (int i = _beginYear; i <= _endYear; i++)
+            {
+                var groups = from b in bugs
+                             where b.FixedDate.HasValue && b.FixedDate.Value.Year == i
+                             group b by weekProjector(b.FixedDate.Value);
+
+                foreach (var grp in groups)
+                    dict.Add(i.ToString() + "W" + grp.Key.ToString("00"), grp.Sum(b => b.CommentCount) / grp.Count());
+            }
+
+            var sortedDict = new Dictionary<string, int>();
+            foreach (var item in dict.OrderBy(i => i.Key))
+            {
+                sortedDict.Add(item.Key, item.Value);
+            }
+
+            ViewData["BugCommentsLabels"] = "\"" + String.Join("\",\"", sortedDict.Keys.ToArray()) + "\"";
+            ViewData["BugCommentsValues"] = String.Join(",", sortedDict.Values.ToArray());
+        }
+
+        private void SetPRCommentsChart(List<Bug> bugs)
+        {
+            Dictionary<string, int> dict = new Dictionary<string, int>();
+            for (int i = _beginYear; i <= _endYear; i++)
+            {
+                var groups = from b in bugs
+                             where b.FirstPullRequestDate.HasValue && b.FirstPullRequestDate.Value.Year == i && b.PullRequestCount > 0
+                             group b by weekProjector(b.FirstPullRequestDate.Value);
+
+                foreach (var grp in groups)
+                    dict.Add(i.ToString() + "W" + grp.Key.ToString("00"), grp.Sum(c => c.FirstPullRequestCommentCount) / grp.Sum(s => s.PullRequestCount));
+            }
+
+            var sortedDict = new Dictionary<string, int>();
+            foreach (var item in dict.OrderBy(i => i.Key))
+            {
+                sortedDict.Add(item.Key, item.Value);
+            }
+
+            ViewData["PRCommentsLabels"] = "\"" + String.Join("\",\"", sortedDict.Keys.ToArray()) + "\"";
+            ViewData["PRCommentsValues"] = String.Join(",", sortedDict.Values.ToArray());
         }
 
         private void SetEfficiencyChart(List<Bug> bugs)

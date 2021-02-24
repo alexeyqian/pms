@@ -8,16 +8,16 @@
 
         @using (Html.BeginForm("Index", "Home", FormMethod.Get))
         {
-        <fieldset>
-            @Html.Label("StartDate", "Start Date:")
-            <input class="startdate" id="startdate" name="startdate" type="date" value="">
-            @Html.Label("enddate", "End Date:")
-            <input class="startdate" id="enddate" name="enddate" type="date" value="">
-            <input type="submit" value="Apply" />
-            <input type="submit" value="By Week" />
-            <input type="submit" value="By Month" />
-            <input type="submit" value="By Year" />
-        </fieldset>
+            <fieldset>
+                @Html.Label("StartDate", "Start Date:")
+                <input class="startdate" id="startdate" name="startdate" type="date" value="">
+                @Html.Label("enddate", "End Date:")
+                <input class="startdate" id="enddate" name="enddate" type="date" value="">
+                <input type="submit" value="Apply" />
+                <input type="submit" value="By Week" />
+                <input type="submit" value="By Month" />
+                <input type="submit" value="By Year" />
+            </fieldset>
         }
 
     </div>
@@ -37,12 +37,13 @@
             <ul>
                 <li>Category: How many bugs completed by category.</li>
                 <li>Productivity: How many bugs completed per week.</li>
-                <li>Quality: How many bugs completed but rejected per week.</li>
+                <li>Quality: How many avg PR commits per PR per week.</li>
                 <li>Efficency: Average hours per bug per week.</li>
             </ul>
         </div>
     </div>
 </div>
+
 <hr />
 <div class="row">
     <div class="col-md-4">
@@ -52,19 +53,36 @@
     </div>
     <div class="col-md-4">
         <h3>Quality</h3>
-        <h6>Rejected number</h6>
+        <h6>By Avg. PR Commits per PR</h6>
         <canvas id="qualityChart"></canvas>
     </div>
     <div class="col-md-4">
-        <h3>Efficiency [Not Ready Yet]</h3>
-        <h6>Hours per bug</h6>
+        <h3>Efficiency</h3>
+        <h6>Avg Hours per bug</h6>
         <canvas id="efficencyChart"></canvas>
     </div>
 </div>
 
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <h3>Bug Comments</h3>
+        <h6>Avg bug comments per bug per week</h6>
+        <canvas id="bugCommentsChart"></canvas>
+    </div>
+    <div class="col-md-4">
+        <h3>PR Comments</h3>
+        <h6>Avg. PR comments per PR per week</h6>
+        <canvas id="prCommentsChart"></canvas>
+    </div>
+    <div class="col-md-4">
+      
+    </div>
+</div>
+
+
 @section Scripts {
     <script>
-    // Overview
 
     function createOverviewChart() {
         var ctx = document.getElementById('categoryChart').getContext('2d');
@@ -146,35 +164,84 @@
                 }
             }
         });
-        }
+    }
 
-        function createEfficiencyChart() {
-            var ctx = document.getElementById('efficencyChart').getContext('2d');
-            var chart = new Chart(ctx, {
-                type: 'line',
+    function createEfficiencyChart() {
+        var ctx = document.getElementById('efficencyChart').getContext('2d');
+        var chart = new Chart(ctx, {
+            type: 'line',
 
-                data: {
-                    labels: [@Html.Raw(ViewData["EfficiencyLabels"])],
-                    datasets: [{
-                        label: 'Efficiency dataset',
-                        backgroundColor: 'rgb(50, 100, 50)',
-                        borderColor: 'blue',
-                        data: [@ViewData["EfficiencyValues"]]
-                    }]
-                },
+            data: {
+                labels: [@Html.Raw(ViewData["EfficiencyLabels"])],
+                datasets: [{
+                    label: 'Efficiency dataset',
+                    backgroundColor: 'rgb(50, 100, 50)',
+                    borderColor: 'blue',
+                    data: [@ViewData["EfficiencyValues"]]
+                }]
+            },
 
-                options: {
+            options: {
+            legend: {
+                display: false,
+                }
+            }
+        });
+    }
+
+    function createBugCommentsChart() {
+        var ctx = document.getElementById('bugCommentsChart').getContext('2d');
+        var chart = new Chart(ctx, {
+            type: 'line',
+
+            data: {
+                labels: [@Html.Raw(ViewData["bugCommentsLabels"])],
+                datasets: [{
+                    label: 'Bug Comments Dataset',
+                    backgroundColor: 'rgb(100, 99, 60)',
+                    borderColor: 'rgb(100, 99, 132)',
+                    data: [@ViewData["bugCommentsValues"]]
+                }]
+            },
+
+            options: {
                 legend: {
                     display: false,
-                    }
                 }
-            });
-        }
+            }
+        });
+    }
+
+    function createPRCommentsChart() {
+        var ctx = document.getElementById('prCommentsChart').getContext('2d');
+        var chart = new Chart(ctx, {
+            type: 'line',
+
+            data: {
+                labels: [@Html.Raw(ViewData["prCommentsLabels"])],
+                datasets: [{
+                    label: 'PR Comments Dataset',
+                    backgroundColor: 'rgb(100, 99, 60)',
+                    borderColor: 'rgb(100, 99, 132)',
+                    data: [@ViewData["prCommentsValues"]]
+                }]
+            },
+
+            options: {
+                legend: {
+                    display: false,
+                }
+            }
+        });
+    }
 
     createOverviewChart();
     createProductivityChart();
     createEfficiencyChart();
     createQualityChart();
+    createBugCommentsChart();
+    createPRCommentsChart();
+
 
     </script>
 }

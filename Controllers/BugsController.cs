@@ -1,13 +1,14 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
+using Microsoft.Graph;
 using PMS.Data;
 using PMS.Models;
+using System.Collections.Generic;
+using System.Data;
+using System.Linq;
+using System.Threading.Tasks;
 
 namespace PMS.Controllers
 {
@@ -16,19 +17,21 @@ namespace PMS.Controllers
         private readonly IConfiguration _configuration;
         private readonly PMSDBContext _context;
 
+        private static SelectList _statusList = new SelectList(new List<string> { "FixedAndApproved", "FixedAndWaitingForApproval",
+                    "FixedWithoutCodeChange", "WorkedAndContinue", "WorkedButNotABug", "WorkedButOutOfScope" });
+        private static SelectList _devList = new SelectList(new List<string> { "Kai Zhou", "Ling Nan Yang", "Qiang Qiang Guo", "Wei Yu" });
+
         public BugsController(IConfiguration configuration, PMSDBContext context)
         {
             _configuration = configuration;
             _context = context;
         }
 
-        // GET: Bugs
         public async Task<IActionResult> Index()
         {
-            return View(await _context.Bug.ToListAsync());
+            return View(await _context.Bug.OrderByDescending(r=>r.Id).ToListAsync());
         }
 
-        // GET: Bugs/Details/5
         public async Task<IActionResult> Details(int? id)
         {
             if (id == null)
@@ -46,18 +49,16 @@ namespace PMS.Controllers
             return View(bug);
         }
 
-        // GET: Bugs/Create
         public IActionResult Create()
         {
+            ViewBag.StatusList = _statusList;
+            ViewBag.DevList = _devList;
             return View();
         }
 
-        // POST: Bugs/Create
-        // To protect from overposting attacks, enable the specific properties you want to bind to.
-        // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,NO,Status,StatusInVS,Title,Tags,Developer,CreatedDate,StartedDate,FixedDate,ApprovedDate,ResovedDate,EstimatedHours,ActualHours,RejectedTimes,CommentCount,PullRequestCount,FirstPullRequestDate,FirstPullRequestStatus,FirstPullRequestCommentCount,FirstPullRequestCommitCount,Team,Note")] Bug bug)
+        public async Task<IActionResult> Create([Bind("Id,NO,Status,Developer,StartedDate,FixedDate,EstimatedHours,ActualHours,Note")] Bug bug)
         {
             if (ModelState.IsValid)
             {
@@ -68,7 +69,6 @@ namespace PMS.Controllers
             return View(bug);
         }
 
-        // GET: Bugs/Edit/5
         public async Task<IActionResult> Edit(int? id)
         {
             if (id == null)
@@ -81,17 +81,28 @@ namespace PMS.Controllers
             {
                 return NotFound();
             }
+
+            var selectedStatus = _statusList.Where(x => x.Text == bug.Status).First();
+            selectedStatus.Selected = true;
+            var selectedDeveloper = _devList.Where(x => x.Text == bug.Developer).First();
+            selectedDeveloper.Selected = true;
+
+            ViewBag.StatusList = _statusList;
+            ViewBag.DevList = _devList;
             return View(bug);
         }
-
-        // POST: Bugs/Edit/5
-        // To protect from overposting attacks, enable the specific properties you want to bind to.
-        // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
+           
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Id,NO,Status,StatusInVS,Title,Tags,Developer,CreatedDate,StartedDate,FixedDate,ApprovedDate,ResovedDate,EstimatedHours,ActualHours,RejectedTimes,CommentCount,PullRequestCount,FirstPullRequestDate,FirstPullRequestStatus,FirstPullRequestCommentCount,FirstPullRequestCommitCount,Team,Note")] Bug bug)
+        public async Task<IActionResult> Edit(int id, [Bind("Id,Status,Developer,StartedDate,FixedDate,ActualHours,Note")] Bug bug)
         {
             if (id != bug.Id)
+            {
+                return NotFound();
+            }
+
+            var existing = await _context.Bug.FindAsync(bug.Id);
+            if (existing == null)
             {
                 return NotFound();
             }
@@ -100,7 +111,14 @@ namespace PMS.Controllers
             {
                 try
                 {
-                    _context.Update(bug);
+                    existing.Status = bug.Status;
+                    existing.Developer = bug.Developer;
+                    existing.StartedDate = bug.StartedDate;
+                    existing.FixedDate = bug.FixedDate;
+                    existing.ActualHours = bug.ActualHours;
+                    existing.Note = bug.Note;
+
+                    _context.Update(existing);
                     await _context.SaveChangesAsync();
                 }
                 catch (DbUpdateConcurrencyException)
@@ -119,7 +137,6 @@ namespace PMS.Controllers
             return View(bug);
         }
 
-        // GET: Bugs/Delete/5
         public async Task<IActionResult> Delete(int? id)
         {
             if (id == null)
@@ -137,7 +154,6 @@ namespace PMS.Controllers
             return View(bug);
         }
 
-        // POST: Bugs/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)
@@ -160,7 +176,7 @@ namespace PMS.Controllers
                 var syncHelper = new SyncHelper(_configuration, _context);
                 await syncHelper.SyncBug(id);
             }
-            catch (Exception ex)
+            catch 
             {
                 throw;
             }
