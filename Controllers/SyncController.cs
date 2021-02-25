@@ -46,7 +46,8 @@ namespace PMS.Controllers
             // sync data from excel/json file
             foreach (var b in bugsPartial)
             {
-                var bug = await _context.Bug.Where(r => r.NO == b.NO).FirstOrDefaultAsync();
+                var bug = await _context.Bug.Where(r => r.NO == b.NO).FirstOrDefaultAsync();                
+
                 if (bug == null) // create new record
                 {
                     bug = new Bug();
@@ -65,7 +66,11 @@ namespace PMS.Controllers
             // sync data from DevOps
             var syncHelper = new SyncHelper(_configuration, _context);
             foreach (var b in bugsPartial)
+            {
+                if (b.SyncedOn.HasValue && DateTime.Now.Subtract(b.SyncedOn.Value).Hours <= 2)
+                    continue; // ignore recent synced data
                 await syncHelper.SyncBug(b.NO);
+            }                
 
             return "OK";
         }

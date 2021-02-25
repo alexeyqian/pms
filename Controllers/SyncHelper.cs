@@ -176,6 +176,7 @@ namespace PMS.Controllers
 
                 bug.FirstPullRequestCommentDate = firstPRHumanCommentDate;
                 bug.FirstPullRequestCommentCount = pullRequestCommentCount;
+                bug.SyncedOn = DateTime.Now;
             }
         }
 
@@ -190,7 +191,6 @@ namespace PMS.Controllers
             //EX: https://dev.azure.com/O365Exchange/_apis/wit/workitems/1937102?api-version=6.1-preview.3&$expand=all
             return await GetDataFromVS(string.Format("_apis/wit/workitems/{0}?api-version={1}&$expand=all", id, _apiVersion));
         }
-
 
         private async Task<string> GetWorkItemUpdates(string url)
         {

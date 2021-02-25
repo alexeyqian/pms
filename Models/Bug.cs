@@ -38,6 +38,7 @@ namespace PMS.Models
         [DataType(DataType.Date)]
         public DateTime? StartedDate { get; set; }             
         public string Note { get; set; }
+        public DateTime? SyncedOn { get; set; }
 
         // deprecated fields
         public string Team { get; set; }
