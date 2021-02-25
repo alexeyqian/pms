@@ -25,6 +25,8 @@ namespace PMS.Models
         [DataType(DataType.Date)]
         public DateTime? FirstPullRequestDate { get; internal set; } // Our Resolved Date
         public string FirstPullRequestStatus { get; internal set; }
+        public DateTime? FirstPullRequestCommentDate { get; set; }
+        public int FirstPullRequestIterationCount { get; set; }
         public int FirstPullRequestCommentCount { get; internal set; }
         public int FirstPullRequestCommitCount { get; internal set; }
 

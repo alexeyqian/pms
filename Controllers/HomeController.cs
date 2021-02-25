@@ -32,8 +32,7 @@ namespace PMS.Controllers
         private int _endYear = 2021;
 
         public HomeController(ILogger<HomeController> logger, IConfiguration configration, PMSDBContext context)
-        {
-            /*
+        {            
             _logger = logger;
             _configuration = configration;
             _context = context;
@@ -46,11 +45,11 @@ namespace PMS.Controllers
                     b.Status = "Fixed";
                 else
                     b.Status = "Active";
-            }*/
+            }
         }
 
         public IActionResult Index(DateTime? startdate, DateTime? enddate)
-        {   /*
+        {   
             if (!startdate.HasValue) startdate = new DateTime(2020, 1, 1);
             if (!enddate.HasValue) enddate = new DateTime(2030, 1, 1);
 
@@ -62,8 +61,10 @@ namespace PMS.Controllers
             SetQualityChart(bugs);
             SetEfficiencyChart(bugs);
             SetBugCommentsChart(bugs);
-            SetPRCommentsChart(bugs);*/
-            return View("Test");
+            SetPRCommentsChart(bugs);
+            SetPREngagementChart(bugs);
+
+            return View();
         }
 
         public IActionResult ByDeveloper()
@@ -159,7 +160,7 @@ namespace PMS.Controllers
                              group b by weekProjector(b.FirstPullRequestDate.Value);
 
                 foreach (var grp in groups)
-                    dict.Add(i.ToString() + "W" + grp.Key.ToString("00"), grp.Sum(c => c.FirstPullRequestCommitCount) / grp.Sum(s => s.PullRequestCount));
+                    dict.Add(i.ToString() + "W" + grp.Key.ToString("00"), grp.Sum(c => c.FirstPullRequestIterationCount) / grp.Sum(s => s.PullRequestCount));
             }
 
             var sortedDict = new Dictionary<string, int>();
@@ -216,6 +217,29 @@ namespace PMS.Controllers
 
             ViewData["PRCommentsLabels"] = "\"" + String.Join("\",\"", sortedDict.Keys.ToArray()) + "\"";
             ViewData["PRCommentsValues"] = String.Join(",", sortedDict.Values.ToArray());
+        }
+
+        private void SetPREngagementChart(List<Bug> bugs)
+        {
+            Dictionary<string, int> dict = new Dictionary<string, int>();
+            for (int i = _beginYear; i <= _endYear; i++)
+            {
+                var groups = from b in bugs
+                             where b.FirstPullRequestDate.HasValue && b.FirstPullRequestCommentDate.HasValue && b.FirstPullRequestDate.Value.Year == i && b.PullRequestCount > 0 
+                             group b by weekProjector(b.FirstPullRequestDate.Value);
+
+                foreach (var grp in groups)
+                    dict.Add(i.ToString() + "W" + grp.Key.ToString("00"), grp.Sum(c => c.FirstPullRequestCommentDate.Value.Subtract(c.FirstPullRequestDate.Value).Hours) / grp.Count());
+            }
+
+            var sortedDict = new Dictionary<string, int>();
+            foreach (var item in dict.OrderBy(i => i.Key))
+            {
+                sortedDict.Add(item.Key, item.Value);
+            }
+
+            ViewData["PREngagementLabels"] = "\"" + String.Join("\",\"", sortedDict.Keys.ToArray()) + "\"";
+            ViewData["PREngagementValues"] = String.Join(",", sortedDict.Values.ToArray());
         }
 
         private void SetEfficiencyChart(List<Bug> bugs)

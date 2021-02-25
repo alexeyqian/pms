@@ -5,6 +5,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Graph;
 using PMS.Data;
 using PMS.Models;
+using System;
 using System.Collections.Generic;
 using System.Data;
 using System.Linq;
@@ -154,6 +155,7 @@ namespace PMS.Controllers
             return View(bug);
         }
 
+        /*
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)
@@ -162,7 +164,7 @@ namespace PMS.Controllers
             _context.Bug.Remove(bug);
             await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
-        }
+        }*/
                
         public async Task<IActionResult> Sync(int id)
         {
@@ -182,6 +184,17 @@ namespace PMS.Controllers
             }
 
             return RedirectToAction(nameof(Index));
+        }
+
+        public static int GetPullRequestAge(Bug bug)
+        {
+            if (!bug.FirstPullRequestDate.HasValue) return 0;
+
+            var endDate = DateTime.Now;
+            if (bug.ResovedDate.HasValue)
+                endDate = bug.ResovedDate.Value;
+
+            return endDate.Subtract(bug.FirstPullRequestDate.Value).Days + 1;
         }
 
         private bool BugExists(int id)

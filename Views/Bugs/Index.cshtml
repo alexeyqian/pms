@@ -8,24 +8,27 @@
     <div class="col-auto">
         <label class="control-label">Bug ID</label>
     </div>
-    <div class="col-auto">        
+    <div class="col-auto">
         <input type="text" name="id" class="form-control" />
     </div>
     <div class="col-auto">
         <input type="submit" value="Quick Add" class="btn btn-primary" />
     </div>
     @*<div class="col-auto">
-        <a asp-action="Create" class="btn btn-link">Create New</a>
-    </div>*@
+            <a asp-action="Create" class="btn btn-link">Create New</a>
+        </div>*@
 </form>
 
 <style>
-    .table{
+    .table {
         font-size: 0.8rem;
     }
 </style>
 
-<div>BC = Bug Comments, PR = Pull Request, PRD = First PR Date, PRC= PR Comments, PRCM = PR Commits</div>
+<link rel="stylesheet" href="https://cdn.datatables.net/1.10.23/css/dataTables.jqueryui.min.css" />
+<link rel="stylesheet" href="https://cdn.datatables.net/scroller/2.0.3/css/scroller.jqueryui.min.css" />
+
+<div>BC = Bug Comments, PR = Pull Request, PRD = First PR Date, PRC= PR Comments, PRCM = PR Commits, PRA = PR Age</div>
 <table class="table" id="bugTable">
     <thead>
         <tr>
@@ -55,6 +58,9 @@
                 PRD
             </th>
             <th>
+                PRA
+            </th>
+            <th>
                 PRS
             </th>
             <th>
@@ -69,48 +75,51 @@
     <tbody>
         @foreach (var item in Model)
         {
-        <tr>
-            <td>
-                <a href="https://o365exchange.visualstudio.com/DefaultCollection/IP%20Engineering/_workitems/edit/@item.NO" target="_blank">@item.NO</a>
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Developer)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.StatusInVS)
-            </td>
+            <tr>
+                <td>
+                    <a href="https://o365exchange.visualstudio.com/DefaultCollection/IP%20Engineering/_workitems/edit/@item.NO" target="_blank">@item.NO</a>
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Developer)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.StatusInVS)
+                </td>
 
-            <td>
-                @Html.DisplayFor(modelItem => item.FixedDate)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.ResovedDate)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.CommentCount)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.PullRequestCount)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.FirstPullRequestDate)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.FirstPullRequestStatus)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.FirstPullRequestCommentCount)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.FirstPullRequestCommitCount)
-            </td>
-            <td>
-                <a asp-action="Edit" asp-route-id="@item.Id"><i class="bi bi-pencil"></i></a>
-                <a asp-action="Details" asp-route-id="@item.Id"><i class="bi bi-card-text"></i></a>
-                <a asp-action="Sync" asp-route-id="@item.NO"><i class="bi bi-arrow-clockwise"></i></a>
-                @*<a asp-action="Delete" asp-route-id="@item.Id">D</a>*@
-            </td>
-        </tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.FixedDate)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.ResovedDate)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.CommentCount)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.PullRequestCount)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.FirstPullRequestDate)
+                </td>
+                <td>
+                    @(PMS.Controllers.BugsController.GetPullRequestAge(item))
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.FirstPullRequestStatus)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.FirstPullRequestCommentCount)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.FirstPullRequestCommitCount)
+                </td>
+                <td>
+                    @*<a asp-action="Edit" asp-route-id="@item.Id"><i class="bi bi-pencil"></i></a>*@
+                    <a asp-action="Details" asp-route-id="@item.Id"><i class="bi bi-card-text"></i></a>
+                    <a asp-action="Sync" asp-route-id="@item.NO"><i class="bi bi-arrow-clockwise"></i></a>
+                    @*<a asp-action="Delete" asp-route-id="@item.Id">D</a>*@
+                </td>
+            </tr>
         }
     </tbody>
 </table>
@@ -122,7 +131,11 @@
     <script>
         $(document).ready(function () {
             $('#bugTable').DataTable({
-                paging: false});
+                //paging: false,
+                scrollY: 1000,
+                scrollCollapse: true,
+                scroller: true
+            });
         });
     </script>
 }
