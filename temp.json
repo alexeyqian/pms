@@ -1,0 +1,141 @@
+﻿{
+  "id": 1937102,
+  "rev": 19,
+  "fields": {
+    "System.Id": 1937102,
+    "System.AreaId": 684,
+    "System.AreaPath": "IP Engineering\\Security and Compliance Center",
+    "System.TeamProject": "IP Engineering",
+    "System.NodeName": "Security and Compliance Center",
+    "System.AreaLevel1": "IP Engineering",
+    "System.AreaLevel2": "Security and Compliance Center",
+    "System.Rev": 19,
+    "System.AuthorizedDate": "2021-02-20T03:29:54.747Z",
+    "System.RevisedDate": "9999-01-01T00:00:00Z",
+    "System.IterationId": 199,
+    "System.IterationPath": "IP Engineering",
+    "System.IterationLevel1": "IP Engineering",
+    "System.WorkItemType": "Bug",
+    "System.State": "Active",
+    "System.Reason": "Approved",
+    "System.AssignedTo": {
+      "displayName": "Kai Zhou",
+      "url": "https://spsprodwus22.vssps.visualstudio.com/A28f31532-b635-4501-ab58-7eb1d27f889d/_apis/Identities/78918592-e7a1-6389-9d00-b2499d2be3ba",
+      "_links": { "avatar": { "href": "https://dev.azure.com/O365Exchange/_apis/GraphProfile/MemberAvatars/aad.Nzg5MTg1OTItZTdhMS03Mzg5LTlkMDAtYjI0OTlkMmJlM2Jh" } },
+      "id": "78918592-e7a1-6389-9d00-b2499d2be3ba",
+      "uniqueName": "v-kaizhou@microsoft.com",
+      "imageUrl": "https://dev.azure.com/O365Exchange/_apis/GraphProfile/MemberAvatars/aad.Nzg5MTg1OTItZTdhMS03Mzg5LTlkMDAtYjI0OTlkMmJlM2Jh",
+      "descriptor": "aad.Nzg5MTg1OTItZTdhMS03Mzg5LTlkMDAtYjI0OTlkMmJlM2Jh"
+    },
+    "System.CreatedDate": "2021-02-03T08:44:38.243Z",
+    "System.CreatedBy": {
+      "displayName": "Ashish Pandey",
+      "url": "https://spsprodwus22.vssps.visualstudio.com/A28f31532-b635-4501-ab58-7eb1d27f889d/_apis/Identities/4608fb0e-5368-6462-a0f6-a4915100979d",
+      "_links": { "avatar": { "href": "https://dev.azure.com/O365Exchange/_apis/GraphProfile/MemberAvatars/aad.NDYwOGZiMGUtNTM2OC03NDYyLWEwZjYtYTQ5MTUxMDA5Nzlk" } },
+      "id": "4608fb0e-5368-6462-a0f6-a4915100979d",
+      "uniqueName": "v-ashpan@microsoft.com",
+      "imageUrl": "https://dev.azure.com/O365Exchange/_apis/GraphProfile/MemberAvatars/aad.NDYwOGZiMGUtNTM2OC03NDYyLWEwZjYtYTQ5MTUxMDA5Nzlk",
+      "descriptor": "aad.NDYwOGZiMGUtNTM2OC03NDYyLWEwZjYtYTQ5MTUxMDA5Nzlk"
+    },
+    "System.ChangedDate": "2021-02-20T03:29:54.747Z",
+    "System.ChangedBy": {
+      "displayName": "Kai Zhou",
+      "url": "https://spsprodwus22.vssps.visualstudio.com/A28f31532-b635-4501-ab58-7eb1d27f889d/_apis/Identities/78918592-e7a1-6389-9d00-b2499d2be3ba",
+      "_links": { "avatar": { "href": "https://dev.azure.com/O365Exchange/_apis/GraphProfile/MemberAvatars/aad.Nzg5MTg1OTItZTdhMS03Mzg5LTlkMDAtYjI0OTlkMmJlM2Jh" } },
+      "id": "78918592-e7a1-6389-9d00-b2499d2be3ba",
+      "uniqueName": "v-kaizhou@microsoft.com",
+      "imageUrl": "https://dev.azure.com/O365Exchange/_apis/GraphProfile/MemberAvatars/aad.Nzg5MTg1OTItZTdhMS03Mzg5LTlkMDAtYjI0OTlkMmJlM2Jh",
+      "descriptor": "aad.Nzg5MTg1OTItZTdhMS03Mzg5LTlkMDAtYjI0OTlkMmJlM2Jh"
+    },
+    "System.AuthorizedAs": {
+      "displayName": "Kai Zhou",
+      "url": "https://spsprodwus22.vssps.visualstudio.com/A28f31532-b635-4501-ab58-7eb1d27f889d/_apis/Identities/78918592-e7a1-6389-9d00-b2499d2be3ba",
+      "_links": { "avatar": { "href": "https://dev.azure.com/O365Exchange/_apis/GraphProfile/MemberAvatars/aad.Nzg5MTg1OTItZTdhMS03Mzg5LTlkMDAtYjI0OTlkMmJlM2Jh" } },
+      "id": "78918592-e7a1-6389-9d00-b2499d2be3ba",
+      "uniqueName": "v-kaizhou@microsoft.com",
+      "imageUrl": "https://dev.azure.com/O365Exchange/_apis/GraphProfile/MemberAvatars/aad.Nzg5MTg1OTItZTdhMS03Mzg5LTlkMDAtYjI0OTlkMmJlM2Jh",
+      "descriptor": "aad.Nzg5MTg1OTItZTdhMS03Mzg5LTlkMDAtYjI0OTlkMmJlM2Jh"
+    },
+    "System.PersonId": 29082571,
+    "System.Watermark": 15070301,
+    "System.CommentCount": 1,
+    "System.Title": "[Accessibility -Visual Requirement -Create Policy]: The Contrast Minimum is failed for the Separator Line above the Create New Button.",
+    "Microsoft.VSTS.Common.StateChangeDate": "2021-02-20T03:29:54.747Z",
+    "Microsoft.VSTS.Common.ActivatedDate": "2021-02-20T03:29:54.747Z",
+    "Microsoft.VSTS.Common.ActivatedBy": {
+      "displayName": "Kai Zhou",
+      "url": "https://spsprodwus22.vssps.visualstudio.com/A28f31532-b635-4501-ab58-7eb1d27f889d/_apis/Identities/78918592-e7a1-6389-9d00-b2499d2be3ba",
+      "_links": { "avatar": { "href": "https://dev.azure.com/O365Exchange/_apis/GraphProfile/MemberAvatars/aad.Nzg5MTg1OTItZTdhMS03Mzg5LTlkMDAtYjI0OTlkMmJlM2Jh" } },
+      "id": "78918592-e7a1-6389-9d00-b2499d2be3ba",
+      "uniqueName": "v-kaizhou@microsoft.com",
+      "imageUrl": "https://dev.azure.com/O365Exchange/_apis/GraphProfile/MemberAvatars/aad.Nzg5MTg1OTItZTdhMS03Mzg5LTlkMDAtYjI0OTlkMmJlM2Jh",
+      "descriptor": "aad.Nzg5MTg1OTItZTdhMS03Mzg5LTlkMDAtYjI0OTlkMmJlM2Jh"
+    },
+    "Microsoft.VSTS.Common.Priority": 3,
+    "Microsoft.VSTS.Common.Severity": "4 - Low",
+    "Microsoft.VSTS.Common.ValueArea": "Business",
+    "Office.ProductStudio.PSDatabase": "OfficeMain",
+    "Microsoft.VSTS.Common.Triage": "Not Triaged",
+    "O365.Security.Impact": false,
+    "O365.Is.Exception": false,
+    "System.Description": "<div><b>User Experience:</b></div><div>User with partial vision will face the difficulty if the luminosity ratio is less than the required ratio.</div><div><br></div><div><b>Test Environment:</b></div><div>OS: Version 2004 (OS Build 20262.1010)</div><div><div>Browser: Edge Anaheim<br style=\"box-sizing:border-box;\"></div><div>Browser version: Version 88.0.702.0 (Official build) Dev (64-bit)</div>Username: admin@ediscoSdf.onmicrosoft.com</div><div><div>URL:&nbsp;&nbsp;<a href=\"https://nam06.safelinks.protection.outlook.com/?url=https://sip.compliance.microsoft.com/m365appprotection?flight%3DEnableBetaControls&amp;data=04%7c01%7cv-kisharma%40microsoft.com%7c60bd28f569e941821ef308d8c413e6e5%7c72f988bf86f141af91ab2d7cd011db47%7c1%7c0%7c637474937048865944%7cUnknown%7cTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7c1000&amp;sdata=S7PfWdsBulu64dsq9OQom33JWErIXfJzce7GOk%2BZ3J4%3D&amp;reserved=0\" target=_blank rel=\"noopener noreferrer\" title=\"Original URL: https://sip.compliance.microsoft.com/m365appprotection?flight=EnableBetaControls. Click or tap if you trust this link.\" style=\"margin:0px;font-size:14.6667px;font-family:Calibri, sans-serif;orphans:2;widows:2;\">https://sip.compliance.microsoft.com/m365appprotection?flight=EnableBetaControls</a></div></div><div>Tools : CCA<br></div><div>Task ID - <a href=\"https://o365exchange.visualstudio.com/O365%20Core/_workitems/edit/1939718\">1939718</a></div><div><br><div><b>Repro Steps:</b></div><div>1- Go to the above mentioned URL with right credentials.</div><div>2- M365 App Protection(Preview) Page will get open.</div><div>3- Navigate to the &quot;Policy&quot; Tab.</div><div>4- Navigate to the &quot;Create New&quot; button.</div><div>5- Launch CCA and observe the luminosity ratio for the separator line above the button.</div><div><br></div><div><b>Note: </b>This is happening through out the M365 Product.<br></div><div><br></div><div><b>Actual Result:</b></div><div>When checked using CCA, the luminosity ratio for the separator line is failed and is less than the minimum required contrast ratio.<br></div><div><br></div><div><b>Expected Result:</b></div><div>The luminosity ratio should be more or up to the required minimum ratio so that less vision user can actually see that there is a separator line defined.<br></div><div><br></div><div><b>MAS Reference:</b></div><div><a href=\"https://microsoft.sharepoint.com/teams/msenable/_layouts/15/WopiFrame.aspx?sourcedoc=%7ba73546c7-765f-489c-b18f-afb659fe99e6%7d\" title=\"MAS 1.4.3 - Contrast (Minimum) Document\" target=_blank style=\"box-sizing:border-box;font-family:&quot;Segoe UI&quot;, Arial;orphans:2;widows:2;\">MAS 1.4.3 - Contrast (Minimum)</a><br></div><br></div>",
+    "System.Tags": "A11yFeature; A11ylowImpact; A11yMAS; Accesibility; CommonControl; Compliance; HCL; HCL-E+D; HCL-M365-S&CC; HCL-MAPG; M365Compliance; M365SCC; MAS1.4.3"
+  },
+  "relations": [
+    {
+      "rel": "System.LinkTypes.Related",
+      "url": "https://dev.azure.com/O365Exchange/959adb23-f323-4d52-8203-ff34e5cbeefa/_apis/wit/workItems/1939718",
+      "attributes": {
+        "isLocked": false,
+        "name": "Related"
+      }
+    },
+    {
+      "rel": "AttachedFile",
+      "url": "https://dev.azure.com/O365Exchange/f2b55896-e832-438d-9220-cbc08c545713/_apis/wit/attachments/8dc7213a-0175-4898-b7ea-a626e7732e88",
+      "attributes": {
+        "authorizedDate": "2021-02-15T08:16:36.523Z",
+        "id": 3513660,
+        "resourceCreatedDate": "2021-02-03T11:05:36.667Z",
+        "resourceModifiedDate": "2021-02-03T11:05:13.197Z",
+        "revisedDate": "9999-01-01T00:00:00Z",
+        "resourceSize": 78692,
+        "name": "Mas1.4.3 - Contrast Minimum Failed for the separator line.png"
+      }
+    },
+    {
+      "rel": "ArtifactLink",
+      "url": "vstfs:///Git/Ref/f2b55896-e832-438d-9220-cbc08c545713%2Fcb274bb6-3339-491a-804d-e2a4f615ad4b%2FGBuser%2Fv-kaizhou%2F1937102",
+      "attributes": {
+        "authorizedDate": "2021-02-20T03:01:09.35Z",
+        "id": 3536438,
+        "resourceCreatedDate": "2021-02-20T03:01:09.35Z",
+        "resourceModifiedDate": "2021-02-20T03:01:09.35Z",
+        "revisedDate": "9999-01-01T00:00:00Z",
+        "name": "Branch"
+      }
+    },
+    {
+      "rel": "ArtifactLink",
+      "url": "vstfs:///Git/PullRequestId/f2b55896-e832-438d-9220-cbc08c545713%2Fcb274bb6-3339-491a-804d-e2a4f615ad4b%2F1206724",
+      "attributes": {
+        "authorizedDate": "2021-02-20T03:27:50.27Z",
+        "id": 3536492,
+        "resourceCreatedDate": "2021-02-20T03:27:50.27Z",
+        "resourceModifiedDate": "2021-02-20T03:27:50.27Z",
+        "revisedDate": "9999-01-01T00:00:00Z",
+        "name": "Pull Request"
+      }
+    }
+  ],
+  "_links": {
+    "self": { "href": "https://dev.azure.com/O365Exchange/f2b55896-e832-438d-9220-cbc08c545713/_apis/wit/workItems/1937102" },
+    "workItemUpdates": { "href": "https://dev.azure.com/O365Exchange/f2b55896-e832-438d-9220-cbc08c545713/_apis/wit/workItems/1937102/updates" },
+    "workItemRevisions": { "href": "https://dev.azure.com/O365Exchange/f2b55896-e832-438d-9220-cbc08c545713/_apis/wit/workItems/1937102/revisions" },
+    "workItemComments": { "href": "https://dev.azure.com/O365Exchange/f2b55896-e832-438d-9220-cbc08c545713/_apis/wit/workItems/1937102/comments" },
+    "html": { "href": "https://dev.azure.com/O365Exchange/f2b55896-e832-438d-9220-cbc08c545713/_workitems/edit/1937102" },
+    "workItemType": { "href": "https://dev.azure.com/O365Exchange/f2b55896-e832-438d-9220-cbc08c545713/_apis/wit/workItemTypes/Bug" },
+    "fields": { "href": "https://dev.azure.com/O365Exchange/f2b55896-e832-438d-9220-cbc08c545713/_apis/wit/fields" }
+  },
+  "url": "https://dev.azure.com/O365Exchange/f2b55896-e832-438d-9220-cbc08c545713/_apis/wit/workItems/1937102"
+}

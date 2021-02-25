@@ -1,0 +1,1953 @@
+﻿{
+  "count": 26,
+  "value": [
+    {
+      "id": 1,
+      "workItemId": 1565614,
+      "rev": 1,
+      "revisedBy": {
+        "id": "598ee4ea-9e57-6963-9315-cff4bfa570b5",
+        "name": "Vadakasai Sudheerkumar <v-vasud@microsoft.com>",
+        "displayName": "Vadakasai Sudheerkumar",
+        "url": "https://spsprodwus22.vssps.visualstudio.com/A28f31532-b635-4501-ab58-7eb1d27f889d/_apis/Identities/598ee4ea-9e57-6963-9315-cff4bfa570b5",
+        "_links": { "avatar": { "href": "https://dev.azure.com/O365Exchange/_apis/GraphProfile/MemberAvatars/aad.NTk4ZWU0ZWEtOWU1Ny03OTYzLTkzMTUtY2ZmNGJmYTU3MGI1" } },
+        "uniqueName": "v-vasud@microsoft.com",
+        "imageUrl": "https://dev.azure.com/O365Exchange/_apis/GraphProfile/MemberAvatars/aad.NTk4ZWU0ZWEtOWU1Ny03OTYzLTkzMTUtY2ZmNGJmYTU3MGI1",
+        "descriptor": "aad.NTk4ZWU0ZWEtOWU1Ny03OTYzLTkzMTUtY2ZmNGJmYTU3MGI1"
+      },
+      "revisedDate": "2020-07-06T08:41:57.43Z",
+      "fields": {
+        "System.Id": { "newValue": 1565614 },
+        "System.AreaId": { "newValue": 4598 },
+        "System.NodeName": { "newValue": "M365 Compliance" },
+        "System.AreaLevel1": { "newValue": "IP Engineering" },
+        "System.AreaLevel2": { "newValue": "M365 Compliance" },
+        "System.Rev": { "newValue": 1 },
+        "System.AuthorizedDate": { "newValue": "2020-07-03T13:21:31.267Z" },
+        "System.RevisedDate": { "newValue": "2020-07-06T08:41:57.43Z" },
+        "System.IterationId": { "newValue": 200 },
+        "System.IterationLevel1": { "newValue": "IP Engineering" },
+        "System.WorkItemType": { "newValue": "Bug" },
+        "System.State": { "newValue": "New" },
+        "System.Reason": { "newValue": "New" },
+        "System.AssignedTo": {
+          "newValue": {
+            "displayName": "Padmini Pandey",
+            "url": "https://spsprodwus22.vssps.visualstudio.com/A28f31532-b635-4501-ab58-7eb1d27f889d/_apis/Identities/4767b08f-3609-46b6-bd49-bfaed8b150c3",
+            "_links": { "avatar": { "href": "https://dev.azure.com/O365Exchange/_apis/GraphProfile/MemberAvatars/aad.Yjk1YTEyMTctOWEwYy03ZDQxLWI5NzUtNDQ3NTY0ODJjODg2" } },
+            "id": "4767b08f-3609-46b6-bd49-bfaed8b150c3",
+            "uniqueName": "v-padmpa@microsoft.com",
+            "imageUrl": "https://dev.azure.com/O365Exchange/_apis/GraphProfile/MemberAvatars/aad.Yjk1YTEyMTctOWEwYy03ZDQxLWI5NzUtNDQ3NTY0ODJjODg2",
+            "descriptor": "aad.Yjk1YTEyMTctOWEwYy03ZDQxLWI5NzUtNDQ3NTY0ODJjODg2"
+          }
+        },
+        "System.CreatedDate": { "newValue": "2020-07-03T13:21:31.267Z" },
+        "System.CreatedBy": {
+          "newValue": {
+            "displayName": "Vadakasai Sudheerkumar",
+            "url": "https://spsprodwus22.vssps.visualstudio.com/A28f31532-b635-4501-ab58-7eb1d27f889d/_apis/Identities/598ee4ea-9e57-6963-9315-cff4bfa570b5",
+            "_links": { "avatar": { "href": "https://dev.azure.com/O365Exchange/_apis/GraphProfile/MemberAvatars/aad.NTk4ZWU0ZWEtOWU1Ny03OTYzLTkzMTUtY2ZmNGJmYTU3MGI1" } },
+            "id": "598ee4ea-9e57-6963-9315-cff4bfa570b5",
+            "uniqueName": "v-vasud@microsoft.com",
+            "imageUrl": "https://dev.azure.com/O365Exchange/_apis/GraphProfile/MemberAvatars/aad.NTk4ZWU0ZWEtOWU1Ny03OTYzLTkzMTUtY2ZmNGJmYTU3MGI1",
+            "descriptor": "aad.NTk4ZWU0ZWEtOWU1Ny03OTYzLTkzMTUtY2ZmNGJmYTU3MGI1"
+          }
+        },
+        "System.ChangedDate": { "newValue": "2020-07-03T13:21:31.267Z" },
+        "System.ChangedBy": {
+          "newValue": {
+            "displayName": "Vadakasai Sudheerkumar",
+            "url": "https://spsprodwus22.vssps.visualstudio.com/A28f31532-b635-4501-ab58-7eb1d27f889d/_apis/Identities/598ee4ea-9e57-6963-9315-cff4bfa570b5",
+            "_links": { "avatar": { "href": "https://dev.azure.com/O365Exchange/_apis/GraphProfile/MemberAvatars/aad.NTk4ZWU0ZWEtOWU1Ny03OTYzLTkzMTUtY2ZmNGJmYTU3MGI1" } },
+            "id": "598ee4ea-9e57-6963-9315-cff4bfa570b5",
+            "uniqueName": "v-vasud@microsoft.com",
+            "imageUrl": "https://dev.azure.com/O365Exchange/_apis/GraphProfile/MemberAvatars/aad.NTk4ZWU0ZWEtOWU1Ny03OTYzLTkzMTUtY2ZmNGJmYTU3MGI1",
+            "descriptor": "aad.NTk4ZWU0ZWEtOWU1Ny03OTYzLTkzMTUtY2ZmNGJmYTU3MGI1"
+          }
+        },
+        "System.AuthorizedAs": {
+          "newValue": {
+            "displayName": "Vadakasai Sudheerkumar",
+            "url": "https://spsprodwus22.vssps.visualstudio.com/A28f31532-b635-4501-ab58-7eb1d27f889d/_apis/Identities/598ee4ea-9e57-6963-9315-cff4bfa570b5",
+            "_links": { "avatar": { "href": "https://dev.azure.com/O365Exchange/_apis/GraphProfile/MemberAvatars/aad.NTk4ZWU0ZWEtOWU1Ny03OTYzLTkzMTUtY2ZmNGJmYTU3MGI1" } },
+            "id": "598ee4ea-9e57-6963-9315-cff4bfa570b5",
+            "uniqueName": "v-vasud@microsoft.com",
+            "imageUrl": "https://dev.azure.com/O365Exchange/_apis/GraphProfile/MemberAvatars/aad.NTk4ZWU0ZWEtOWU1Ny03OTYzLTkzMTUtY2ZmNGJmYTU3MGI1",
+            "descriptor": "aad.NTk4ZWU0ZWEtOWU1Ny03OTYzLTkzMTUtY2ZmNGJmYTU3MGI1"
+          }
+        },
+        "System.PersonId": { "newValue": 29044933 },
+        "System.Watermark": { "newValue": 11354707 },
+        "System.IsDeleted": { "newValue": false },
+        "System.CommentCount": { "newValue": 0 },
+        "System.TeamProject": { "newValue": "IP Engineering" },
+        "System.AreaPath": { "newValue": "IP Engineering\\M365 Compliance" },
+        "System.IterationPath": { "newValue": "IP Engineering" },
+        "Microsoft.VSTS.Common.Priority": { "newValue": 4 },
+        "Microsoft.VSTS.Common.Severity": { "newValue": "3 - Medium" },
+        "Microsoft.VSTS.Common.ValueArea": { "newValue": "Business" },
+        "Office.ProductStudio.PSDatabase": { "newValue": "OfficeMain" },
+        "Microsoft.VSTS.Common.Triage": { "newValue": "Not Triaged" },
+        "O365.Security.Impact": { "newValue": false },
+        "O365.Is.Exception": { "newValue": false },
+        "Microsoft.VSTS.Common.StateChangeDate": { "newValue": "2020-07-03T13:21:31.267Z" },
+        "System.Title": { "newValue": "[Supporting the platform - M365 Compliance - Viewing an Assessment]: Two -dimensional scrolling (Horizontal and Vertical) is observed in \"Viewing an Assessment\" page when zoom to 400%." },
+        "System.Description": { "newValue": "<div style=\"box-sizing:border-box;margin:0px 0cm 0.000133333px;\"><div style=\"box-sizing:border-box;margin:0px 0cm 0.000133333px;\"><div style=\"box-sizing:border-box;margin:0px 0cm 0.000133333px;\"><div style=\"box-sizing:border-box;margin:0px 0cm 0.000133333px;\"><div style=\"box-sizing:border-box;margin:0px 0cm 0.000133333px;\"><p style=\"font-family:Calibri, sans-serif;font-size:11pt;margin:0in 0in 0.0001pt;background:white;\"><b></b></p><div style=\"margin:0px 0in 0.000133333px;background:white;\"><p style=\"font-family:Calibri, sans-serif;font-size:11pt;margin:0in 0in 0.0001pt;background:white;\"><b><span style=\"color:black;\"></span></b></p></div></div></div></div></div></div><div><div style=\"box-sizing:border-box;\"><b style=\"box-sizing:border-box;\"></b></div></div><p style=\"box-sizing:border-box;font-family:Calibri, sans-serif;font-weight:400;font-size:14.6667px;margin:0cm 0cm 0.0001pt;\"><b style=\"box-sizing:border-box;\"><span style=\"box-sizing:border-box;font-size:12pt;color:black;\">User Experience:</span></b></p><div><span style=\"display:inline !important;\"><span style=\"font-family:Calibri, sans-serif;font-size:16px;display:inline !important;\">Visually impaired users are getting impacted as it is difficult to scroll in two-dimensional.&nbsp;</span></span></div><span style=\"display:inline !important;\"><span style=\"display:inline !important;\"></span></span><div><div style=\"box-sizing:border-box;\"><br style=\"box-sizing:border-box;\"></div><div style=\"box-sizing:border-box;\"><b style=\"box-sizing:border-box;\"></b></div><div style=\"box-sizing:border-box;\"><span style=\"box-sizing:border-box;display:inline !important;\"><p style=\"box-sizing:border-box;font-weight:400;font-family:Calibri, sans-serif;font-size:14.6667px;margin:0cm 0cm 0.0001pt;\"><b style=\"box-sizing:border-box;\"><span style=\"box-sizing:border-box;font-size:12pt;\">Test Environment:</span></b></p><div style=\"box-sizing:border-box;font-weight:400;font-family:Calibri, sans-serif;\">OS : Windows 10</div><div style=\"box-sizing:border-box;font-weight:400;font-family:Calibri, sans-serif;\">Version: 2004(OS Build 19588.1000)</div><div style=\"box-sizing:border-box;font-weight:400;font-family:Calibri, sans-serif;\"></div><div style=\"box-sizing:border-box;font-weight:400;font-family:Calibri, sans-serif;\">Browser : Anaheim Dev (Version 85.0.552.1 (Official build) dev (64-bit))</div><div style=\"box-sizing:border-box;font-weight:400;font-family:Calibri, sans-serif;\">URL:&nbsp;<span lang=en-US style=\"box-sizing:border-box;text-decoration:underline;cursor:pointer;font-family:&quot;Segoe UI&quot;;font-size:10.5pt;\"><a href=\"https://nam06.safelinks.protection.outlook.com/?url=https://df.compliance.microsoft.com/compliancescore?viewid%3DAssessments%26flight%3DEnableComplianceScoreADO%2cEnableComplianceScoreADC%2cEnableComplianceScoreAM&amp;data=02%7c01%7cv-shsoni%40microsoft.com%7c37e47b4935654366f3c008d81d88bf8e%7c72f988bf86f141af91ab2d7cd011db47%7c1%7c0%7c637291821424801697&amp;sdata=ApfR4APZIbfNBRBul0yddMOByAt8oFrF9xfty2HpxRQ%3D&amp;reserved=0\" style=\"box-sizing:border-box;text-decoration:underline;\">https://df.compliance.microsoft.com/compliancescore?viewid=Assessments&amp;flight=EnableComplianceScoreADO,EnableComplianceScoreADC,EnableComplianceScoreAM</a></span></div></span></div><div style=\"box-sizing:border-box;\"><br style=\"box-sizing:border-box;\"></div><div style=\"box-sizing:border-box;\"><b style=\"box-sizing:border-box;\"></b></div><div style=\"box-sizing:border-box;\"><span style=\"box-sizing:border-box;\"><span style=\"box-sizing:border-box;display:inline !important;\"><div style=\"box-sizing:border-box;font-weight:400;\"><b style=\"box-sizing:border-box;\">Repro Steps:</b></div><div style=\"box-sizing:border-box;font-weight:400;\">Step 1: Open&nbsp;Anaheim Dev browser.</div><div style=\"box-sizing:border-box;font-weight:400;\">Step 2: Enter URL :&nbsp;<a href=\"https://compliance.microsoft.com/auditlogsearch\" style=\"box-sizing:border-box;text-decoration:underline;cursor:pointer;\">https://compliance.microsoft.com/auditlogsearch</a></div><div style=\"box-sizing:border-box;font-weight:400;\"></div><div style=\"box-sizing:border-box;font-weight:400;\"><div style=\"box-sizing:border-box;\">Step 3: Now&nbsp;&quot;Microsoft Compliance Score (preview)&quot;&nbsp;page will be displayed.</div><div style=\"box-sizing:border-box;\">Step 4: Navigate to Assessments tab and activate it.</div></div><div style=\"box-sizing:border-box;font-weight:400;\"><span style=\"box-sizing:border-box;display:inline !important;\"></span></div><div style=\"box-sizing:border-box;font-weight:400;\">Step 5: Navigate to &quot;Adding a new Assessment&quot; button and activate it using keyboard.</div><div style=\"box-sizing:border-box;font-weight:400;\">Step 6: Create an Assessment here For eg: 'Hello' and click on ;create assessment' button within the 'Review and finish' page.</div><div style=\"box-sizing:border-box;font-weight:400;\">Step 7: 'Hello' assessment page will get open.</div><div style=\"box-sizing:border-box;font-weight:400;\">Step 8: Observe the issue.</div></span></span><br style=\"box-sizing:border-box;\"></div><div style=\"box-sizing:border-box;\"><b></b></div></div><div><b>Actual:</b></div><div></div><div>Two -dimensional scrolling (Horizontal and Vertical) is observed in &quot;Viewing an Assessment&quot; page when zoom to 400%.<div style=\"box-sizing:border-box;\"><div style=\"box-sizing:border-box;\"><br style=\"box-sizing:border-box;\"></div></div><div style=\"box-sizing:border-box;\"><b style=\"box-sizing:border-box;\">Expected Result:</b><span style=\"\">&nbsp;</span></div><span style=\"font-family:Calibri, sans-serif;font-size:16px;display:inline !important;\">Horizontal scrolling should not available in&nbsp;&quot;Viewing an Assessment&quot; page when zoom to 400%.</span><div style=\"box-sizing:border-box;\"><span style=\"box-sizing:border-box;display:inline !important;\"><br style=\"box-sizing:border-box;\"></span></div><div style=\"box-sizing:border-box;\"><p style=\"box-sizing:border-box;font-family:Calibri, sans-serif;font-size:14.6667px;margin:0cm 0cm 0.0001pt;\"><b style=\"box-sizing:border-box;\"><span style=\"box-sizing:border-box;font-size:12pt;\">MAS Reference:</span></b></p><p style=\"box-sizing:border-box;font-family:Calibri, sans-serif;font-size:14.6667px;margin:0cm 0cm 0.0001pt;\"><b style=\"box-sizing:border-box;\"><span style=\"box-sizing:border-box;font-size:12pt;\">MAS1.4.10</span></b></p><p style=\"box-sizing:border-box;font-family:Calibri, sans-serif;font-size:14.6667px;margin:0cm 0cm 0.0001pt;\"><span style=\"box-sizing:border-box;font-size:12pt;\"><a href=\"https://microsoft.sharepoint.com/teams/msenable/_layouts/15/Doc.aspx?sourcedoc=%7bE12828DF-B35C-4F4D-9289-1F932E19F8CF%7d&amp;file=MAS%201.4.10%20%E2%80%93%20Reflow.docx&amp;action=default&amp;mobileredirect=true&amp;cid=5488f398-d97c-4915-9921-2e870e860e53\" style=\"box-sizing:border-box;text-decoration:underline;cursor:pointer;\">https://microsoft.sharepoint.com/teams/msenable/_layouts/15/Doc.aspx?sourcedoc=%7BE12828DF-B35C-4F4D-9289-1F932E19F8CF%7D&amp;file=MAS%201.4.10%20%E2%80%93%20Reflow.docx&amp;action=default&amp;mobileredirect=true&amp;cid=5488f398-d97c-4915-9921-2e870e860e53</a></span></p></div></div><div style=\"box-sizing:border-box;font-size:14px;font-weight:400;\"><a href=\"https://microsoft.sharepoint.com/:w:/r/teams/msenable/_layouts/15/WopiFrame.aspx?sourcedoc=%7b248054a6-5e68-4771-9e1e-242fb5025730%7d\" style=\"box-sizing:border-box;text-decoration:underline;cursor:pointer;\"></a></div><p style=\"box-sizing:border-box;font-weight:400;background:white;font-size:11pt;font-family:Calibri, sans-serif;margin:0in 0in 0.0001pt;\"><span style=\"box-sizing:border-box;color:black;background:white;\"><span style=\"box-sizing:border-box;\"><span style=\"box-sizing:border-box;color:rgba(0, 0, 0, 0.9);\"><a href=\"https://microsoft.sharepoint.com/teams/msenable/_layouts/15/WopiFrame.aspx?sourcedoc=%7bb69e5ccc-dde2-4406-b550-4deb38648f6d%7d\" style=\"box-sizing:border-box;text-decoration:underline;cursor:pointer;\"></a></span></span></span></p>" },
+        "System.Tags": { "newValue": "A11yFeature; A11yMAS; A11yMediumImpact; A11yWCAG2.1; Accessibility; Compliance; ComplianceScore; HCL-E+D; HCL-M365-S&CC; M365SCC; MAS1.4.10" }
+      },
+      "relations": {
+        "added": [
+          {
+            "rel": "AttachedFile",
+            "url": "https://dev.azure.com/O365Exchange/f2b55896-e832-438d-9220-cbc08c545713/_apis/wit/attachments/3826f32e-2570-4cc3-b642-787a33453d5c",
+            "attributes": {
+              "authorizedDate": "2020-07-03T13:21:31.267Z",
+              "id": 2675512,
+              "resourceCreatedDate": "2020-07-03T13:21:32.317Z",
+              "resourceModifiedDate": "2020-07-03T13:20:52.94Z",
+              "revisedDate": "9999-01-01T00:00:00Z",
+              "resourceSize": 65669,
+              "name": "MAS1.4.10_Viewing an assessment.png"
+            }
+          }
+        ]
+      },
+      "url": "https://dev.azure.com/O365Exchange/f2b55896-e832-438d-9220-cbc08c545713/_apis/wit/workItems/1565614/updates/1"
+    },
+    {
+      "id": 2,
+      "workItemId": 1565614,
+      "rev": 2,
+      "revisedBy": {
+        "id": "598ee4ea-9e57-6963-9315-cff4bfa570b5",
+        "name": "Vadakasai Sudheerkumar <v-vasud@microsoft.com>",
+        "displayName": "Vadakasai Sudheerkumar",
+        "url": "https://spsprodwus22.vssps.visualstudio.com/A28f31532-b635-4501-ab58-7eb1d27f889d/_apis/Identities/598ee4ea-9e57-6963-9315-cff4bfa570b5",
+        "_links": { "avatar": { "href": "https://dev.azure.com/O365Exchange/_apis/GraphProfile/MemberAvatars/aad.NTk4ZWU0ZWEtOWU1Ny03OTYzLTkzMTUtY2ZmNGJmYTU3MGI1" } },
+        "uniqueName": "v-vasud@microsoft.com",
+        "imageUrl": "https://dev.azure.com/O365Exchange/_apis/GraphProfile/MemberAvatars/aad.NTk4ZWU0ZWEtOWU1Ny03OTYzLTkzMTUtY2ZmNGJmYTU3MGI1",
+        "descriptor": "aad.NTk4ZWU0ZWEtOWU1Ny03OTYzLTkzMTUtY2ZmNGJmYTU3MGI1"
+      },
+      "revisedDate": "2020-07-06T08:42:06.947Z",
+      "fields": {
+        "System.Rev": {
+          "oldValue": 1,
+          "newValue": 2
+        },
+        "System.AuthorizedDate": {
+          "oldValue": "2020-07-03T13:21:31.267Z",
+          "newValue": "2020-07-06T08:41:57.43Z"
+        },
+        "System.RevisedDate": {
+          "oldValue": "2020-07-06T08:41:57.43Z",
+          "newValue": "2020-07-06T08:42:06.947Z"
+        },
+        "System.ChangedDate": {
+          "oldValue": "2020-07-03T13:21:31.267Z",
+          "newValue": "2020-07-06T08:41:57.43Z"
+        },
+        "System.Watermark": {
+          "oldValue": 11354707,
+          "newValue": 11376934
+        },
+        "System.Description": {
+          "oldValue": "<div style=\"box-sizing:border-box;margin:0px 0cm 0.000133333px;\"><div style=\"box-sizing:border-box;margin:0px 0cm 0.000133333px;\"><div style=\"box-sizing:border-box;margin:0px 0cm 0.000133333px;\"><div style=\"box-sizing:border-box;margin:0px 0cm 0.000133333px;\"><div style=\"box-sizing:border-box;margin:0px 0cm 0.000133333px;\"><p style=\"font-family:Calibri, sans-serif;font-size:11pt;margin:0in 0in 0.0001pt;background:white;\"><b></b></p><div style=\"margin:0px 0in 0.000133333px;background:white;\"><p style=\"font-family:Calibri, sans-serif;font-size:11pt;margin:0in 0in 0.0001pt;background:white;\"><b><span style=\"color:black;\"></span></b></p></div></div></div></div></div></div><div><div style=\"box-sizing:border-box;\"><b style=\"box-sizing:border-box;\"></b></div></div><p style=\"box-sizing:border-box;font-family:Calibri, sans-serif;font-weight:400;font-size:14.6667px;margin:0cm 0cm 0.0001pt;\"><b style=\"box-sizing:border-box;\"><span style=\"box-sizing:border-box;font-size:12pt;color:black;\">User Experience:</span></b></p><div><span style=\"display:inline !important;\"><span style=\"font-family:Calibri, sans-serif;font-size:16px;display:inline !important;\">Visually impaired users are getting impacted as it is difficult to scroll in two-dimensional.&nbsp;</span></span></div><span style=\"display:inline !important;\"><span style=\"display:inline !important;\"></span></span><div><div style=\"box-sizing:border-box;\"><br style=\"box-sizing:border-box;\"></div><div style=\"box-sizing:border-box;\"><b style=\"box-sizing:border-box;\"></b></div><div style=\"box-sizing:border-box;\"><span style=\"box-sizing:border-box;display:inline !important;\"><p style=\"box-sizing:border-box;font-weight:400;font-family:Calibri, sans-serif;font-size:14.6667px;margin:0cm 0cm 0.0001pt;\"><b style=\"box-sizing:border-box;\"><span style=\"box-sizing:border-box;font-size:12pt;\">Test Environment:</span></b></p><div style=\"box-sizing:border-box;font-weight:400;font-family:Calibri, sans-serif;\">OS : Windows 10</div><div style=\"box-sizing:border-box;font-weight:400;font-family:Calibri, sans-serif;\">Version: 2004(OS Build 19588.1000)</div><div style=\"box-sizing:border-box;font-weight:400;font-family:Calibri, sans-serif;\"></div><div style=\"box-sizing:border-box;font-weight:400;font-family:Calibri, sans-serif;\">Browser : Anaheim Dev (Version 85.0.552.1 (Official build) dev (64-bit))</div><div style=\"box-sizing:border-box;font-weight:400;font-family:Calibri, sans-serif;\">URL:&nbsp;<span lang=en-US style=\"box-sizing:border-box;text-decoration:underline;cursor:pointer;font-family:&quot;Segoe UI&quot;;font-size:10.5pt;\"><a href=\"https://nam06.safelinks.protection.outlook.com/?url=https://df.compliance.microsoft.com/compliancescore?viewid%3DAssessments%26flight%3DEnableComplianceScoreADO%2cEnableComplianceScoreADC%2cEnableComplianceScoreAM&amp;data=02%7c01%7cv-shsoni%40microsoft.com%7c37e47b4935654366f3c008d81d88bf8e%7c72f988bf86f141af91ab2d7cd011db47%7c1%7c0%7c637291821424801697&amp;sdata=ApfR4APZIbfNBRBul0yddMOByAt8oFrF9xfty2HpxRQ%3D&amp;reserved=0\" style=\"box-sizing:border-box;text-decoration:underline;\">https://df.compliance.microsoft.com/compliancescore?viewid=Assessments&amp;flight=EnableComplianceScoreADO,EnableComplianceScoreADC,EnableComplianceScoreAM</a></span></div></span></div><div style=\"box-sizing:border-box;\"><br style=\"box-sizing:border-box;\"></div><div style=\"box-sizing:border-box;\"><b style=\"box-sizing:border-box;\"></b></div><div style=\"box-sizing:border-box;\"><span style=\"box-sizing:border-box;\"><span style=\"box-sizing:border-box;display:inline !important;\"><div style=\"box-sizing:border-box;font-weight:400;\"><b style=\"box-sizing:border-box;\">Repro Steps:</b></div><div style=\"box-sizing:border-box;font-weight:400;\">Step 1: Open&nbsp;Anaheim Dev browser.</div><div style=\"box-sizing:border-box;font-weight:400;\">Step 2: Enter URL :&nbsp;<a href=\"https://compliance.microsoft.com/auditlogsearch\" style=\"box-sizing:border-box;text-decoration:underline;cursor:pointer;\">https://compliance.microsoft.com/auditlogsearch</a></div><div style=\"box-sizing:border-box;font-weight:400;\"></div><div style=\"box-sizing:border-box;font-weight:400;\"><div style=\"box-sizing:border-box;\">Step 3: Now&nbsp;&quot;Microsoft Compliance Score (preview)&quot;&nbsp;page will be displayed.</div><div style=\"box-sizing:border-box;\">Step 4: Navigate to Assessments tab and activate it.</div></div><div style=\"box-sizing:border-box;font-weight:400;\"><span style=\"box-sizing:border-box;display:inline !important;\"></span></div><div style=\"box-sizing:border-box;font-weight:400;\">Step 5: Navigate to &quot;Adding a new Assessment&quot; button and activate it using keyboard.</div><div style=\"box-sizing:border-box;font-weight:400;\">Step 6: Create an Assessment here For eg: 'Hello' and click on ;create assessment' button within the 'Review and finish' page.</div><div style=\"box-sizing:border-box;font-weight:400;\">Step 7: 'Hello' assessment page will get open.</div><div style=\"box-sizing:border-box;font-weight:400;\">Step 8: Observe the issue.</div></span></span><br style=\"box-sizing:border-box;\"></div><div style=\"box-sizing:border-box;\"><b></b></div></div><div><b>Actual:</b></div><div></div><div>Two -dimensional scrolling (Horizontal and Vertical) is observed in &quot;Viewing an Assessment&quot; page when zoom to 400%.<div style=\"box-sizing:border-box;\"><div style=\"box-sizing:border-box;\"><br style=\"box-sizing:border-box;\"></div></div><div style=\"box-sizing:border-box;\"><b style=\"box-sizing:border-box;\">Expected Result:</b><span style=\"\">&nbsp;</span></div><span style=\"font-family:Calibri, sans-serif;font-size:16px;display:inline !important;\">Horizontal scrolling should not available in&nbsp;&quot;Viewing an Assessment&quot; page when zoom to 400%.</span><div style=\"box-sizing:border-box;\"><span style=\"box-sizing:border-box;display:inline !important;\"><br style=\"box-sizing:border-box;\"></span></div><div style=\"box-sizing:border-box;\"><p style=\"box-sizing:border-box;font-family:Calibri, sans-serif;font-size:14.6667px;margin:0cm 0cm 0.0001pt;\"><b style=\"box-sizing:border-box;\"><span style=\"box-sizing:border-box;font-size:12pt;\">MAS Reference:</span></b></p><p style=\"box-sizing:border-box;font-family:Calibri, sans-serif;font-size:14.6667px;margin:0cm 0cm 0.0001pt;\"><b style=\"box-sizing:border-box;\"><span style=\"box-sizing:border-box;font-size:12pt;\">MAS1.4.10</span></b></p><p style=\"box-sizing:border-box;font-family:Calibri, sans-serif;font-size:14.6667px;margin:0cm 0cm 0.0001pt;\"><span style=\"box-sizing:border-box;font-size:12pt;\"><a href=\"https://microsoft.sharepoint.com/teams/msenable/_layouts/15/Doc.aspx?sourcedoc=%7bE12828DF-B35C-4F4D-9289-1F932E19F8CF%7d&amp;file=MAS%201.4.10%20%E2%80%93%20Reflow.docx&amp;action=default&amp;mobileredirect=true&amp;cid=5488f398-d97c-4915-9921-2e870e860e53\" style=\"box-sizing:border-box;text-decoration:underline;cursor:pointer;\">https://microsoft.sharepoint.com/teams/msenable/_layouts/15/Doc.aspx?sourcedoc=%7BE12828DF-B35C-4F4D-9289-1F932E19F8CF%7D&amp;file=MAS%201.4.10%20%E2%80%93%20Reflow.docx&amp;action=default&amp;mobileredirect=true&amp;cid=5488f398-d97c-4915-9921-2e870e860e53</a></span></p></div></div><div style=\"box-sizing:border-box;font-size:14px;font-weight:400;\"><a href=\"https://microsoft.sharepoint.com/:w:/r/teams/msenable/_layouts/15/WopiFrame.aspx?sourcedoc=%7b248054a6-5e68-4771-9e1e-242fb5025730%7d\" style=\"box-sizing:border-box;text-decoration:underline;cursor:pointer;\"></a></div><p style=\"box-sizing:border-box;font-weight:400;background:white;font-size:11pt;font-family:Calibri, sans-serif;margin:0in 0in 0.0001pt;\"><span style=\"box-sizing:border-box;color:black;background:white;\"><span style=\"box-sizing:border-box;\"><span style=\"box-sizing:border-box;color:rgba(0, 0, 0, 0.9);\"><a href=\"https://microsoft.sharepoint.com/teams/msenable/_layouts/15/WopiFrame.aspx?sourcedoc=%7bb69e5ccc-dde2-4406-b550-4deb38648f6d%7d\" style=\"box-sizing:border-box;text-decoration:underline;cursor:pointer;\"></a></span></span></span></p>",
+          "newValue": "<div style=\"box-sizing:border-box;margin:0px 0cm 0.000133333px;\"><div style=\"box-sizing:border-box;margin:0px 0cm 0.000133333px;\"><div style=\"box-sizing:border-box;margin:0px 0cm 0.000133333px;\"><div style=\"box-sizing:border-box;margin:0px 0cm 0.000133333px;\"><div style=\"box-sizing:border-box;margin:0px 0cm 0.000133333px;\"><p style=\"font-family:Calibri, sans-serif;font-size:11pt;margin:0in 0in 0.0001pt;background:white;\"><b></b></p><div style=\"margin:0px 0in 0.000133333px;background:white;\"><p style=\"font-family:Calibri, sans-serif;font-size:11pt;margin:0in 0in 0.0001pt;background:white;\"><b><span style=\"color:black;\"></span></b></p></div></div></div></div></div></div><div><div style=\"box-sizing:border-box;\"><b style=\"box-sizing:border-box;\"></b></div></div><p style=\"box-sizing:border-box;font-family:Calibri, sans-serif;font-weight:400;font-size:14.6667px;margin:0cm 0cm 0.0001pt;\"><b style=\"box-sizing:border-box;\"><span style=\"box-sizing:border-box;font-size:12pt;color:black;\">User Experience:</span></b></p><div><span style=\"display:inline !important;\"><span style=\"font-family:Calibri, sans-serif;font-size:16px;display:inline !important;\">Visually impaired users are getting impacted as it is difficult to scroll in two-dimensional.&nbsp;</span></span></div><span style=\"display:inline !important;\"><span style=\"display:inline !important;\"></span></span><div><div style=\"box-sizing:border-box;\"><br style=\"box-sizing:border-box;\"></div><div style=\"box-sizing:border-box;\"><b style=\"box-sizing:border-box;\"></b></div><div style=\"box-sizing:border-box;\"><span style=\"box-sizing:border-box;display:inline !important;\"><p style=\"box-sizing:border-box;font-weight:400;font-family:Calibri, sans-serif;font-size:14.6667px;margin:0cm 0cm 0.0001pt;\"><b style=\"box-sizing:border-box;\"><span style=\"box-sizing:border-box;font-size:12pt;\">Test Environment:</span></b></p><div style=\"box-sizing:border-box;font-weight:400;font-family:Calibri, sans-serif;\">OS : Windows 10</div><div style=\"box-sizing:border-box;font-weight:400;font-family:Calibri, sans-serif;\">Version: 2004(OS Build 19588.1000)</div><div style=\"box-sizing:border-box;font-weight:400;font-family:Calibri, sans-serif;\"></div><div style=\"box-sizing:border-box;font-weight:400;font-family:Calibri, sans-serif;\"></div></span></div><div style=\"box-sizing:border-box;\"><span style=\"box-sizing:border-box;display:inline !important;\"><div style=\"box-sizing:border-box;font-family:Calibri, sans-serif;\"><span lang=en-US style=\"box-sizing:border-box;cursor:pointer;font-family:&quot;Segoe UI&quot;;font-size:10.5pt;\"><div style=\"box-sizing:border-box;\">URL:&nbsp;<a href=\"https://df.compliance.microsoft.com/compliancescore?viewid=Assessments\" style=\"box-sizing:border-box;text-decoration:underline;\">https://df.compliance.microsoft.com/compliancescore?viewid=Assessments</a></div><div style=\"box-sizing:border-box;\">Screen Reader:&nbsp;NVDA<span style=\"box-sizing:border-box;\">&nbsp;</span>and Narrator</div><div style=\"box-sizing:border-box;\">Username:<span style=\"box-sizing:border-box;\">&nbsp;</span><a href=\"mailto:tifc@a830edad9050849EQTPWBJZXODQ.onmicrosoft.com\" style=\"box-sizing:border-box;text-decoration:underline;\">tifc@a830edad9050849EQTPWBJZXODQ.onmicrosoft.com</a></div></span></div></span></div><div style=\"box-sizing:border-box;\"><br style=\"box-sizing:border-box;\"></div><div style=\"box-sizing:border-box;\"><b style=\"box-sizing:border-box;\"></b></div><div style=\"box-sizing:border-box;\"><span style=\"box-sizing:border-box;\"><span style=\"box-sizing:border-box;display:inline !important;\"><div style=\"box-sizing:border-box;\"><b style=\"box-sizing:border-box;\">Repro Steps:</b></div><div style=\"box-sizing:border-box;\">Step 1: Open&nbsp;Anaheim Dev browser.</div><div style=\"box-sizing:border-box;\">Step 2: Enter URL and login with valid credentials.</div><div style=\"box-sizing:border-box;\"><div style=\"box-sizing:border-box;\">Step 3: Navigate to Assessments tab and activate it.</div></div></span></span></div><div style=\"box-sizing:border-box;\"><span style=\"box-sizing:border-box;\"><span style=\"box-sizing:border-box;display:inline !important;\"><div style=\"box-sizing:border-box;font-weight:400;\"><div style=\"box-sizing:border-box;\"></div></div><div style=\"box-sizing:border-box;font-weight:400;\"><span style=\"box-sizing:border-box;display:inline !important;\"></span></div><div style=\"box-sizing:border-box;font-weight:400;\">Step 4: Navigate to &quot;Adding a new Assessment&quot; button and activate it using keyboard.</div><div style=\"box-sizing:border-box;font-weight:400;\">Step 5: Create an Assessment here For eg: 'Hello' and click on ;create assessment' button within the 'Review and finish' page.</div><div style=\"box-sizing:border-box;font-weight:400;\">Step 6: 'Hello' assessment page will get open.</div><div style=\"box-sizing:border-box;font-weight:400;\">Step 7: Observe the issue.</div></span></span><br style=\"box-sizing:border-box;\"></div><div style=\"box-sizing:border-box;\"><b></b></div></div><div><b>Actual:</b></div><div></div><div>Two -dimensional scrolling (Horizontal and Vertical) is observed in &quot;Viewing an Assessment&quot; page when zoom to 400%.<div style=\"box-sizing:border-box;\"><div style=\"box-sizing:border-box;\"><br style=\"box-sizing:border-box;\"></div></div><div style=\"box-sizing:border-box;\"><b style=\"box-sizing:border-box;\">Expected Result:</b><span>&nbsp;</span></div><span style=\"font-family:Calibri, sans-serif;font-size:16px;display:inline !important;\">Horizontal scrolling should not available in&nbsp;&quot;Viewing an Assessment&quot; page when zoom to 400%.</span><div style=\"box-sizing:border-box;\"><span style=\"box-sizing:border-box;display:inline !important;\"><br style=\"box-sizing:border-box;\"></span></div><div style=\"box-sizing:border-box;\"><p style=\"box-sizing:border-box;font-family:Calibri, sans-serif;font-size:14.6667px;margin:0cm 0cm 0.0001pt;\"><b style=\"box-sizing:border-box;\"><span style=\"box-sizing:border-box;font-size:12pt;\">MAS Reference:</span></b></p><p style=\"box-sizing:border-box;font-family:Calibri, sans-serif;font-size:14.6667px;margin:0cm 0cm 0.0001pt;\"><b style=\"box-sizing:border-box;\"><span style=\"box-sizing:border-box;font-size:12pt;\">MAS1.4.10</span></b></p><p style=\"box-sizing:border-box;font-family:Calibri, sans-serif;font-size:14.6667px;margin:0cm 0cm 0.0001pt;\"><span style=\"box-sizing:border-box;font-size:12pt;\"><a href=\"https://microsoft.sharepoint.com/teams/msenable/_layouts/15/Doc.aspx?sourcedoc=%7bE12828DF-B35C-4F4D-9289-1F932E19F8CF%7d&amp;file=MAS%201.4.10%20%E2%80%93%20Reflow.docx&amp;action=default&amp;mobileredirect=true&amp;cid=5488f398-d97c-4915-9921-2e870e860e53\" style=\"box-sizing:border-box;text-decoration:underline;cursor:pointer;\">https://microsoft.sharepoint.com/teams/msenable/_layouts/15/Doc.aspx?sourcedoc=%7BE12828DF-B35C-4F4D-9289-1F932E19F8CF%7D&amp;file=MAS%201.4.10%20%E2%80%93%20Reflow.docx&amp;action=default&amp;mobileredirect=true&amp;cid=5488f398-d97c-4915-9921-2e870e860e53</a></span></p></div></div><div style=\"box-sizing:border-box;font-size:14px;font-weight:400;\"><a href=\"https://microsoft.sharepoint.com/:w:/r/teams/msenable/_layouts/15/WopiFrame.aspx?sourcedoc=%7b248054a6-5e68-4771-9e1e-242fb5025730%7d\" style=\"box-sizing:border-box;text-decoration:underline;cursor:pointer;\"></a></div><p style=\"box-sizing:border-box;font-weight:400;background:white;font-size:11pt;font-family:Calibri, sans-serif;margin:0in 0in 0.0001pt;\"><span style=\"box-sizing:border-box;color:black;background:white;\"><span style=\"box-sizing:border-box;\"><span style=\"box-sizing:border-box;color:rgba(0, 0, 0, 0.9);\"><a href=\"https://microsoft.sharepoint.com/teams/msenable/_layouts/15/WopiFrame.aspx?sourcedoc=%7bb69e5ccc-dde2-4406-b550-4deb38648f6d%7d\" style=\"box-sizing:border-box;text-decoration:underline;cursor:pointer;\"></a></span></span></span></p>"
+        }
+      },
+      "url": "https://dev.azure.com/O365Exchange/f2b55896-e832-438d-9220-cbc08c545713/_apis/wit/workItems/1565614/updates/2"
+    },
+    {
+      "id": 3,
+      "workItemId": 1565614,
+      "rev": 3,
+      "revisedBy": {
+        "id": "598ee4ea-9e57-6963-9315-cff4bfa570b5",
+        "name": "Vadakasai Sudheerkumar <v-vasud@microsoft.com>",
+        "displayName": "Vadakasai Sudheerkumar",
+        "url": "https://spsprodwus22.vssps.visualstudio.com/A28f31532-b635-4501-ab58-7eb1d27f889d/_apis/Identities/598ee4ea-9e57-6963-9315-cff4bfa570b5",
+        "_links": { "avatar": { "href": "https://dev.azure.com/O365Exchange/_apis/GraphProfile/MemberAvatars/aad.NTk4ZWU0ZWEtOWU1Ny03OTYzLTkzMTUtY2ZmNGJmYTU3MGI1" } },
+        "uniqueName": "v-vasud@microsoft.com",
+        "imageUrl": "https://dev.azure.com/O365Exchange/_apis/GraphProfile/MemberAvatars/aad.NTk4ZWU0ZWEtOWU1Ny03OTYzLTkzMTUtY2ZmNGJmYTU3MGI1",
+        "descriptor": "aad.NTk4ZWU0ZWEtOWU1Ny03OTYzLTkzMTUtY2ZmNGJmYTU3MGI1"
+      },
+      "revisedDate": "2020-07-06T08:53:27.59Z",
+      "fields": {
+        "System.Rev": {
+          "oldValue": 2,
+          "newValue": 3
+        },
+        "System.AuthorizedDate": {
+          "oldValue": "2020-07-06T08:41:57.43Z",
+          "newValue": "2020-07-06T08:42:06.947Z"
+        },
+        "System.RevisedDate": {
+          "oldValue": "2020-07-06T08:42:06.947Z",
+          "newValue": "2020-07-06T08:53:27.59Z"
+        },
+        "System.ChangedDate": {
+          "oldValue": "2020-07-06T08:41:57.43Z",
+          "newValue": "2020-07-06T08:42:06.947Z"
+        },
+        "System.Watermark": {
+          "oldValue": 11376934,
+          "newValue": 11376935
+        },
+        "System.Description": {
+          "oldValue": "<div style=\"box-sizing:border-box;margin:0px 0cm 0.000133333px;\"><div style=\"box-sizing:border-box;margin:0px 0cm 0.000133333px;\"><div style=\"box-sizing:border-box;margin:0px 0cm 0.000133333px;\"><div style=\"box-sizing:border-box;margin:0px 0cm 0.000133333px;\"><div style=\"box-sizing:border-box;margin:0px 0cm 0.000133333px;\"><p style=\"font-family:Calibri, sans-serif;font-size:11pt;margin:0in 0in 0.0001pt;background:white;\"><b></b></p><div style=\"margin:0px 0in 0.000133333px;background:white;\"><p style=\"font-family:Calibri, sans-serif;font-size:11pt;margin:0in 0in 0.0001pt;background:white;\"><b><span style=\"color:black;\"></span></b></p></div></div></div></div></div></div><div><div style=\"box-sizing:border-box;\"><b style=\"box-sizing:border-box;\"></b></div></div><p style=\"box-sizing:border-box;font-family:Calibri, sans-serif;font-weight:400;font-size:14.6667px;margin:0cm 0cm 0.0001pt;\"><b style=\"box-sizing:border-box;\"><span style=\"box-sizing:border-box;font-size:12pt;color:black;\">User Experience:</span></b></p><div><span style=\"display:inline !important;\"><span style=\"font-family:Calibri, sans-serif;font-size:16px;display:inline !important;\">Visually impaired users are getting impacted as it is difficult to scroll in two-dimensional.&nbsp;</span></span></div><span style=\"display:inline !important;\"><span style=\"display:inline !important;\"></span></span><div><div style=\"box-sizing:border-box;\"><br style=\"box-sizing:border-box;\"></div><div style=\"box-sizing:border-box;\"><b style=\"box-sizing:border-box;\"></b></div><div style=\"box-sizing:border-box;\"><span style=\"box-sizing:border-box;display:inline !important;\"><p style=\"box-sizing:border-box;font-weight:400;font-family:Calibri, sans-serif;font-size:14.6667px;margin:0cm 0cm 0.0001pt;\"><b style=\"box-sizing:border-box;\"><span style=\"box-sizing:border-box;font-size:12pt;\">Test Environment:</span></b></p><div style=\"box-sizing:border-box;font-weight:400;font-family:Calibri, sans-serif;\">OS : Windows 10</div><div style=\"box-sizing:border-box;font-weight:400;font-family:Calibri, sans-serif;\">Version: 2004(OS Build 19588.1000)</div><div style=\"box-sizing:border-box;font-weight:400;font-family:Calibri, sans-serif;\"></div><div style=\"box-sizing:border-box;font-weight:400;font-family:Calibri, sans-serif;\"></div></span></div><div style=\"box-sizing:border-box;\"><span style=\"box-sizing:border-box;display:inline !important;\"><div style=\"box-sizing:border-box;font-family:Calibri, sans-serif;\"><span lang=en-US style=\"box-sizing:border-box;cursor:pointer;font-family:&quot;Segoe UI&quot;;font-size:10.5pt;\"><div style=\"box-sizing:border-box;\">URL:&nbsp;<a href=\"https://df.compliance.microsoft.com/compliancescore?viewid=Assessments\" style=\"box-sizing:border-box;text-decoration:underline;\">https://df.compliance.microsoft.com/compliancescore?viewid=Assessments</a></div><div style=\"box-sizing:border-box;\">Screen Reader:&nbsp;NVDA<span style=\"box-sizing:border-box;\">&nbsp;</span>and Narrator</div><div style=\"box-sizing:border-box;\">Username:<span style=\"box-sizing:border-box;\">&nbsp;</span><a href=\"mailto:tifc@a830edad9050849EQTPWBJZXODQ.onmicrosoft.com\" style=\"box-sizing:border-box;text-decoration:underline;\">tifc@a830edad9050849EQTPWBJZXODQ.onmicrosoft.com</a></div></span></div></span></div><div style=\"box-sizing:border-box;\"><br style=\"box-sizing:border-box;\"></div><div style=\"box-sizing:border-box;\"><b style=\"box-sizing:border-box;\"></b></div><div style=\"box-sizing:border-box;\"><span style=\"box-sizing:border-box;\"><span style=\"box-sizing:border-box;display:inline !important;\"><div style=\"box-sizing:border-box;\"><b style=\"box-sizing:border-box;\">Repro Steps:</b></div><div style=\"box-sizing:border-box;\">Step 1: Open&nbsp;Anaheim Dev browser.</div><div style=\"box-sizing:border-box;\">Step 2: Enter URL and login with valid credentials.</div><div style=\"box-sizing:border-box;\"><div style=\"box-sizing:border-box;\">Step 3: Navigate to Assessments tab and activate it.</div></div></span></span></div><div style=\"box-sizing:border-box;\"><span style=\"box-sizing:border-box;\"><span style=\"box-sizing:border-box;display:inline !important;\"><div style=\"box-sizing:border-box;font-weight:400;\"><div style=\"box-sizing:border-box;\"></div></div><div style=\"box-sizing:border-box;font-weight:400;\"><span style=\"box-sizing:border-box;display:inline !important;\"></span></div><div style=\"box-sizing:border-box;font-weight:400;\">Step 4: Navigate to &quot;Adding a new Assessment&quot; button and activate it using keyboard.</div><div style=\"box-sizing:border-box;font-weight:400;\">Step 5: Create an Assessment here For eg: 'Hello' and click on ;create assessment' button within the 'Review and finish' page.</div><div style=\"box-sizing:border-box;font-weight:400;\">Step 6: 'Hello' assessment page will get open.</div><div style=\"box-sizing:border-box;font-weight:400;\">Step 7: Observe the issue.</div></span></span><br style=\"box-sizing:border-box;\"></div><div style=\"box-sizing:border-box;\"><b></b></div></div><div><b>Actual:</b></div><div></div><div>Two -dimensional scrolling (Horizontal and Vertical) is observed in &quot;Viewing an Assessment&quot; page when zoom to 400%.<div style=\"box-sizing:border-box;\"><div style=\"box-sizing:border-box;\"><br style=\"box-sizing:border-box;\"></div></div><div style=\"box-sizing:border-box;\"><b style=\"box-sizing:border-box;\">Expected Result:</b><span>&nbsp;</span></div><span style=\"font-family:Calibri, sans-serif;font-size:16px;display:inline !important;\">Horizontal scrolling should not available in&nbsp;&quot;Viewing an Assessment&quot; page when zoom to 400%.</span><div style=\"box-sizing:border-box;\"><span style=\"box-sizing:border-box;display:inline !important;\"><br style=\"box-sizing:border-box;\"></span></div><div style=\"box-sizing:border-box;\"><p style=\"box-sizing:border-box;font-family:Calibri, sans-serif;font-size:14.6667px;margin:0cm 0cm 0.0001pt;\"><b style=\"box-sizing:border-box;\"><span style=\"box-sizing:border-box;font-size:12pt;\">MAS Reference:</span></b></p><p style=\"box-sizing:border-box;font-family:Calibri, sans-serif;font-size:14.6667px;margin:0cm 0cm 0.0001pt;\"><b style=\"box-sizing:border-box;\"><span style=\"box-sizing:border-box;font-size:12pt;\">MAS1.4.10</span></b></p><p style=\"box-sizing:border-box;font-family:Calibri, sans-serif;font-size:14.6667px;margin:0cm 0cm 0.0001pt;\"><span style=\"box-sizing:border-box;font-size:12pt;\"><a href=\"https://microsoft.sharepoint.com/teams/msenable/_layouts/15/Doc.aspx?sourcedoc=%7bE12828DF-B35C-4F4D-9289-1F932E19F8CF%7d&amp;file=MAS%201.4.10%20%E2%80%93%20Reflow.docx&amp;action=default&amp;mobileredirect=true&amp;cid=5488f398-d97c-4915-9921-2e870e860e53\" style=\"box-sizing:border-box;text-decoration:underline;cursor:pointer;\">https://microsoft.sharepoint.com/teams/msenable/_layouts/15/Doc.aspx?sourcedoc=%7BE12828DF-B35C-4F4D-9289-1F932E19F8CF%7D&amp;file=MAS%201.4.10%20%E2%80%93%20Reflow.docx&amp;action=default&amp;mobileredirect=true&amp;cid=5488f398-d97c-4915-9921-2e870e860e53</a></span></p></div></div><div style=\"box-sizing:border-box;font-size:14px;font-weight:400;\"><a href=\"https://microsoft.sharepoint.com/:w:/r/teams/msenable/_layouts/15/WopiFrame.aspx?sourcedoc=%7b248054a6-5e68-4771-9e1e-242fb5025730%7d\" style=\"box-sizing:border-box;text-decoration:underline;cursor:pointer;\"></a></div><p style=\"box-sizing:border-box;font-weight:400;background:white;font-size:11pt;font-family:Calibri, sans-serif;margin:0in 0in 0.0001pt;\"><span style=\"box-sizing:border-box;color:black;background:white;\"><span style=\"box-sizing:border-box;\"><span style=\"box-sizing:border-box;color:rgba(0, 0, 0, 0.9);\"><a href=\"https://microsoft.sharepoint.com/teams/msenable/_layouts/15/WopiFrame.aspx?sourcedoc=%7bb69e5ccc-dde2-4406-b550-4deb38648f6d%7d\" style=\"box-sizing:border-box;text-decoration:underline;cursor:pointer;\"></a></span></span></span></p>",
+          "newValue": "<div style=\"box-sizing:border-box;margin:0px 0cm 0.000133333px;\"><div style=\"box-sizing:border-box;margin:0px 0cm 0.000133333px;\"><div style=\"box-sizing:border-box;margin:0px 0cm 0.000133333px;\"><div style=\"box-sizing:border-box;margin:0px 0cm 0.000133333px;\"><div style=\"box-sizing:border-box;margin:0px 0cm 0.000133333px;\"><p style=\"font-family:Calibri, sans-serif;font-size:11pt;margin:0in 0in 0.0001pt;background:white;\"><b></b></p><div style=\"margin:0px 0in 0.000133333px;background:white;\"><p style=\"font-family:Calibri, sans-serif;font-size:11pt;margin:0in 0in 0.0001pt;background:white;\"><b><span style=\"color:black;\"></span></b></p></div></div></div></div></div></div><div><div style=\"box-sizing:border-box;\"><b style=\"box-sizing:border-box;\"></b></div></div><p style=\"box-sizing:border-box;font-family:Calibri, sans-serif;font-weight:400;font-size:14.6667px;margin:0cm 0cm 0.0001pt;\"><b style=\"box-sizing:border-box;\"><span style=\"box-sizing:border-box;font-size:12pt;color:black;\">User Experience:</span></b></p><div><span style=\"display:inline !important;\"><span style=\"font-family:Calibri, sans-serif;font-size:16px;display:inline !important;\">Visually impaired users are getting impacted as it is difficult to scroll in two-dimensional.&nbsp;</span></span></div><span style=\"display:inline !important;\"><span style=\"display:inline !important;\"></span></span><div><div style=\"box-sizing:border-box;\"><br style=\"box-sizing:border-box;\"></div><div style=\"box-sizing:border-box;\"><b style=\"box-sizing:border-box;\"></b></div><div style=\"box-sizing:border-box;\"><span style=\"box-sizing:border-box;display:inline !important;\"><p style=\"box-sizing:border-box;font-weight:400;font-family:Calibri, sans-serif;font-size:14.6667px;margin:0cm 0cm 0.0001pt;\"><b style=\"box-sizing:border-box;\"><span style=\"box-sizing:border-box;font-size:12pt;\">Test Environment:</span></b></p><div style=\"box-sizing:border-box;font-weight:400;font-family:Calibri, sans-serif;\">OS : Windows 10</div><div style=\"box-sizing:border-box;font-weight:400;font-family:Calibri, sans-serif;\">Version: 2004(OS Build 19588.1000)</div><div style=\"box-sizing:border-box;font-weight:400;font-family:Calibri, sans-serif;\"></div><div style=\"box-sizing:border-box;font-weight:400;font-family:Calibri, sans-serif;\"></div></span></div><div style=\"box-sizing:border-box;\"><span style=\"box-sizing:border-box;display:inline !important;\"><div style=\"box-sizing:border-box;font-family:Calibri, sans-serif;\"><span lang=en-US style=\"box-sizing:border-box;cursor:pointer;font-family:&quot;Segoe UI&quot;;font-size:10.5pt;\"><div style=\"box-sizing:border-box;\">URL:&nbsp;<a href=\"https://df.compliance.microsoft.com/compliancescore?viewid=Assessments\" style=\"box-sizing:border-box;text-decoration:underline;\">https://df.compliance.microsoft.com/compliancescore?viewid=Assessments</a></div><div style=\"box-sizing:border-box;\">Screen Reader:&nbsp;NVDA<span style=\"box-sizing:border-box;\">&nbsp;</span>and Narrator</div><div style=\"box-sizing:border-box;\">Username:<span style=\"box-sizing:border-box;\">&nbsp;</span><a href=\"mailto:tifc@a830edad9050849EQTPWBJZXODQ.onmicrosoft.com\" style=\"box-sizing:border-box;text-decoration:underline;\">tifc@a830edad9050849EQTPWBJZXODQ.onmicrosoft.com</a></div></span></div></span></div><div style=\"box-sizing:border-box;\"><br style=\"box-sizing:border-box;\"></div><div style=\"box-sizing:border-box;\"><b style=\"box-sizing:border-box;\"></b></div><div style=\"box-sizing:border-box;\"><span style=\"box-sizing:border-box;\"><span style=\"box-sizing:border-box;display:inline !important;\"><div style=\"box-sizing:border-box;\"><b style=\"box-sizing:border-box;\">Repro Steps:</b></div><div style=\"box-sizing:border-box;\">Step 1: Open&nbsp;Anaheim Dev browser.</div><div style=\"box-sizing:border-box;\">Step 2: Enter URL and login with valid credentials.</div><div style=\"box-sizing:border-box;\"><div style=\"box-sizing:border-box;\">Step 3: Navigate to Assessments tab and activate it.</div></div></span></span></div><div style=\"box-sizing:border-box;\"><span style=\"box-sizing:border-box;\"><span style=\"box-sizing:border-box;display:inline !important;\"><div style=\"box-sizing:border-box;font-weight:400;\"><div style=\"box-sizing:border-box;\"></div></div><div style=\"box-sizing:border-box;font-weight:400;\"><span style=\"box-sizing:border-box;display:inline !important;\"></span></div><div style=\"box-sizing:border-box;font-weight:400;\">Step 4: Navigate to &quot;Adding a new Assessment&quot; button and activate it using keyboard.</div><div style=\"box-sizing:border-box;font-weight:400;\">Step 5: Create an Assessment here For eg: 'Hello' and click on 'create assessment' button within the 'Review and finish' page.</div><div style=\"box-sizing:border-box;font-weight:400;\">Step 6: 'Hello' assessment page will get open.</div><div style=\"box-sizing:border-box;font-weight:400;\">Step 7: Observe the issue.</div></span></span><br style=\"box-sizing:border-box;\"></div><div style=\"box-sizing:border-box;\"><b></b></div></div><div><b>Actual:</b></div><div></div><div>Two -dimensional scrolling (Horizontal and Vertical) is observed in &quot;Viewing an Assessment&quot; page when zoom to 400%.<div style=\"box-sizing:border-box;\"><div style=\"box-sizing:border-box;\"><br style=\"box-sizing:border-box;\"></div></div><div style=\"box-sizing:border-box;\"><b style=\"box-sizing:border-box;\">Expected Result:</b><span>&nbsp;</span></div><span style=\"font-family:Calibri, sans-serif;font-size:16px;display:inline !important;\">Horizontal scrolling should not available in&nbsp;&quot;Viewing an Assessment&quot; page when zoom to 400%.</span><div style=\"box-sizing:border-box;\"><span style=\"box-sizing:border-box;display:inline !important;\"><br style=\"box-sizing:border-box;\"></span></div><div style=\"box-sizing:border-box;\"><p style=\"box-sizing:border-box;font-family:Calibri, sans-serif;font-size:14.6667px;margin:0cm 0cm 0.0001pt;\"><b style=\"box-sizing:border-box;\"><span style=\"box-sizing:border-box;font-size:12pt;\">MAS Reference:</span></b></p><p style=\"box-sizing:border-box;font-family:Calibri, sans-serif;font-size:14.6667px;margin:0cm 0cm 0.0001pt;\"><b style=\"box-sizing:border-box;\"><span style=\"box-sizing:border-box;font-size:12pt;\">MAS1.4.10</span></b></p><p style=\"box-sizing:border-box;font-family:Calibri, sans-serif;font-size:14.6667px;margin:0cm 0cm 0.0001pt;\"><span style=\"box-sizing:border-box;font-size:12pt;\"><a href=\"https://microsoft.sharepoint.com/teams/msenable/_layouts/15/Doc.aspx?sourcedoc=%7bE12828DF-B35C-4F4D-9289-1F932E19F8CF%7d&amp;file=MAS%201.4.10%20%E2%80%93%20Reflow.docx&amp;action=default&amp;mobileredirect=true&amp;cid=5488f398-d97c-4915-9921-2e870e860e53\" style=\"box-sizing:border-box;text-decoration:underline;cursor:pointer;\">https://microsoft.sharepoint.com/teams/msenable/_layouts/15/Doc.aspx?sourcedoc=%7BE12828DF-B35C-4F4D-9289-1F932E19F8CF%7D&amp;file=MAS%201.4.10%20%E2%80%93%20Reflow.docx&amp;action=default&amp;mobileredirect=true&amp;cid=5488f398-d97c-4915-9921-2e870e860e53</a></span></p></div></div><div style=\"box-sizing:border-box;font-size:14px;font-weight:400;\"><a href=\"https://microsoft.sharepoint.com/:w:/r/teams/msenable/_layouts/15/WopiFrame.aspx?sourcedoc=%7b248054a6-5e68-4771-9e1e-242fb5025730%7d\" style=\"box-sizing:border-box;text-decoration:underline;cursor:pointer;\"></a></div><p style=\"box-sizing:border-box;font-weight:400;background:white;font-size:11pt;font-family:Calibri, sans-serif;margin:0in 0in 0.0001pt;\"><span style=\"box-sizing:border-box;color:black;background:white;\"><span style=\"box-sizing:border-box;\"><span style=\"box-sizing:border-box;color:rgba(0, 0, 0, 0.9);\"><a href=\"https://microsoft.sharepoint.com/teams/msenable/_layouts/15/WopiFrame.aspx?sourcedoc=%7bb69e5ccc-dde2-4406-b550-4deb38648f6d%7d\" style=\"box-sizing:border-box;text-decoration:underline;cursor:pointer;\"></a></span></span></span></p>"
+        }
+      },
+      "url": "https://dev.azure.com/O365Exchange/f2b55896-e832-438d-9220-cbc08c545713/_apis/wit/workItems/1565614/updates/3"
+    },
+    {
+      "id": 4,
+      "workItemId": 1565614,
+      "rev": 4,
+      "revisedBy": {
+        "id": "598ee4ea-9e57-6963-9315-cff4bfa570b5",
+        "name": "Vadakasai Sudheerkumar <v-vasud@microsoft.com>",
+        "displayName": "Vadakasai Sudheerkumar",
+        "url": "https://spsprodwus22.vssps.visualstudio.com/A28f31532-b635-4501-ab58-7eb1d27f889d/_apis/Identities/598ee4ea-9e57-6963-9315-cff4bfa570b5",
+        "_links": { "avatar": { "href": "https://dev.azure.com/O365Exchange/_apis/GraphProfile/MemberAvatars/aad.NTk4ZWU0ZWEtOWU1Ny03OTYzLTkzMTUtY2ZmNGJmYTU3MGI1" } },
+        "uniqueName": "v-vasud@microsoft.com",
+        "imageUrl": "https://dev.azure.com/O365Exchange/_apis/GraphProfile/MemberAvatars/aad.NTk4ZWU0ZWEtOWU1Ny03OTYzLTkzMTUtY2ZmNGJmYTU3MGI1",
+        "descriptor": "aad.NTk4ZWU0ZWEtOWU1Ny03OTYzLTkzMTUtY2ZmNGJmYTU3MGI1"
+      },
+      "revisedDate": "2020-07-07T09:08:32.43Z",
+      "fields": {
+        "System.Rev": {
+          "oldValue": 3,
+          "newValue": 4
+        },
+        "System.AuthorizedDate": {
+          "oldValue": "2020-07-06T08:42:06.947Z",
+          "newValue": "2020-07-06T08:53:27.59Z"
+        },
+        "System.RevisedDate": {
+          "oldValue": "2020-07-06T08:53:27.59Z",
+          "newValue": "2020-07-07T09:08:32.43Z"
+        },
+        "System.ChangedDate": {
+          "oldValue": "2020-07-06T08:42:06.947Z",
+          "newValue": "2020-07-06T08:53:27.59Z"
+        },
+        "System.Watermark": {
+          "oldValue": 11376935,
+          "newValue": 11377008
+        },
+        "System.Description": {
+          "oldValue": "<div style=\"box-sizing:border-box;margin:0px 0cm 0.000133333px;\"><div style=\"box-sizing:border-box;margin:0px 0cm 0.000133333px;\"><div style=\"box-sizing:border-box;margin:0px 0cm 0.000133333px;\"><div style=\"box-sizing:border-box;margin:0px 0cm 0.000133333px;\"><div style=\"box-sizing:border-box;margin:0px 0cm 0.000133333px;\"><p style=\"font-family:Calibri, sans-serif;font-size:11pt;margin:0in 0in 0.0001pt;background:white;\"><b></b></p><div style=\"margin:0px 0in 0.000133333px;background:white;\"><p style=\"font-family:Calibri, sans-serif;font-size:11pt;margin:0in 0in 0.0001pt;background:white;\"><b><span style=\"color:black;\"></span></b></p></div></div></div></div></div></div><div><div style=\"box-sizing:border-box;\"><b style=\"box-sizing:border-box;\"></b></div></div><p style=\"box-sizing:border-box;font-family:Calibri, sans-serif;font-weight:400;font-size:14.6667px;margin:0cm 0cm 0.0001pt;\"><b style=\"box-sizing:border-box;\"><span style=\"box-sizing:border-box;font-size:12pt;color:black;\">User Experience:</span></b></p><div><span style=\"display:inline !important;\"><span style=\"font-family:Calibri, sans-serif;font-size:16px;display:inline !important;\">Visually impaired users are getting impacted as it is difficult to scroll in two-dimensional.&nbsp;</span></span></div><span style=\"display:inline !important;\"><span style=\"display:inline !important;\"></span></span><div><div style=\"box-sizing:border-box;\"><br style=\"box-sizing:border-box;\"></div><div style=\"box-sizing:border-box;\"><b style=\"box-sizing:border-box;\"></b></div><div style=\"box-sizing:border-box;\"><span style=\"box-sizing:border-box;display:inline !important;\"><p style=\"box-sizing:border-box;font-weight:400;font-family:Calibri, sans-serif;font-size:14.6667px;margin:0cm 0cm 0.0001pt;\"><b style=\"box-sizing:border-box;\"><span style=\"box-sizing:border-box;font-size:12pt;\">Test Environment:</span></b></p><div style=\"box-sizing:border-box;font-weight:400;font-family:Calibri, sans-serif;\">OS : Windows 10</div><div style=\"box-sizing:border-box;font-weight:400;font-family:Calibri, sans-serif;\">Version: 2004(OS Build 19588.1000)</div><div style=\"box-sizing:border-box;font-weight:400;font-family:Calibri, sans-serif;\"></div><div style=\"box-sizing:border-box;font-weight:400;font-family:Calibri, sans-serif;\"></div></span></div><div style=\"box-sizing:border-box;\"><span style=\"box-sizing:border-box;display:inline !important;\"><div style=\"box-sizing:border-box;font-family:Calibri, sans-serif;\"><span lang=en-US style=\"box-sizing:border-box;cursor:pointer;font-family:&quot;Segoe UI&quot;;font-size:10.5pt;\"><div style=\"box-sizing:border-box;\">URL:&nbsp;<a href=\"https://df.compliance.microsoft.com/compliancescore?viewid=Assessments\" style=\"box-sizing:border-box;text-decoration:underline;\">https://df.compliance.microsoft.com/compliancescore?viewid=Assessments</a></div><div style=\"box-sizing:border-box;\">Screen Reader:&nbsp;NVDA<span style=\"box-sizing:border-box;\">&nbsp;</span>and Narrator</div><div style=\"box-sizing:border-box;\">Username:<span style=\"box-sizing:border-box;\">&nbsp;</span><a href=\"mailto:tifc@a830edad9050849EQTPWBJZXODQ.onmicrosoft.com\" style=\"box-sizing:border-box;text-decoration:underline;\">tifc@a830edad9050849EQTPWBJZXODQ.onmicrosoft.com</a></div></span></div></span></div><div style=\"box-sizing:border-box;\"><br style=\"box-sizing:border-box;\"></div><div style=\"box-sizing:border-box;\"><b style=\"box-sizing:border-box;\"></b></div><div style=\"box-sizing:border-box;\"><span style=\"box-sizing:border-box;\"><span style=\"box-sizing:border-box;display:inline !important;\"><div style=\"box-sizing:border-box;\"><b style=\"box-sizing:border-box;\">Repro Steps:</b></div><div style=\"box-sizing:border-box;\">Step 1: Open&nbsp;Anaheim Dev browser.</div><div style=\"box-sizing:border-box;\">Step 2: Enter URL and login with valid credentials.</div><div style=\"box-sizing:border-box;\"><div style=\"box-sizing:border-box;\">Step 3: Navigate to Assessments tab and activate it.</div></div></span></span></div><div style=\"box-sizing:border-box;\"><span style=\"box-sizing:border-box;\"><span style=\"box-sizing:border-box;display:inline !important;\"><div style=\"box-sizing:border-box;font-weight:400;\"><div style=\"box-sizing:border-box;\"></div></div><div style=\"box-sizing:border-box;font-weight:400;\"><span style=\"box-sizing:border-box;display:inline !important;\"></span></div><div style=\"box-sizing:border-box;font-weight:400;\">Step 4: Navigate to &quot;Adding a new Assessment&quot; button and activate it using keyboard.</div><div style=\"box-sizing:border-box;font-weight:400;\">Step 5: Create an Assessment here For eg: 'Hello' and click on 'create assessment' button within the 'Review and finish' page.</div><div style=\"box-sizing:border-box;font-weight:400;\">Step 6: 'Hello' assessment page will get open.</div><div style=\"box-sizing:border-box;font-weight:400;\">Step 7: Observe the issue.</div></span></span><br style=\"box-sizing:border-box;\"></div><div style=\"box-sizing:border-box;\"><b></b></div></div><div><b>Actual:</b></div><div></div><div>Two -dimensional scrolling (Horizontal and Vertical) is observed in &quot;Viewing an Assessment&quot; page when zoom to 400%.<div style=\"box-sizing:border-box;\"><div style=\"box-sizing:border-box;\"><br style=\"box-sizing:border-box;\"></div></div><div style=\"box-sizing:border-box;\"><b style=\"box-sizing:border-box;\">Expected Result:</b><span>&nbsp;</span></div><span style=\"font-family:Calibri, sans-serif;font-size:16px;display:inline !important;\">Horizontal scrolling should not available in&nbsp;&quot;Viewing an Assessment&quot; page when zoom to 400%.</span><div style=\"box-sizing:border-box;\"><span style=\"box-sizing:border-box;display:inline !important;\"><br style=\"box-sizing:border-box;\"></span></div><div style=\"box-sizing:border-box;\"><p style=\"box-sizing:border-box;font-family:Calibri, sans-serif;font-size:14.6667px;margin:0cm 0cm 0.0001pt;\"><b style=\"box-sizing:border-box;\"><span style=\"box-sizing:border-box;font-size:12pt;\">MAS Reference:</span></b></p><p style=\"box-sizing:border-box;font-family:Calibri, sans-serif;font-size:14.6667px;margin:0cm 0cm 0.0001pt;\"><b style=\"box-sizing:border-box;\"><span style=\"box-sizing:border-box;font-size:12pt;\">MAS1.4.10</span></b></p><p style=\"box-sizing:border-box;font-family:Calibri, sans-serif;font-size:14.6667px;margin:0cm 0cm 0.0001pt;\"><span style=\"box-sizing:border-box;font-size:12pt;\"><a href=\"https://microsoft.sharepoint.com/teams/msenable/_layouts/15/Doc.aspx?sourcedoc=%7bE12828DF-B35C-4F4D-9289-1F932E19F8CF%7d&amp;file=MAS%201.4.10%20%E2%80%93%20Reflow.docx&amp;action=default&amp;mobileredirect=true&amp;cid=5488f398-d97c-4915-9921-2e870e860e53\" style=\"box-sizing:border-box;text-decoration:underline;cursor:pointer;\">https://microsoft.sharepoint.com/teams/msenable/_layouts/15/Doc.aspx?sourcedoc=%7BE12828DF-B35C-4F4D-9289-1F932E19F8CF%7D&amp;file=MAS%201.4.10%20%E2%80%93%20Reflow.docx&amp;action=default&amp;mobileredirect=true&amp;cid=5488f398-d97c-4915-9921-2e870e860e53</a></span></p></div></div><div style=\"box-sizing:border-box;font-size:14px;font-weight:400;\"><a href=\"https://microsoft.sharepoint.com/:w:/r/teams/msenable/_layouts/15/WopiFrame.aspx?sourcedoc=%7b248054a6-5e68-4771-9e1e-242fb5025730%7d\" style=\"box-sizing:border-box;text-decoration:underline;cursor:pointer;\"></a></div><p style=\"box-sizing:border-box;font-weight:400;background:white;font-size:11pt;font-family:Calibri, sans-serif;margin:0in 0in 0.0001pt;\"><span style=\"box-sizing:border-box;color:black;background:white;\"><span style=\"box-sizing:border-box;\"><span style=\"box-sizing:border-box;color:rgba(0, 0, 0, 0.9);\"><a href=\"https://microsoft.sharepoint.com/teams/msenable/_layouts/15/WopiFrame.aspx?sourcedoc=%7bb69e5ccc-dde2-4406-b550-4deb38648f6d%7d\" style=\"box-sizing:border-box;text-decoration:underline;cursor:pointer;\"></a></span></span></span></p>",
+          "newValue": "<div style=\"box-sizing:border-box;margin:0px 0cm 0.000133333px;\"><div style=\"box-sizing:border-box;margin:0px 0cm 0.000133333px;\"><div style=\"box-sizing:border-box;margin:0px 0cm 0.000133333px;\"><div style=\"box-sizing:border-box;margin:0px 0cm 0.000133333px;\"><div style=\"box-sizing:border-box;margin:0px 0cm 0.000133333px;\"><p style=\"font-family:Calibri, sans-serif;font-size:11pt;margin:0in 0in 0.0001pt;background:white;\"><b></b></p><div style=\"margin:0px 0in 0.000133333px;background:white;\"><p style=\"font-family:Calibri, sans-serif;font-size:11pt;margin:0in 0in 0.0001pt;background:white;\"><b><span style=\"color:black;\"></span></b></p></div></div></div></div></div></div><div><div style=\"box-sizing:border-box;\"><b style=\"box-sizing:border-box;\"></b></div></div><p style=\"box-sizing:border-box;font-family:Calibri, sans-serif;font-weight:400;font-size:14.6667px;margin:0cm 0cm 0.0001pt;\"><b style=\"box-sizing:border-box;\"><span style=\"box-sizing:border-box;font-size:12pt;color:black;\">User Experience:</span></b></p><div><span style=\"display:inline !important;\"><span style=\"font-family:Calibri, sans-serif;font-size:16px;display:inline !important;\">Visually impaired users are getting impacted as it is difficult to scroll in two-dimensional.&nbsp;</span></span></div><span style=\"display:inline !important;\"><span style=\"display:inline !important;\"></span></span><div><div style=\"box-sizing:border-box;\"><br style=\"box-sizing:border-box;\"></div><div style=\"box-sizing:border-box;\"><b style=\"box-sizing:border-box;\"></b></div><div style=\"box-sizing:border-box;\"><span style=\"box-sizing:border-box;display:inline !important;\"><p style=\"box-sizing:border-box;font-weight:400;font-family:Calibri, sans-serif;font-size:14.6667px;margin:0cm 0cm 0.0001pt;\"><b style=\"box-sizing:border-box;\"><span style=\"box-sizing:border-box;font-size:12pt;\">Test Environment:</span></b></p><div style=\"box-sizing:border-box;font-weight:400;font-family:Calibri, sans-serif;\">OS : Windows 10</div><div style=\"box-sizing:border-box;font-weight:400;font-family:Calibri, sans-serif;\">Version: 2004(OS Build 19588.1000)</div><div style=\"box-sizing:border-box;font-weight:400;font-family:Calibri, sans-serif;\"><span style=\"font-family:Calibri, sans-serif;display:inline !important;\">Browser : Anaheim Dev (Version 85.0.552.1 (Official build) dev (64-bit))</span><br></div><div style=\"box-sizing:border-box;font-weight:400;font-family:Calibri, sans-serif;\"></div><div style=\"box-sizing:border-box;font-weight:400;font-family:Calibri, sans-serif;\"></div></span></div><div style=\"box-sizing:border-box;\"><span style=\"box-sizing:border-box;display:inline !important;\"><div style=\"box-sizing:border-box;font-family:Calibri, sans-serif;\"><span lang=en-US style=\"box-sizing:border-box;cursor:pointer;font-family:&quot;Segoe UI&quot;;font-size:10.5pt;\"><div style=\"box-sizing:border-box;\">URL:&nbsp;<a href=\"https://df.compliance.microsoft.com/compliancescore?viewid=Assessments\" style=\"box-sizing:border-box;text-decoration:underline;\">https://df.compliance.microsoft.com/compliancescore?viewid=Assessments</a></div><div style=\"box-sizing:border-box;\">Screen Reader:&nbsp;NVDA<span style=\"box-sizing:border-box;\">&nbsp;</span>and Narrator</div><div style=\"box-sizing:border-box;\">Username:<span style=\"box-sizing:border-box;\">&nbsp;</span><a href=\"mailto:tifc@a830edad9050849EQTPWBJZXODQ.onmicrosoft.com\" style=\"box-sizing:border-box;text-decoration:underline;\">tifc@a830edad9050849EQTPWBJZXODQ.onmicrosoft.com</a></div></span></div></span></div><div style=\"box-sizing:border-box;\"><br style=\"box-sizing:border-box;\"></div><div style=\"box-sizing:border-box;\"><b style=\"box-sizing:border-box;\"></b></div><div style=\"box-sizing:border-box;\"><span style=\"box-sizing:border-box;\"><span style=\"box-sizing:border-box;display:inline !important;\"><div style=\"box-sizing:border-box;\"><b style=\"box-sizing:border-box;\">Repro Steps:</b></div><div style=\"box-sizing:border-box;\">Step 1: Open&nbsp;Anaheim Dev browser.</div><div style=\"box-sizing:border-box;\">Step 2: Enter URL and login with valid credentials.</div><div style=\"box-sizing:border-box;\"><div style=\"box-sizing:border-box;\">Step 3: Navigate to Assessments tab and activate it.</div></div></span></span></div><div style=\"box-sizing:border-box;\"><span style=\"box-sizing:border-box;\"><span style=\"box-sizing:border-box;display:inline !important;\"><div style=\"box-sizing:border-box;font-weight:400;\"><div style=\"box-sizing:border-box;\"></div></div><div style=\"box-sizing:border-box;font-weight:400;\"><span style=\"box-sizing:border-box;display:inline !important;\"></span></div><div style=\"box-sizing:border-box;font-weight:400;\">Step 4: Navigate to &quot;Adding a new Assessment&quot; button and activate it using keyboard.</div><div style=\"box-sizing:border-box;font-weight:400;\">Step 5: Create an Assessment here For eg: 'Hello' and click on 'create assessment' button within the 'Review and finish' page.</div><div style=\"box-sizing:border-box;font-weight:400;\">Step 6: 'Hello' assessment page will get open.</div><div style=\"box-sizing:border-box;font-weight:400;\">Step 7: Observe the issue.</div></span></span><br style=\"box-sizing:border-box;\"></div><div style=\"box-sizing:border-box;\"><b></b></div></div><div><b>Actual:</b></div><div></div><div>Two -dimensional scrolling (Horizontal and Vertical) is observed in &quot;Viewing an Assessment&quot; page when zoom to 400%.<div style=\"box-sizing:border-box;\"><div style=\"box-sizing:border-box;\"><br style=\"box-sizing:border-box;\"></div></div><div style=\"box-sizing:border-box;\"><b style=\"box-sizing:border-box;\">Expected Result:</b><span>&nbsp;</span></div><span style=\"font-family:Calibri, sans-serif;font-size:16px;display:inline !important;\">Horizontal scrolling should not available in&nbsp;&quot;Viewing an Assessment&quot; page when zoom to 400%.</span><div style=\"box-sizing:border-box;\"><span style=\"box-sizing:border-box;display:inline !important;\"><br style=\"box-sizing:border-box;\"></span></div><div style=\"box-sizing:border-box;\"><p style=\"box-sizing:border-box;font-family:Calibri, sans-serif;font-size:14.6667px;margin:0cm 0cm 0.0001pt;\"><b style=\"box-sizing:border-box;\"><span style=\"box-sizing:border-box;font-size:12pt;\">MAS Reference:</span></b></p><p style=\"box-sizing:border-box;font-family:Calibri, sans-serif;font-size:14.6667px;margin:0cm 0cm 0.0001pt;\"><b style=\"box-sizing:border-box;\"><span style=\"box-sizing:border-box;font-size:12pt;\">MAS1.4.10</span></b></p><p style=\"box-sizing:border-box;font-family:Calibri, sans-serif;font-size:14.6667px;margin:0cm 0cm 0.0001pt;\"><span style=\"box-sizing:border-box;font-size:12pt;\"><a href=\"https://microsoft.sharepoint.com/teams/msenable/_layouts/15/Doc.aspx?sourcedoc=%7bE12828DF-B35C-4F4D-9289-1F932E19F8CF%7d&amp;file=MAS%201.4.10%20%E2%80%93%20Reflow.docx&amp;action=default&amp;mobileredirect=true&amp;cid=5488f398-d97c-4915-9921-2e870e860e53\" style=\"box-sizing:border-box;text-decoration:underline;cursor:pointer;\">https://microsoft.sharepoint.com/teams/msenable/_layouts/15/Doc.aspx?sourcedoc=%7BE12828DF-B35C-4F4D-9289-1F932E19F8CF%7D&amp;file=MAS%201.4.10%20%E2%80%93%20Reflow.docx&amp;action=default&amp;mobileredirect=true&amp;cid=5488f398-d97c-4915-9921-2e870e860e53</a></span></p></div></div><div style=\"box-sizing:border-box;font-size:14px;font-weight:400;\"><a href=\"https://microsoft.sharepoint.com/:w:/r/teams/msenable/_layouts/15/WopiFrame.aspx?sourcedoc=%7b248054a6-5e68-4771-9e1e-242fb5025730%7d\" style=\"box-sizing:border-box;text-decoration:underline;cursor:pointer;\"></a></div><p style=\"box-sizing:border-box;font-weight:400;background:white;font-size:11pt;font-family:Calibri, sans-serif;margin:0in 0in 0.0001pt;\"><span style=\"box-sizing:border-box;color:black;background:white;\"><span style=\"box-sizing:border-box;\"><span style=\"box-sizing:border-box;color:rgba(0, 0, 0, 0.9);\"><a href=\"https://microsoft.sharepoint.com/teams/msenable/_layouts/15/WopiFrame.aspx?sourcedoc=%7bb69e5ccc-dde2-4406-b550-4deb38648f6d%7d\" style=\"box-sizing:border-box;text-decoration:underline;cursor:pointer;\"></a></span></span></span></p>"
+        },
+        "System.Parent": { "newValue": 1566638 }
+      },
+      "url": "https://dev.azure.com/O365Exchange/f2b55896-e832-438d-9220-cbc08c545713/_apis/wit/workItems/1565614/updates/4"
+    },
+    {
+      "id": 5,
+      "workItemId": 1565614,
+      "rev": 4,
+      "revisedBy": {
+        "id": "598ee4ea-9e57-6963-9315-cff4bfa570b5",
+        "name": "Vadakasai Sudheerkumar <v-vasud@microsoft.com>",
+        "displayName": "Vadakasai Sudheerkumar",
+        "url": "https://spsprodwus22.vssps.visualstudio.com/A28f31532-b635-4501-ab58-7eb1d27f889d/_apis/Identities/598ee4ea-9e57-6963-9315-cff4bfa570b5",
+        "_links": { "avatar": { "href": "https://dev.azure.com/O365Exchange/_apis/GraphProfile/MemberAvatars/aad.NTk4ZWU0ZWEtOWU1Ny03OTYzLTkzMTUtY2ZmNGJmYTU3MGI1" } },
+        "uniqueName": "v-vasud@microsoft.com",
+        "imageUrl": "https://dev.azure.com/O365Exchange/_apis/GraphProfile/MemberAvatars/aad.NTk4ZWU0ZWEtOWU1Ny03OTYzLTkzMTUtY2ZmNGJmYTU3MGI1",
+        "descriptor": "aad.NTk4ZWU0ZWEtOWU1Ny03OTYzLTkzMTUtY2ZmNGJmYTU3MGI1"
+      },
+      "revisedDate": "2020-07-06T09:51:30.357Z",
+      "relations": {
+        "added": [
+          {
+            "rel": "System.LinkTypes.Hierarchy-Reverse",
+            "url": "https://dev.azure.com/O365Exchange/f2b55896-e832-438d-9220-cbc08c545713/_apis/wit/workItems/1566638",
+            "attributes": {
+              "isLocked": false,
+              "name": "Parent"
+            }
+          }
+        ]
+      },
+      "url": "https://dev.azure.com/O365Exchange/f2b55896-e832-438d-9220-cbc08c545713/_apis/wit/workItems/1565614/updates/5"
+    },
+    {
+      "id": 6,
+      "workItemId": 1565614,
+      "rev": 5,
+      "revisedBy": {
+        "id": "4767b08f-3609-46b6-bd49-bfaed8b150c3",
+        "name": "Padmini Pandey <v-padmpa@microsoft.com>",
+        "displayName": "Padmini Pandey",
+        "url": "https://spsprodwus22.vssps.visualstudio.com/A28f31532-b635-4501-ab58-7eb1d27f889d/_apis/Identities/4767b08f-3609-46b6-bd49-bfaed8b150c3",
+        "_links": { "avatar": { "href": "https://dev.azure.com/O365Exchange/_apis/GraphProfile/MemberAvatars/aad.Yjk1YTEyMTctOWEwYy03ZDQxLWI5NzUtNDQ3NTY0ODJjODg2" } },
+        "uniqueName": "v-padmpa@microsoft.com",
+        "imageUrl": "https://dev.azure.com/O365Exchange/_apis/GraphProfile/MemberAvatars/aad.Yjk1YTEyMTctOWEwYy03ZDQxLWI5NzUtNDQ3NTY0ODJjODg2",
+        "descriptor": "aad.Yjk1YTEyMTctOWEwYy03ZDQxLWI5NzUtNDQ3NTY0ODJjODg2"
+      },
+      "revisedDate": "2020-07-08T03:59:05.523Z",
+      "fields": {
+        "System.Rev": {
+          "oldValue": 4,
+          "newValue": 5
+        },
+        "System.AuthorizedDate": {
+          "oldValue": "2020-07-06T08:53:27.59Z",
+          "newValue": "2020-07-07T09:08:32.43Z"
+        },
+        "System.RevisedDate": {
+          "oldValue": "2020-07-07T09:08:32.43Z",
+          "newValue": "2020-07-08T03:59:05.523Z"
+        },
+        "System.AssignedTo": {
+          "oldValue": {
+            "displayName": "Padmini Pandey",
+            "url": "https://spsprodwus22.vssps.visualstudio.com/A28f31532-b635-4501-ab58-7eb1d27f889d/_apis/Identities/4767b08f-3609-46b6-bd49-bfaed8b150c3",
+            "_links": { "avatar": { "href": "https://dev.azure.com/O365Exchange/_apis/GraphProfile/MemberAvatars/aad.Yjk1YTEyMTctOWEwYy03ZDQxLWI5NzUtNDQ3NTY0ODJjODg2" } },
+            "id": "4767b08f-3609-46b6-bd49-bfaed8b150c3",
+            "uniqueName": "v-padmpa@microsoft.com",
+            "imageUrl": "https://dev.azure.com/O365Exchange/_apis/GraphProfile/MemberAvatars/aad.Yjk1YTEyMTctOWEwYy03ZDQxLWI5NzUtNDQ3NTY0ODJjODg2",
+            "descriptor": "aad.Yjk1YTEyMTctOWEwYy03ZDQxLWI5NzUtNDQ3NTY0ODJjODg2"
+          }
+        },
+        "System.ChangedDate": {
+          "oldValue": "2020-07-06T08:53:27.59Z",
+          "newValue": "2020-07-07T09:08:32.43Z"
+        },
+        "System.ChangedBy": {
+          "oldValue": {
+            "displayName": "Vadakasai Sudheerkumar",
+            "url": "https://spsprodwus22.vssps.visualstudio.com/A28f31532-b635-4501-ab58-7eb1d27f889d/_apis/Identities/598ee4ea-9e57-6963-9315-cff4bfa570b5",
+            "_links": { "avatar": { "href": "https://dev.azure.com/O365Exchange/_apis/GraphProfile/MemberAvatars/aad.NTk4ZWU0ZWEtOWU1Ny03OTYzLTkzMTUtY2ZmNGJmYTU3MGI1" } },
+            "id": "598ee4ea-9e57-6963-9315-cff4bfa570b5",
+            "uniqueName": "v-vasud@microsoft.com",
+            "imageUrl": "https://dev.azure.com/O365Exchange/_apis/GraphProfile/MemberAvatars/aad.NTk4ZWU0ZWEtOWU1Ny03OTYzLTkzMTUtY2ZmNGJmYTU3MGI1",
+            "descriptor": "aad.NTk4ZWU0ZWEtOWU1Ny03OTYzLTkzMTUtY2ZmNGJmYTU3MGI1"
+          },
+          "newValue": {
+            "displayName": "Padmini Pandey",
+            "url": "https://spsprodwus22.vssps.visualstudio.com/A28f31532-b635-4501-ab58-7eb1d27f889d/_apis/Identities/4767b08f-3609-46b6-bd49-bfaed8b150c3",
+            "_links": { "avatar": { "href": "https://dev.azure.com/O365Exchange/_apis/GraphProfile/MemberAvatars/aad.Yjk1YTEyMTctOWEwYy03ZDQxLWI5NzUtNDQ3NTY0ODJjODg2" } },
+            "id": "4767b08f-3609-46b6-bd49-bfaed8b150c3",
+            "uniqueName": "v-padmpa@microsoft.com",
+            "imageUrl": "https://dev.azure.com/O365Exchange/_apis/GraphProfile/MemberAvatars/aad.Yjk1YTEyMTctOWEwYy03ZDQxLWI5NzUtNDQ3NTY0ODJjODg2",
+            "descriptor": "aad.Yjk1YTEyMTctOWEwYy03ZDQxLWI5NzUtNDQ3NTY0ODJjODg2"
+          }
+        },
+        "System.AuthorizedAs": {
+          "oldValue": {
+            "displayName": "Vadakasai Sudheerkumar",
+            "url": "https://spsprodwus22.vssps.visualstudio.com/A28f31532-b635-4501-ab58-7eb1d27f889d/_apis/Identities/598ee4ea-9e57-6963-9315-cff4bfa570b5",
+            "_links": { "avatar": { "href": "https://dev.azure.com/O365Exchange/_apis/GraphProfile/MemberAvatars/aad.NTk4ZWU0ZWEtOWU1Ny03OTYzLTkzMTUtY2ZmNGJmYTU3MGI1" } },
+            "id": "598ee4ea-9e57-6963-9315-cff4bfa570b5",
+            "uniqueName": "v-vasud@microsoft.com",
+            "imageUrl": "https://dev.azure.com/O365Exchange/_apis/GraphProfile/MemberAvatars/aad.NTk4ZWU0ZWEtOWU1Ny03OTYzLTkzMTUtY2ZmNGJmYTU3MGI1",
+            "descriptor": "aad.NTk4ZWU0ZWEtOWU1Ny03OTYzLTkzMTUtY2ZmNGJmYTU3MGI1"
+          },
+          "newValue": {
+            "displayName": "Padmini Pandey",
+            "url": "https://spsprodwus22.vssps.visualstudio.com/A28f31532-b635-4501-ab58-7eb1d27f889d/_apis/Identities/4767b08f-3609-46b6-bd49-bfaed8b150c3",
+            "_links": { "avatar": { "href": "https://dev.azure.com/O365Exchange/_apis/GraphProfile/MemberAvatars/aad.Yjk1YTEyMTctOWEwYy03ZDQxLWI5NzUtNDQ3NTY0ODJjODg2" } },
+            "id": "4767b08f-3609-46b6-bd49-bfaed8b150c3",
+            "uniqueName": "v-padmpa@microsoft.com",
+            "imageUrl": "https://dev.azure.com/O365Exchange/_apis/GraphProfile/MemberAvatars/aad.Yjk1YTEyMTctOWEwYy03ZDQxLWI5NzUtNDQ3NTY0ODJjODg2",
+            "descriptor": "aad.Yjk1YTEyMTctOWEwYy03ZDQxLWI5NzUtNDQ3NTY0ODJjODg2"
+          }
+        },
+        "System.PersonId": {
+          "oldValue": 29044933,
+          "newValue": 21822601
+        },
+        "System.Watermark": {
+          "oldValue": 11377008,
+          "newValue": 11397228
+        }
+      },
+      "url": "https://dev.azure.com/O365Exchange/f2b55896-e832-438d-9220-cbc08c545713/_apis/wit/workItems/1565614/updates/6"
+    },
+    {
+      "id": 7,
+      "workItemId": 1565614,
+      "rev": 6,
+      "revisedBy": {
+        "id": "2f589fae-8aa0-446b-bd95-7906119d797d",
+        "name": "Anadi Chaturvedi <anchatur@microsoft.com>",
+        "displayName": "Anadi Chaturvedi",
+        "url": "https://spsprodwus22.vssps.visualstudio.com/A28f31532-b635-4501-ab58-7eb1d27f889d/_apis/Identities/2f589fae-8aa0-446b-bd95-7906119d797d",
+        "_links": { "avatar": { "href": "https://dev.azure.com/O365Exchange/_apis/GraphProfile/MemberAvatars/aad.ODkwYjkwNzQtNWIzYi03OGQyLTkzMzAtNmJhYzc4ODZmZmY2" } },
+        "uniqueName": "anchatur@microsoft.com",
+        "imageUrl": "https://dev.azure.com/O365Exchange/_apis/GraphProfile/MemberAvatars/aad.ODkwYjkwNzQtNWIzYi03OGQyLTkzMzAtNmJhYzc4ODZmZmY2",
+        "descriptor": "aad.ODkwYjkwNzQtNWIzYi03OGQyLTkzMzAtNmJhYzc4ODZmZmY2"
+      },
+      "revisedDate": "2020-07-13T12:38:43.48Z",
+      "fields": {
+        "System.AreaId": {
+          "oldValue": 4598,
+          "newValue": 4221
+        },
+        "System.NodeName": {
+          "oldValue": "M365 Compliance",
+          "newValue": "Compliance Score"
+        },
+        "System.AreaLevel3": { "newValue": "Compliance Score" },
+        "System.Rev": {
+          "oldValue": 5,
+          "newValue": 6
+        },
+        "System.AuthorizedDate": {
+          "oldValue": "2020-07-07T09:08:32.43Z",
+          "newValue": "2020-07-08T03:59:05.523Z"
+        },
+        "System.RevisedDate": {
+          "oldValue": "2020-07-08T03:59:05.523Z",
+          "newValue": "2020-07-13T12:38:43.48Z"
+        },
+        "System.ChangedDate": {
+          "oldValue": "2020-07-07T09:08:32.43Z",
+          "newValue": "2020-07-08T03:59:05.523Z"
+        },
+        "System.ChangedBy": {
+          "oldValue": {
+            "displayName": "Padmini Pandey",
+            "url": "https://spsprodwus22.vssps.visualstudio.com/A28f31532-b635-4501-ab58-7eb1d27f889d/_apis/Identities/4767b08f-3609-46b6-bd49-bfaed8b150c3",
+            "_links": { "avatar": { "href": "https://dev.azure.com/O365Exchange/_apis/GraphProfile/MemberAvatars/aad.Yjk1YTEyMTctOWEwYy03ZDQxLWI5NzUtNDQ3NTY0ODJjODg2" } },
+            "id": "4767b08f-3609-46b6-bd49-bfaed8b150c3",
+            "uniqueName": "v-padmpa@microsoft.com",
+            "imageUrl": "https://dev.azure.com/O365Exchange/_apis/GraphProfile/MemberAvatars/aad.Yjk1YTEyMTctOWEwYy03ZDQxLWI5NzUtNDQ3NTY0ODJjODg2",
+            "descriptor": "aad.Yjk1YTEyMTctOWEwYy03ZDQxLWI5NzUtNDQ3NTY0ODJjODg2"
+          },
+          "newValue": {
+            "displayName": "Anadi Chaturvedi",
+            "url": "https://spsprodwus22.vssps.visualstudio.com/A28f31532-b635-4501-ab58-7eb1d27f889d/_apis/Identities/2f589fae-8aa0-446b-bd95-7906119d797d",
+            "_links": { "avatar": { "href": "https://dev.azure.com/O365Exchange/_apis/GraphProfile/MemberAvatars/aad.ODkwYjkwNzQtNWIzYi03OGQyLTkzMzAtNmJhYzc4ODZmZmY2" } },
+            "id": "2f589fae-8aa0-446b-bd95-7906119d797d",
+            "uniqueName": "anchatur@microsoft.com",
+            "imageUrl": "https://dev.azure.com/O365Exchange/_apis/GraphProfile/MemberAvatars/aad.ODkwYjkwNzQtNWIzYi03OGQyLTkzMzAtNmJhYzc4ODZmZmY2",
+            "descriptor": "aad.ODkwYjkwNzQtNWIzYi03OGQyLTkzMzAtNmJhYzc4ODZmZmY2"
+          }
+        },
+        "System.AuthorizedAs": {
+          "oldValue": {
+            "displayName": "Padmini Pandey",
+            "url": "https://spsprodwus22.vssps.visualstudio.com/A28f31532-b635-4501-ab58-7eb1d27f889d/_apis/Identities/4767b08f-3609-46b6-bd49-bfaed8b150c3",
+            "_links": { "avatar": { "href": "https://dev.azure.com/O365Exchange/_apis/GraphProfile/MemberAvatars/aad.Yjk1YTEyMTctOWEwYy03ZDQxLWI5NzUtNDQ3NTY0ODJjODg2" } },
+            "id": "4767b08f-3609-46b6-bd49-bfaed8b150c3",
+            "uniqueName": "v-padmpa@microsoft.com",
+            "imageUrl": "https://dev.azure.com/O365Exchange/_apis/GraphProfile/MemberAvatars/aad.Yjk1YTEyMTctOWEwYy03ZDQxLWI5NzUtNDQ3NTY0ODJjODg2",
+            "descriptor": "aad.Yjk1YTEyMTctOWEwYy03ZDQxLWI5NzUtNDQ3NTY0ODJjODg2"
+          },
+          "newValue": {
+            "displayName": "Anadi Chaturvedi",
+            "url": "https://spsprodwus22.vssps.visualstudio.com/A28f31532-b635-4501-ab58-7eb1d27f889d/_apis/Identities/2f589fae-8aa0-446b-bd95-7906119d797d",
+            "_links": { "avatar": { "href": "https://dev.azure.com/O365Exchange/_apis/GraphProfile/MemberAvatars/aad.ODkwYjkwNzQtNWIzYi03OGQyLTkzMzAtNmJhYzc4ODZmZmY2" } },
+            "id": "2f589fae-8aa0-446b-bd95-7906119d797d",
+            "uniqueName": "anchatur@microsoft.com",
+            "imageUrl": "https://dev.azure.com/O365Exchange/_apis/GraphProfile/MemberAvatars/aad.ODkwYjkwNzQtNWIzYi03OGQyLTkzMzAtNmJhYzc4ODZmZmY2",
+            "descriptor": "aad.ODkwYjkwNzQtNWIzYi03OGQyLTkzMzAtNmJhYzc4ODZmZmY2"
+          }
+        },
+        "System.PersonId": {
+          "oldValue": 21822601,
+          "newValue": 29050169
+        },
+        "System.Watermark": {
+          "oldValue": 11397228,
+          "newValue": 11413777
+        },
+        "System.AreaPath": {
+          "oldValue": "IP Engineering\\M365 Compliance",
+          "newValue": "IP Engineering\\M365 Compliance\\Compliance Score"
+        }
+      },
+      "url": "https://dev.azure.com/O365Exchange/f2b55896-e832-438d-9220-cbc08c545713/_apis/wit/workItems/1565614/updates/7"
+    },
+    {
+      "id": 8,
+      "workItemId": 1565614,
+      "rev": 7,
+      "revisedBy": {
+        "id": "eed46342-b5fc-45ec-b2ce-2e65cf894136",
+        "name": "Pankaj Bhambhani <panbha@microsoft.com>",
+        "displayName": "Pankaj Bhambhani",
+        "url": "https://spsprodwus22.vssps.visualstudio.com/A28f31532-b635-4501-ab58-7eb1d27f889d/_apis/Identities/eed46342-b5fc-45ec-b2ce-2e65cf894136",
+        "_links": { "avatar": { "href": "https://dev.azure.com/O365Exchange/_apis/GraphProfile/MemberAvatars/aad.YTUyMWRjOTctMDdlMS03ODlmLThjNGQtN2MyM2RjMDg0ZmFl" } },
+        "uniqueName": "panbha@microsoft.com",
+        "imageUrl": "https://dev.azure.com/O365Exchange/_apis/GraphProfile/MemberAvatars/aad.YTUyMWRjOTctMDdlMS03ODlmLThjNGQtN2MyM2RjMDg0ZmFl",
+        "descriptor": "aad.YTUyMWRjOTctMDdlMS03ODlmLThjNGQtN2MyM2RjMDg0ZmFl"
+      },
+      "revisedDate": "2020-07-21T07:58:18.213Z",
+      "fields": {
+        "System.Rev": {
+          "oldValue": 6,
+          "newValue": 7
+        },
+        "System.AuthorizedDate": {
+          "oldValue": "2020-07-08T03:59:05.523Z",
+          "newValue": "2020-07-13T12:38:43.48Z"
+        },
+        "System.RevisedDate": {
+          "oldValue": "2020-07-13T12:38:43.48Z",
+          "newValue": "2020-07-21T07:58:18.213Z"
+        },
+        "System.AssignedTo": {
+          "newValue": {
+            "displayName": "Sai Prasen 🎯",
+            "url": "https://spsprodwus22.vssps.visualstudio.com/A28f31532-b635-4501-ab58-7eb1d27f889d/_apis/Identities/19b3c232-b6d4-6942-b490-547c00b9a7a6",
+            "_links": { "avatar": { "href": "https://dev.azure.com/O365Exchange/_apis/GraphProfile/MemberAvatars/aad.MTliM2MyMzItYjZkNC03OTQyLWI0OTAtNTQ3YzAwYjlhN2E2" } },
+            "id": "19b3c232-b6d4-6942-b490-547c00b9a7a6",
+            "uniqueName": "thsaipra@microsoft.com",
+            "imageUrl": "https://dev.azure.com/O365Exchange/_apis/GraphProfile/MemberAvatars/aad.MTliM2MyMzItYjZkNC03OTQyLWI0OTAtNTQ3YzAwYjlhN2E2",
+            "descriptor": "aad.MTliM2MyMzItYjZkNC03OTQyLWI0OTAtNTQ3YzAwYjlhN2E2"
+          }
+        },
+        "System.ChangedDate": {
+          "oldValue": "2020-07-08T03:59:05.523Z",
+          "newValue": "2020-07-13T12:38:43.48Z"
+        },
+        "System.ChangedBy": {
+          "oldValue": {
+            "displayName": "Anadi Chaturvedi",
+            "url": "https://spsprodwus22.vssps.visualstudio.com/A28f31532-b635-4501-ab58-7eb1d27f889d/_apis/Identities/2f589fae-8aa0-446b-bd95-7906119d797d",
+            "_links": { "avatar": { "href": "https://dev.azure.com/O365Exchange/_apis/GraphProfile/MemberAvatars/aad.ODkwYjkwNzQtNWIzYi03OGQyLTkzMzAtNmJhYzc4ODZmZmY2" } },
+            "id": "2f589fae-8aa0-446b-bd95-7906119d797d",
+            "uniqueName": "anchatur@microsoft.com",
+            "imageUrl": "https://dev.azure.com/O365Exchange/_apis/GraphProfile/MemberAvatars/aad.ODkwYjkwNzQtNWIzYi03OGQyLTkzMzAtNmJhYzc4ODZmZmY2",
+            "descriptor": "aad.ODkwYjkwNzQtNWIzYi03OGQyLTkzMzAtNmJhYzc4ODZmZmY2"
+          },
+          "newValue": {
+            "displayName": "Pankaj Bhambhani",
+            "url": "https://spsprodwus22.vssps.visualstudio.com/A28f31532-b635-4501-ab58-7eb1d27f889d/_apis/Identities/eed46342-b5fc-45ec-b2ce-2e65cf894136",
+            "_links": { "avatar": { "href": "https://dev.azure.com/O365Exchange/_apis/GraphProfile/MemberAvatars/aad.YTUyMWRjOTctMDdlMS03ODlmLThjNGQtN2MyM2RjMDg0ZmFl" } },
+            "id": "eed46342-b5fc-45ec-b2ce-2e65cf894136",
+            "uniqueName": "panbha@microsoft.com",
+            "imageUrl": "https://dev.azure.com/O365Exchange/_apis/GraphProfile/MemberAvatars/aad.YTUyMWRjOTctMDdlMS03ODlmLThjNGQtN2MyM2RjMDg0ZmFl",
+            "descriptor": "aad.YTUyMWRjOTctMDdlMS03ODlmLThjNGQtN2MyM2RjMDg0ZmFl"
+          }
+        },
+        "System.AuthorizedAs": {
+          "oldValue": {
+            "displayName": "Anadi Chaturvedi",
+            "url": "https://spsprodwus22.vssps.visualstudio.com/A28f31532-b635-4501-ab58-7eb1d27f889d/_apis/Identities/2f589fae-8aa0-446b-bd95-7906119d797d",
+            "_links": { "avatar": { "href": "https://dev.azure.com/O365Exchange/_apis/GraphProfile/MemberAvatars/aad.ODkwYjkwNzQtNWIzYi03OGQyLTkzMzAtNmJhYzc4ODZmZmY2" } },
+            "id": "2f589fae-8aa0-446b-bd95-7906119d797d",
+            "uniqueName": "anchatur@microsoft.com",
+            "imageUrl": "https://dev.azure.com/O365Exchange/_apis/GraphProfile/MemberAvatars/aad.ODkwYjkwNzQtNWIzYi03OGQyLTkzMzAtNmJhYzc4ODZmZmY2",
+            "descriptor": "aad.ODkwYjkwNzQtNWIzYi03OGQyLTkzMzAtNmJhYzc4ODZmZmY2"
+          },
+          "newValue": {
+            "displayName": "Pankaj Bhambhani",
+            "url": "https://spsprodwus22.vssps.visualstudio.com/A28f31532-b635-4501-ab58-7eb1d27f889d/_apis/Identities/eed46342-b5fc-45ec-b2ce-2e65cf894136",
+            "_links": { "avatar": { "href": "https://dev.azure.com/O365Exchange/_apis/GraphProfile/MemberAvatars/aad.YTUyMWRjOTctMDdlMS03ODlmLThjNGQtN2MyM2RjMDg0ZmFl" } },
+            "id": "eed46342-b5fc-45ec-b2ce-2e65cf894136",
+            "uniqueName": "panbha@microsoft.com",
+            "imageUrl": "https://dev.azure.com/O365Exchange/_apis/GraphProfile/MemberAvatars/aad.YTUyMWRjOTctMDdlMS03ODlmLThjNGQtN2MyM2RjMDg0ZmFl",
+            "descriptor": "aad.YTUyMWRjOTctMDdlMS03ODlmLThjNGQtN2MyM2RjMDg0ZmFl"
+          }
+        },
+        "System.PersonId": {
+          "oldValue": 29050169,
+          "newValue": 29062737
+        },
+        "System.Watermark": {
+          "oldValue": 11413777,
+          "newValue": 11496761
+        }
+      },
+      "url": "https://dev.azure.com/O365Exchange/f2b55896-e832-438d-9220-cbc08c545713/_apis/wit/workItems/1565614/updates/8"
+    },
+    {
+      "id": 9,
+      "workItemId": 1565614,
+      "rev": 8,
+      "revisedBy": {
+        "id": "19b3c232-b6d4-6942-b490-547c00b9a7a6",
+        "name": "Sai Prasen 🎯 <thsaipra@microsoft.com>",
+        "displayName": "Sai Prasen 🎯",
+        "url": "https://spsprodwus22.vssps.visualstudio.com/A28f31532-b635-4501-ab58-7eb1d27f889d/_apis/Identities/19b3c232-b6d4-6942-b490-547c00b9a7a6",
+        "_links": { "avatar": { "href": "https://dev.azure.com/O365Exchange/_apis/GraphProfile/MemberAvatars/aad.MTliM2MyMzItYjZkNC03OTQyLWI0OTAtNTQ3YzAwYjlhN2E2" } },
+        "uniqueName": "thsaipra@microsoft.com",
+        "imageUrl": "https://dev.azure.com/O365Exchange/_apis/GraphProfile/MemberAvatars/aad.MTliM2MyMzItYjZkNC03OTQyLWI0OTAtNTQ3YzAwYjlhN2E2",
+        "descriptor": "aad.MTliM2MyMzItYjZkNC03OTQyLWI0OTAtNTQ3YzAwYjlhN2E2"
+      },
+      "revisedDate": "2020-07-27T02:22:49.283Z",
+      "fields": {
+        "System.Rev": {
+          "oldValue": 7,
+          "newValue": 8
+        },
+        "System.AuthorizedDate": {
+          "oldValue": "2020-07-13T12:38:43.48Z",
+          "newValue": "2020-07-21T07:58:18.213Z"
+        },
+        "System.RevisedDate": {
+          "oldValue": "2020-07-21T07:58:18.213Z",
+          "newValue": "2020-07-27T02:22:49.283Z"
+        },
+        "System.ChangedDate": {
+          "oldValue": "2020-07-13T12:38:43.48Z",
+          "newValue": "2020-07-21T07:58:18.213Z"
+        },
+        "System.ChangedBy": {
+          "oldValue": {
+            "displayName": "Pankaj Bhambhani",
+            "url": "https://spsprodwus22.vssps.visualstudio.com/A28f31532-b635-4501-ab58-7eb1d27f889d/_apis/Identities/eed46342-b5fc-45ec-b2ce-2e65cf894136",
+            "_links": { "avatar": { "href": "https://dev.azure.com/O365Exchange/_apis/GraphProfile/MemberAvatars/aad.YTUyMWRjOTctMDdlMS03ODlmLThjNGQtN2MyM2RjMDg0ZmFl" } },
+            "id": "eed46342-b5fc-45ec-b2ce-2e65cf894136",
+            "uniqueName": "panbha@microsoft.com",
+            "imageUrl": "https://dev.azure.com/O365Exchange/_apis/GraphProfile/MemberAvatars/aad.YTUyMWRjOTctMDdlMS03ODlmLThjNGQtN2MyM2RjMDg0ZmFl",
+            "descriptor": "aad.YTUyMWRjOTctMDdlMS03ODlmLThjNGQtN2MyM2RjMDg0ZmFl"
+          },
+          "newValue": {
+            "displayName": "Sai Prasen 🎯",
+            "url": "https://spsprodwus22.vssps.visualstudio.com/A28f31532-b635-4501-ab58-7eb1d27f889d/_apis/Identities/19b3c232-b6d4-6942-b490-547c00b9a7a6",
+            "_links": { "avatar": { "href": "https://dev.azure.com/O365Exchange/_apis/GraphProfile/MemberAvatars/aad.MTliM2MyMzItYjZkNC03OTQyLWI0OTAtNTQ3YzAwYjlhN2E2" } },
+            "id": "19b3c232-b6d4-6942-b490-547c00b9a7a6",
+            "uniqueName": "thsaipra@microsoft.com",
+            "imageUrl": "https://dev.azure.com/O365Exchange/_apis/GraphProfile/MemberAvatars/aad.MTliM2MyMzItYjZkNC03OTQyLWI0OTAtNTQ3YzAwYjlhN2E2",
+            "descriptor": "aad.MTliM2MyMzItYjZkNC03OTQyLWI0OTAtNTQ3YzAwYjlhN2E2"
+          }
+        },
+        "System.AuthorizedAs": {
+          "oldValue": {
+            "displayName": "Pankaj Bhambhani",
+            "url": "https://spsprodwus22.vssps.visualstudio.com/A28f31532-b635-4501-ab58-7eb1d27f889d/_apis/Identities/eed46342-b5fc-45ec-b2ce-2e65cf894136",
+            "_links": { "avatar": { "href": "https://dev.azure.com/O365Exchange/_apis/GraphProfile/MemberAvatars/aad.YTUyMWRjOTctMDdlMS03ODlmLThjNGQtN2MyM2RjMDg0ZmFl" } },
+            "id": "eed46342-b5fc-45ec-b2ce-2e65cf894136",
+            "uniqueName": "panbha@microsoft.com",
+            "imageUrl": "https://dev.azure.com/O365Exchange/_apis/GraphProfile/MemberAvatars/aad.YTUyMWRjOTctMDdlMS03ODlmLThjNGQtN2MyM2RjMDg0ZmFl",
+            "descriptor": "aad.YTUyMWRjOTctMDdlMS03ODlmLThjNGQtN2MyM2RjMDg0ZmFl"
+          },
+          "newValue": {
+            "displayName": "Sai Prasen 🎯",
+            "url": "https://spsprodwus22.vssps.visualstudio.com/A28f31532-b635-4501-ab58-7eb1d27f889d/_apis/Identities/19b3c232-b6d4-6942-b490-547c00b9a7a6",
+            "_links": { "avatar": { "href": "https://dev.azure.com/O365Exchange/_apis/GraphProfile/MemberAvatars/aad.MTliM2MyMzItYjZkNC03OTQyLWI0OTAtNTQ3YzAwYjlhN2E2" } },
+            "id": "19b3c232-b6d4-6942-b490-547c00b9a7a6",
+            "uniqueName": "thsaipra@microsoft.com",
+            "imageUrl": "https://dev.azure.com/O365Exchange/_apis/GraphProfile/MemberAvatars/aad.MTliM2MyMzItYjZkNC03OTQyLWI0OTAtNTQ3YzAwYjlhN2E2",
+            "descriptor": "aad.MTliM2MyMzItYjZkNC03OTQyLWI0OTAtNTQ3YzAwYjlhN2E2"
+          }
+        },
+        "System.PersonId": {
+          "oldValue": 29062737,
+          "newValue": 29060666
+        },
+        "System.Watermark": {
+          "oldValue": 11496761,
+          "newValue": 11626434
+        },
+        "System.CommentCount": {
+          "oldValue": 0,
+          "newValue": 1
+        },
+        "System.History": { "newValue": "<div>2D scrolling is mainly because of &quot;Delete Assessment&quot; button overflowing and Workbench overflowing.</div><div>Delete assessment overflow fix is done.</div><div>For Workbench, we are using <b>SCC</b> &quot;<b>Workbench</b>&quot; Component</div><div><br></div><div><img src=\"https://dev.azure.com/O365Exchange/f2b55896-e832-438d-9220-cbc08c545713/_apis/wit/attachments/71d8a782-8c63-493a-832c-f28f2f43eee6?fileName=image.png\" alt=Image><br></div>" },
+        "System.Tags": {
+          "oldValue": "A11yFeature; A11yMAS; A11yMediumImpact; A11yWCAG2.1; Accessibility; Compliance; ComplianceScore; HCL-E+D; HCL-M365-S&CC; M365SCC; MAS1.4.10",
+          "newValue": "A11yFeature; A11yMAS; A11yMediumImpact; A11yWCAG2.1; Accessibility; Compliance; ComplianceScore; HCL-E+D; HCL-M365-S&CC; M365SCC; MAS1.4.10; SCC"
+        }
+      },
+      "url": "https://dev.azure.com/O365Exchange/f2b55896-e832-438d-9220-cbc08c545713/_apis/wit/workItems/1565614/updates/9"
+    },
+    {
+      "id": 10,
+      "workItemId": 1565614,
+      "rev": 9,
+      "revisedBy": {
+        "id": "eed46342-b5fc-45ec-b2ce-2e65cf894136",
+        "name": "Pankaj Bhambhani <panbha@microsoft.com>",
+        "displayName": "Pankaj Bhambhani",
+        "url": "https://spsprodwus22.vssps.visualstudio.com/A28f31532-b635-4501-ab58-7eb1d27f889d/_apis/Identities/eed46342-b5fc-45ec-b2ce-2e65cf894136",
+        "_links": { "avatar": { "href": "https://dev.azure.com/O365Exchange/_apis/GraphProfile/MemberAvatars/aad.YTUyMWRjOTctMDdlMS03ODlmLThjNGQtN2MyM2RjMDg0ZmFl" } },
+        "uniqueName": "panbha@microsoft.com",
+        "imageUrl": "https://dev.azure.com/O365Exchange/_apis/GraphProfile/MemberAvatars/aad.YTUyMWRjOTctMDdlMS03ODlmLThjNGQtN2MyM2RjMDg0ZmFl",
+        "descriptor": "aad.YTUyMWRjOTctMDdlMS03ODlmLThjNGQtN2MyM2RjMDg0ZmFl"
+      },
+      "revisedDate": "2020-08-22T03:06:03.097Z",
+      "fields": {
+        "System.Rev": {
+          "oldValue": 8,
+          "newValue": 9
+        },
+        "System.AuthorizedDate": {
+          "oldValue": "2020-07-21T07:58:18.213Z",
+          "newValue": "2020-07-27T02:22:49.283Z"
+        },
+        "System.RevisedDate": {
+          "oldValue": "2020-07-27T02:22:49.283Z",
+          "newValue": "2020-08-22T03:06:03.097Z"
+        },
+        "System.AssignedTo": {
+          "oldValue": {
+            "displayName": "Sai Prasen 🎯",
+            "url": "https://spsprodwus22.vssps.visualstudio.com/A28f31532-b635-4501-ab58-7eb1d27f889d/_apis/Identities/19b3c232-b6d4-6942-b490-547c00b9a7a6",
+            "_links": { "avatar": { "href": "https://dev.azure.com/O365Exchange/_apis/GraphProfile/MemberAvatars/aad.MTliM2MyMzItYjZkNC03OTQyLWI0OTAtNTQ3YzAwYjlhN2E2" } },
+            "id": "19b3c232-b6d4-6942-b490-547c00b9a7a6",
+            "uniqueName": "thsaipra@microsoft.com",
+            "imageUrl": "https://dev.azure.com/O365Exchange/_apis/GraphProfile/MemberAvatars/aad.MTliM2MyMzItYjZkNC03OTQyLWI0OTAtNTQ3YzAwYjlhN2E2",
+            "descriptor": "aad.MTliM2MyMzItYjZkNC03OTQyLWI0OTAtNTQ3YzAwYjlhN2E2"
+          },
+          "newValue": {
+            "displayName": "Vadakasai Sudheerkumar",
+            "url": "https://spsprodwus22.vssps.visualstudio.com/A28f31532-b635-4501-ab58-7eb1d27f889d/_apis/Identities/598ee4ea-9e57-6963-9315-cff4bfa570b5",
+            "_links": { "avatar": { "href": "https://dev.azure.com/O365Exchange/_apis/GraphProfile/MemberAvatars/aad.NTk4ZWU0ZWEtOWU1Ny03OTYzLTkzMTUtY2ZmNGJmYTU3MGI1" } },
+            "id": "598ee4ea-9e57-6963-9315-cff4bfa570b5",
+            "uniqueName": "v-vasud@microsoft.com",
+            "imageUrl": "https://dev.azure.com/O365Exchange/_apis/GraphProfile/MemberAvatars/aad.NTk4ZWU0ZWEtOWU1Ny03OTYzLTkzMTUtY2ZmNGJmYTU3MGI1",
+            "descriptor": "aad.NTk4ZWU0ZWEtOWU1Ny03OTYzLTkzMTUtY2ZmNGJmYTU3MGI1"
+          }
+        },
+        "System.ChangedDate": {
+          "oldValue": "2020-07-21T07:58:18.213Z",
+          "newValue": "2020-07-27T02:22:49.283Z"
+        },
+        "System.ChangedBy": {
+          "oldValue": {
+            "displayName": "Sai Prasen 🎯",
+            "url": "https://spsprodwus22.vssps.visualstudio.com/A28f31532-b635-4501-ab58-7eb1d27f889d/_apis/Identities/19b3c232-b6d4-6942-b490-547c00b9a7a6",
+            "_links": { "avatar": { "href": "https://dev.azure.com/O365Exchange/_apis/GraphProfile/MemberAvatars/aad.MTliM2MyMzItYjZkNC03OTQyLWI0OTAtNTQ3YzAwYjlhN2E2" } },
+            "id": "19b3c232-b6d4-6942-b490-547c00b9a7a6",
+            "uniqueName": "thsaipra@microsoft.com",
+            "imageUrl": "https://dev.azure.com/O365Exchange/_apis/GraphProfile/MemberAvatars/aad.MTliM2MyMzItYjZkNC03OTQyLWI0OTAtNTQ3YzAwYjlhN2E2",
+            "descriptor": "aad.MTliM2MyMzItYjZkNC03OTQyLWI0OTAtNTQ3YzAwYjlhN2E2"
+          },
+          "newValue": {
+            "displayName": "Pankaj Bhambhani",
+            "url": "https://spsprodwus22.vssps.visualstudio.com/A28f31532-b635-4501-ab58-7eb1d27f889d/_apis/Identities/eed46342-b5fc-45ec-b2ce-2e65cf894136",
+            "_links": { "avatar": { "href": "https://dev.azure.com/O365Exchange/_apis/GraphProfile/MemberAvatars/aad.YTUyMWRjOTctMDdlMS03ODlmLThjNGQtN2MyM2RjMDg0ZmFl" } },
+            "id": "eed46342-b5fc-45ec-b2ce-2e65cf894136",
+            "uniqueName": "panbha@microsoft.com",
+            "imageUrl": "https://dev.azure.com/O365Exchange/_apis/GraphProfile/MemberAvatars/aad.YTUyMWRjOTctMDdlMS03ODlmLThjNGQtN2MyM2RjMDg0ZmFl",
+            "descriptor": "aad.YTUyMWRjOTctMDdlMS03ODlmLThjNGQtN2MyM2RjMDg0ZmFl"
+          }
+        },
+        "System.AuthorizedAs": {
+          "oldValue": {
+            "displayName": "Sai Prasen 🎯",
+            "url": "https://spsprodwus22.vssps.visualstudio.com/A28f31532-b635-4501-ab58-7eb1d27f889d/_apis/Identities/19b3c232-b6d4-6942-b490-547c00b9a7a6",
+            "_links": { "avatar": { "href": "https://dev.azure.com/O365Exchange/_apis/GraphProfile/MemberAvatars/aad.MTliM2MyMzItYjZkNC03OTQyLWI0OTAtNTQ3YzAwYjlhN2E2" } },
+            "id": "19b3c232-b6d4-6942-b490-547c00b9a7a6",
+            "uniqueName": "thsaipra@microsoft.com",
+            "imageUrl": "https://dev.azure.com/O365Exchange/_apis/GraphProfile/MemberAvatars/aad.MTliM2MyMzItYjZkNC03OTQyLWI0OTAtNTQ3YzAwYjlhN2E2",
+            "descriptor": "aad.MTliM2MyMzItYjZkNC03OTQyLWI0OTAtNTQ3YzAwYjlhN2E2"
+          },
+          "newValue": {
+            "displayName": "Pankaj Bhambhani",
+            "url": "https://spsprodwus22.vssps.visualstudio.com/A28f31532-b635-4501-ab58-7eb1d27f889d/_apis/Identities/eed46342-b5fc-45ec-b2ce-2e65cf894136",
+            "_links": { "avatar": { "href": "https://dev.azure.com/O365Exchange/_apis/GraphProfile/MemberAvatars/aad.YTUyMWRjOTctMDdlMS03ODlmLThjNGQtN2MyM2RjMDg0ZmFl" } },
+            "id": "eed46342-b5fc-45ec-b2ce-2e65cf894136",
+            "uniqueName": "panbha@microsoft.com",
+            "imageUrl": "https://dev.azure.com/O365Exchange/_apis/GraphProfile/MemberAvatars/aad.YTUyMWRjOTctMDdlMS03ODlmLThjNGQtN2MyM2RjMDg0ZmFl",
+            "descriptor": "aad.YTUyMWRjOTctMDdlMS03ODlmLThjNGQtN2MyM2RjMDg0ZmFl"
+          }
+        },
+        "System.PersonId": {
+          "oldValue": 29060666,
+          "newValue": 29062737
+        },
+        "System.Watermark": {
+          "oldValue": 11626434,
+          "newValue": 11713714
+        },
+        "System.CommentCount": {
+          "oldValue": 1,
+          "newValue": 2
+        },
+        "System.History": {
+          "oldValue": "<div>2D scrolling is mainly because of &quot;Delete Assessment&quot; button overflowing and Workbench overflowing.</div><div>Delete assessment overflow fix is done.</div><div>For Workbench, we are using <b>SCC</b> &quot;<b>Workbench</b>&quot; Component</div><div><br></div><div><img src=\"https://dev.azure.com/O365Exchange/f2b55896-e832-438d-9220-cbc08c545713/_apis/wit/attachments/71d8a782-8c63-493a-832c-f28f2f43eee6?fileName=image.png\" alt=Image><br></div>",
+          "newValue": "<a href=\"https://o365exchange.visualstudio.com/IP%20Engineering/_queries/query/ac4d14d9-e735-451d-ad51-b120d7569a84#\" data-vss-mention=\"version:2.0,598ee4ea-9e57-6963-9315-cff4bfa570b5\" style=\"box-sizing:border-box;text-decoration:underline;cursor:pointer;\">@Vadakasai Sudheerkumar</a><span style=\"display:inline !important;\">&nbsp; this is SCC bug. Please check.</span>"
+        }
+      },
+      "url": "https://dev.azure.com/O365Exchange/f2b55896-e832-438d-9220-cbc08c545713/_apis/wit/workItems/1565614/updates/10"
+    },
+    {
+      "id": 11,
+      "workItemId": 1565614,
+      "rev": 10,
+      "revisedBy": {
+        "id": "eed46342-b5fc-45ec-b2ce-2e65cf894136",
+        "name": "Pankaj Bhambhani <panbha@microsoft.com>",
+        "displayName": "Pankaj Bhambhani",
+        "url": "https://spsprodwus22.vssps.visualstudio.com/A28f31532-b635-4501-ab58-7eb1d27f889d/_apis/Identities/eed46342-b5fc-45ec-b2ce-2e65cf894136",
+        "_links": { "avatar": { "href": "https://dev.azure.com/O365Exchange/_apis/GraphProfile/MemberAvatars/aad.YTUyMWRjOTctMDdlMS03ODlmLThjNGQtN2MyM2RjMDg0ZmFl" } },
+        "uniqueName": "panbha@microsoft.com",
+        "imageUrl": "https://dev.azure.com/O365Exchange/_apis/GraphProfile/MemberAvatars/aad.YTUyMWRjOTctMDdlMS03ODlmLThjNGQtN2MyM2RjMDg0ZmFl",
+        "descriptor": "aad.YTUyMWRjOTctMDdlMS03ODlmLThjNGQtN2MyM2RjMDg0ZmFl"
+      },
+      "revisedDate": "2020-08-28T04:47:18.113Z",
+      "fields": {
+        "System.Rev": {
+          "oldValue": 9,
+          "newValue": 10
+        },
+        "System.AuthorizedDate": {
+          "oldValue": "2020-07-27T02:22:49.283Z",
+          "newValue": "2020-08-22T03:06:03.097Z"
+        },
+        "System.RevisedDate": {
+          "oldValue": "2020-08-22T03:06:03.097Z",
+          "newValue": "2020-08-28T04:47:18.113Z"
+        },
+        "System.ChangedDate": {
+          "oldValue": "2020-07-27T02:22:49.283Z",
+          "newValue": "2020-08-22T03:06:03.097Z"
+        },
+        "System.Watermark": {
+          "oldValue": 11713714,
+          "newValue": 12066024
+        },
+        "System.CommentCount": {
+          "oldValue": 2,
+          "newValue": 3
+        },
+        "System.History": {
+          "oldValue": "<a href=\"https://o365exchange.visualstudio.com/IP%20Engineering/_queries/query/ac4d14d9-e735-451d-ad51-b120d7569a84#\" data-vss-mention=\"version:2.0,598ee4ea-9e57-6963-9315-cff4bfa570b5\" style=\"box-sizing:border-box;text-decoration:underline;cursor:pointer;\">@Vadakasai Sudheerkumar</a><span style=\"display:inline !important;\">&nbsp; this is SCC bug. Please check.</span>",
+          "newValue": "<div><a href=\"#\" data-vss-mention=\"version:2.0,598ee4ea-9e57-6963-9315-cff4bfa570b5\">@Vadakasai Sudheerkumar</a>&nbsp; any update?</div>"
+        }
+      },
+      "url": "https://dev.azure.com/O365Exchange/f2b55896-e832-438d-9220-cbc08c545713/_apis/wit/workItems/1565614/updates/11"
+    },
+    {
+      "id": 12,
+      "workItemId": 1565614,
+      "rev": 11,
+      "revisedBy": {
+        "id": "00b7980b-6b87-4209-855b-79aebe16dee5",
+        "name": "Amit Walia <v-amiwa@microsoft.com>",
+        "displayName": "Amit Walia",
+        "url": "https://spsprodwus22.vssps.visualstudio.com/A28f31532-b635-4501-ab58-7eb1d27f889d/_apis/Identities/00b7980b-6b87-4209-855b-79aebe16dee5",
+        "_links": { "avatar": { "href": "https://dev.azure.com/O365Exchange/_apis/GraphProfile/MemberAvatars/aad.YTFiYjQzY2EtMjUyZi03MTZjLWFmMTQtNjIyOTdhOTk0YzI2" } },
+        "uniqueName": "v-amiwa@microsoft.com",
+        "imageUrl": "https://dev.azure.com/O365Exchange/_apis/GraphProfile/MemberAvatars/aad.YTFiYjQzY2EtMjUyZi03MTZjLWFmMTQtNjIyOTdhOTk0YzI2",
+        "descriptor": "aad.YTFiYjQzY2EtMjUyZi03MTZjLWFmMTQtNjIyOTdhOTk0YzI2"
+      },
+      "revisedDate": "2020-12-03T00:35:45.107Z",
+      "fields": {
+        "System.Rev": {
+          "oldValue": 10,
+          "newValue": 11
+        },
+        "System.AuthorizedDate": {
+          "oldValue": "2020-08-22T03:06:03.097Z",
+          "newValue": "2020-08-28T04:47:18.113Z"
+        },
+        "System.RevisedDate": {
+          "oldValue": "2020-08-28T04:47:18.113Z",
+          "newValue": "2020-12-03T00:35:45.107Z"
+        },
+        "System.AssignedTo": {
+          "oldValue": {
+            "displayName": "Vadakasai Sudheerkumar",
+            "url": "https://spsprodwus22.vssps.visualstudio.com/A28f31532-b635-4501-ab58-7eb1d27f889d/_apis/Identities/598ee4ea-9e57-6963-9315-cff4bfa570b5",
+            "_links": { "avatar": { "href": "https://dev.azure.com/O365Exchange/_apis/GraphProfile/MemberAvatars/aad.NTk4ZWU0ZWEtOWU1Ny03OTYzLTkzMTUtY2ZmNGJmYTU3MGI1" } },
+            "id": "598ee4ea-9e57-6963-9315-cff4bfa570b5",
+            "uniqueName": "v-vasud@microsoft.com",
+            "imageUrl": "https://dev.azure.com/O365Exchange/_apis/GraphProfile/MemberAvatars/aad.NTk4ZWU0ZWEtOWU1Ny03OTYzLTkzMTUtY2ZmNGJmYTU3MGI1",
+            "descriptor": "aad.NTk4ZWU0ZWEtOWU1Ny03OTYzLTkzMTUtY2ZmNGJmYTU3MGI1"
+          },
+          "newValue": {
+            "displayName": "Ginna Groover 🚧",
+            "url": "https://spsprodwus22.vssps.visualstudio.com/A28f31532-b635-4501-ab58-7eb1d27f889d/_apis/Identities/e79397a6-a19a-617b-be47-ad1dda39556e",
+            "_links": { "avatar": { "href": "https://dev.azure.com/O365Exchange/_apis/GraphProfile/MemberAvatars/aad.ZTc5Mzk3YTYtYTE5YS03MTdiLWJlNDctYWQxZGRhMzk1NTZl" } },
+            "id": "e79397a6-a19a-617b-be47-ad1dda39556e",
+            "uniqueName": "gigroove@microsoft.com",
+            "imageUrl": "https://dev.azure.com/O365Exchange/_apis/GraphProfile/MemberAvatars/aad.ZTc5Mzk3YTYtYTE5YS03MTdiLWJlNDctYWQxZGRhMzk1NTZl",
+            "descriptor": "aad.ZTc5Mzk3YTYtYTE5YS03MTdiLWJlNDctYWQxZGRhMzk1NTZl"
+          }
+        },
+        "System.ChangedDate": {
+          "oldValue": "2020-08-22T03:06:03.097Z",
+          "newValue": "2020-08-28T04:47:18.113Z"
+        },
+        "System.ChangedBy": {
+          "oldValue": {
+            "displayName": "Pankaj Bhambhani",
+            "url": "https://spsprodwus22.vssps.visualstudio.com/A28f31532-b635-4501-ab58-7eb1d27f889d/_apis/Identities/eed46342-b5fc-45ec-b2ce-2e65cf894136",
+            "_links": { "avatar": { "href": "https://dev.azure.com/O365Exchange/_apis/GraphProfile/MemberAvatars/aad.YTUyMWRjOTctMDdlMS03ODlmLThjNGQtN2MyM2RjMDg0ZmFl" } },
+            "id": "eed46342-b5fc-45ec-b2ce-2e65cf894136",
+            "uniqueName": "panbha@microsoft.com",
+            "imageUrl": "https://dev.azure.com/O365Exchange/_apis/GraphProfile/MemberAvatars/aad.YTUyMWRjOTctMDdlMS03ODlmLThjNGQtN2MyM2RjMDg0ZmFl",
+            "descriptor": "aad.YTUyMWRjOTctMDdlMS03ODlmLThjNGQtN2MyM2RjMDg0ZmFl"
+          },
+          "newValue": {
+            "displayName": "Amit Walia",
+            "url": "https://spsprodwus22.vssps.visualstudio.com/A28f31532-b635-4501-ab58-7eb1d27f889d/_apis/Identities/00b7980b-6b87-4209-855b-79aebe16dee5",
+            "_links": { "avatar": { "href": "https://dev.azure.com/O365Exchange/_apis/GraphProfile/MemberAvatars/aad.YTFiYjQzY2EtMjUyZi03MTZjLWFmMTQtNjIyOTdhOTk0YzI2" } },
+            "id": "00b7980b-6b87-4209-855b-79aebe16dee5",
+            "uniqueName": "v-amiwa@microsoft.com",
+            "imageUrl": "https://dev.azure.com/O365Exchange/_apis/GraphProfile/MemberAvatars/aad.YTFiYjQzY2EtMjUyZi03MTZjLWFmMTQtNjIyOTdhOTk0YzI2",
+            "descriptor": "aad.YTFiYjQzY2EtMjUyZi03MTZjLWFmMTQtNjIyOTdhOTk0YzI2"
+          }
+        },
+        "System.AuthorizedAs": {
+          "oldValue": {
+            "displayName": "Pankaj Bhambhani",
+            "url": "https://spsprodwus22.vssps.visualstudio.com/A28f31532-b635-4501-ab58-7eb1d27f889d/_apis/Identities/eed46342-b5fc-45ec-b2ce-2e65cf894136",
+            "_links": { "avatar": { "href": "https://dev.azure.com/O365Exchange/_apis/GraphProfile/MemberAvatars/aad.YTUyMWRjOTctMDdlMS03ODlmLThjNGQtN2MyM2RjMDg0ZmFl" } },
+            "id": "eed46342-b5fc-45ec-b2ce-2e65cf894136",
+            "uniqueName": "panbha@microsoft.com",
+            "imageUrl": "https://dev.azure.com/O365Exchange/_apis/GraphProfile/MemberAvatars/aad.YTUyMWRjOTctMDdlMS03ODlmLThjNGQtN2MyM2RjMDg0ZmFl",
+            "descriptor": "aad.YTUyMWRjOTctMDdlMS03ODlmLThjNGQtN2MyM2RjMDg0ZmFl"
+          },
+          "newValue": {
+            "displayName": "Amit Walia",
+            "url": "https://spsprodwus22.vssps.visualstudio.com/A28f31532-b635-4501-ab58-7eb1d27f889d/_apis/Identities/00b7980b-6b87-4209-855b-79aebe16dee5",
+            "_links": { "avatar": { "href": "https://dev.azure.com/O365Exchange/_apis/GraphProfile/MemberAvatars/aad.YTFiYjQzY2EtMjUyZi03MTZjLWFmMTQtNjIyOTdhOTk0YzI2" } },
+            "id": "00b7980b-6b87-4209-855b-79aebe16dee5",
+            "uniqueName": "v-amiwa@microsoft.com",
+            "imageUrl": "https://dev.azure.com/O365Exchange/_apis/GraphProfile/MemberAvatars/aad.YTFiYjQzY2EtMjUyZi03MTZjLWFmMTQtNjIyOTdhOTk0YzI2",
+            "descriptor": "aad.YTFiYjQzY2EtMjUyZi03MTZjLWFmMTQtNjIyOTdhOTk0YzI2"
+          }
+        },
+        "System.PersonId": {
+          "oldValue": 29062737,
+          "newValue": 29056031
+        },
+        "System.Watermark": {
+          "oldValue": 12066024,
+          "newValue": 12162946
+        },
+        "System.Tags": {
+          "oldValue": "A11yFeature; A11yMAS; A11yMediumImpact; A11yWCAG2.1; Accessibility; Compliance; ComplianceScore; HCL-E+D; HCL-M365-S&CC; M365SCC; MAS1.4.10; SCC",
+          "newValue": "A11yFeature; A11yMAS; A11yMediumImpact; A11yWCAG2.1; Accessibility; CommonControl; Compliance; ComplianceScore; HCL-E+D; HCL-M365-S&CC; M365SCC; MAS1.4.10; SCC"
+        },
+        "System.Parent": {
+          "oldValue": 1566638,
+          "newValue": 1297305
+        }
+      },
+      "url": "https://dev.azure.com/O365Exchange/f2b55896-e832-438d-9220-cbc08c545713/_apis/wit/workItems/1565614/updates/12"
+    },
+    {
+      "id": 13,
+      "workItemId": 1565614,
+      "rev": 11,
+      "revisedBy": {
+        "id": "eed46342-b5fc-45ec-b2ce-2e65cf894136",
+        "name": "Pankaj Bhambhani <panbha@microsoft.com>",
+        "displayName": "Pankaj Bhambhani",
+        "url": "https://spsprodwus22.vssps.visualstudio.com/A28f31532-b635-4501-ab58-7eb1d27f889d/_apis/Identities/eed46342-b5fc-45ec-b2ce-2e65cf894136",
+        "_links": { "avatar": { "href": "https://dev.azure.com/O365Exchange/_apis/GraphProfile/MemberAvatars/aad.YTUyMWRjOTctMDdlMS03ODlmLThjNGQtN2MyM2RjMDg0ZmFl" } },
+        "uniqueName": "panbha@microsoft.com",
+        "imageUrl": "https://dev.azure.com/O365Exchange/_apis/GraphProfile/MemberAvatars/aad.YTUyMWRjOTctMDdlMS03ODlmLThjNGQtN2MyM2RjMDg0ZmFl",
+        "descriptor": "aad.YTUyMWRjOTctMDdlMS03ODlmLThjNGQtN2MyM2RjMDg0ZmFl"
+      },
+      "revisedDate": "2020-09-06T13:04:47.82Z",
+      "relations": {
+        "added": [
+          {
+            "rel": "System.LinkTypes.Hierarchy-Reverse",
+            "url": "https://dev.azure.com/O365Exchange/f2b55896-e832-438d-9220-cbc08c545713/_apis/wit/workItems/1297305",
+            "attributes": {
+              "isLocked": false,
+              "name": "Parent"
+            }
+          },
+          {
+            "rel": "System.LinkTypes.Related",
+            "url": "https://dev.azure.com/O365Exchange/f2b55896-e832-438d-9220-cbc08c545713/_apis/wit/workItems/1566638",
+            "attributes": {
+              "isLocked": false,
+              "name": "Related"
+            }
+          }
+        ],
+        "removed": [
+          {
+            "rel": "System.LinkTypes.Hierarchy-Reverse",
+            "url": "https://dev.azure.com/O365Exchange/f2b55896-e832-438d-9220-cbc08c545713/_apis/wit/workItems/1566638",
+            "attributes": {
+              "isLocked": false,
+              "name": "Parent"
+            }
+          }
+        ]
+      },
+      "url": "https://dev.azure.com/O365Exchange/f2b55896-e832-438d-9220-cbc08c545713/_apis/wit/workItems/1565614/updates/13"
+    },
+    {
+      "id": 14,
+      "workItemId": 1565614,
+      "rev": 12,
+      "revisedBy": {
+        "id": "e79397a6-a19a-617b-be47-ad1dda39556e",
+        "name": "Ginna Groover 🚧 <gigroove@microsoft.com>",
+        "displayName": "Ginna Groover 🚧",
+        "url": "https://spsprodwus22.vssps.visualstudio.com/A28f31532-b635-4501-ab58-7eb1d27f889d/_apis/Identities/e79397a6-a19a-617b-be47-ad1dda39556e",
+        "_links": { "avatar": { "href": "https://dev.azure.com/O365Exchange/_apis/GraphProfile/MemberAvatars/aad.ZTc5Mzk3YTYtYTE5YS03MTdiLWJlNDctYWQxZGRhMzk1NTZl" } },
+        "uniqueName": "gigroove@microsoft.com",
+        "imageUrl": "https://dev.azure.com/O365Exchange/_apis/GraphProfile/MemberAvatars/aad.ZTc5Mzk3YTYtYTE5YS03MTdiLWJlNDctYWQxZGRhMzk1NTZl",
+        "descriptor": "aad.ZTc5Mzk3YTYtYTE5YS03MTdiLWJlNDctYWQxZGRhMzk1NTZl"
+      },
+      "revisedDate": "2020-12-04T22:42:24.23Z",
+      "fields": {
+        "System.Rev": {
+          "oldValue": 11,
+          "newValue": 12
+        },
+        "System.AuthorizedDate": {
+          "oldValue": "2020-08-28T04:47:18.113Z",
+          "newValue": "2020-12-03T00:35:45.107Z"
+        },
+        "System.RevisedDate": {
+          "oldValue": "2020-12-03T00:35:45.107Z",
+          "newValue": "2020-12-04T22:42:24.23Z"
+        },
+        "System.AssignedTo": {
+          "oldValue": {
+            "displayName": "Ginna Groover 🚧",
+            "url": "https://spsprodwus22.vssps.visualstudio.com/A28f31532-b635-4501-ab58-7eb1d27f889d/_apis/Identities/e79397a6-a19a-617b-be47-ad1dda39556e",
+            "_links": { "avatar": { "href": "https://dev.azure.com/O365Exchange/_apis/GraphProfile/MemberAvatars/aad.ZTc5Mzk3YTYtYTE5YS03MTdiLWJlNDctYWQxZGRhMzk1NTZl" } },
+            "id": "e79397a6-a19a-617b-be47-ad1dda39556e",
+            "uniqueName": "gigroove@microsoft.com",
+            "imageUrl": "https://dev.azure.com/O365Exchange/_apis/GraphProfile/MemberAvatars/aad.ZTc5Mzk3YTYtYTE5YS03MTdiLWJlNDctYWQxZGRhMzk1NTZl",
+            "descriptor": "aad.ZTc5Mzk3YTYtYTE5YS03MTdiLWJlNDctYWQxZGRhMzk1NTZl"
+          }
+        },
+        "System.ChangedDate": {
+          "oldValue": "2020-08-28T04:47:18.113Z",
+          "newValue": "2020-12-03T00:35:45.107Z"
+        },
+        "System.ChangedBy": {
+          "oldValue": {
+            "displayName": "Amit Walia",
+            "url": "https://spsprodwus22.vssps.visualstudio.com/A28f31532-b635-4501-ab58-7eb1d27f889d/_apis/Identities/00b7980b-6b87-4209-855b-79aebe16dee5",
+            "_links": { "avatar": { "href": "https://dev.azure.com/O365Exchange/_apis/GraphProfile/MemberAvatars/aad.YTFiYjQzY2EtMjUyZi03MTZjLWFmMTQtNjIyOTdhOTk0YzI2" } },
+            "id": "00b7980b-6b87-4209-855b-79aebe16dee5",
+            "uniqueName": "v-amiwa@microsoft.com",
+            "imageUrl": "https://dev.azure.com/O365Exchange/_apis/GraphProfile/MemberAvatars/aad.YTFiYjQzY2EtMjUyZi03MTZjLWFmMTQtNjIyOTdhOTk0YzI2",
+            "descriptor": "aad.YTFiYjQzY2EtMjUyZi03MTZjLWFmMTQtNjIyOTdhOTk0YzI2"
+          },
+          "newValue": {
+            "displayName": "Ginna Groover 🚧",
+            "url": "https://spsprodwus22.vssps.visualstudio.com/A28f31532-b635-4501-ab58-7eb1d27f889d/_apis/Identities/e79397a6-a19a-617b-be47-ad1dda39556e",
+            "_links": { "avatar": { "href": "https://dev.azure.com/O365Exchange/_apis/GraphProfile/MemberAvatars/aad.ZTc5Mzk3YTYtYTE5YS03MTdiLWJlNDctYWQxZGRhMzk1NTZl" } },
+            "id": "e79397a6-a19a-617b-be47-ad1dda39556e",
+            "uniqueName": "gigroove@microsoft.com",
+            "imageUrl": "https://dev.azure.com/O365Exchange/_apis/GraphProfile/MemberAvatars/aad.ZTc5Mzk3YTYtYTE5YS03MTdiLWJlNDctYWQxZGRhMzk1NTZl",
+            "descriptor": "aad.ZTc5Mzk3YTYtYTE5YS03MTdiLWJlNDctYWQxZGRhMzk1NTZl"
+          }
+        },
+        "System.AuthorizedAs": {
+          "oldValue": {
+            "displayName": "Amit Walia",
+            "url": "https://spsprodwus22.vssps.visualstudio.com/A28f31532-b635-4501-ab58-7eb1d27f889d/_apis/Identities/00b7980b-6b87-4209-855b-79aebe16dee5",
+            "_links": { "avatar": { "href": "https://dev.azure.com/O365Exchange/_apis/GraphProfile/MemberAvatars/aad.YTFiYjQzY2EtMjUyZi03MTZjLWFmMTQtNjIyOTdhOTk0YzI2" } },
+            "id": "00b7980b-6b87-4209-855b-79aebe16dee5",
+            "uniqueName": "v-amiwa@microsoft.com",
+            "imageUrl": "https://dev.azure.com/O365Exchange/_apis/GraphProfile/MemberAvatars/aad.YTFiYjQzY2EtMjUyZi03MTZjLWFmMTQtNjIyOTdhOTk0YzI2",
+            "descriptor": "aad.YTFiYjQzY2EtMjUyZi03MTZjLWFmMTQtNjIyOTdhOTk0YzI2"
+          },
+          "newValue": {
+            "displayName": "Ginna Groover 🚧",
+            "url": "https://spsprodwus22.vssps.visualstudio.com/A28f31532-b635-4501-ab58-7eb1d27f889d/_apis/Identities/e79397a6-a19a-617b-be47-ad1dda39556e",
+            "_links": { "avatar": { "href": "https://dev.azure.com/O365Exchange/_apis/GraphProfile/MemberAvatars/aad.ZTc5Mzk3YTYtYTE5YS03MTdiLWJlNDctYWQxZGRhMzk1NTZl" } },
+            "id": "e79397a6-a19a-617b-be47-ad1dda39556e",
+            "uniqueName": "gigroove@microsoft.com",
+            "imageUrl": "https://dev.azure.com/O365Exchange/_apis/GraphProfile/MemberAvatars/aad.ZTc5Mzk3YTYtYTE5YS03MTdiLWJlNDctYWQxZGRhMzk1NTZl",
+            "descriptor": "aad.ZTc5Mzk3YTYtYTE5YS03MTdiLWJlNDctYWQxZGRhMzk1NTZl"
+          }
+        },
+        "System.PersonId": {
+          "oldValue": 29056031,
+          "newValue": 29039930
+        },
+        "System.Watermark": {
+          "oldValue": 12162946,
+          "newValue": 13778809
+        }
+      },
+      "url": "https://dev.azure.com/O365Exchange/f2b55896-e832-438d-9220-cbc08c545713/_apis/wit/workItems/1565614/updates/14"
+    },
+    {
+      "id": 15,
+      "workItemId": 1565614,
+      "rev": 13,
+      "revisedBy": {
+        "id": "4124bfc9-8295-4903-b96e-ea7c4eeaf2f1",
+        "name": "George Li <georgeli@microsoft.com>",
+        "displayName": "George Li",
+        "url": "https://spsprodwus22.vssps.visualstudio.com/A28f31532-b635-4501-ab58-7eb1d27f889d/_apis/Identities/4124bfc9-8295-4903-b96e-ea7c4eeaf2f1",
+        "_links": { "avatar": { "href": "https://dev.azure.com/O365Exchange/_apis/GraphProfile/MemberAvatars/aad.MjA3MzAxYmYtMDlmMC03ZDI0LWFiZGUtOGU1NGQ0NDFkZmVh" } },
+        "uniqueName": "georgeli@microsoft.com",
+        "imageUrl": "https://dev.azure.com/O365Exchange/_apis/GraphProfile/MemberAvatars/aad.MjA3MzAxYmYtMDlmMC03ZDI0LWFiZGUtOGU1NGQ0NDFkZmVh",
+        "descriptor": "aad.MjA3MzAxYmYtMDlmMC03ZDI0LWFiZGUtOGU1NGQ0NDFkZmVh"
+      },
+      "revisedDate": "2020-12-28T05:55:03.01Z",
+      "fields": {
+        "System.Rev": {
+          "oldValue": 12,
+          "newValue": 13
+        },
+        "System.AuthorizedDate": {
+          "oldValue": "2020-12-03T00:35:45.107Z",
+          "newValue": "2020-12-04T22:42:24.23Z"
+        },
+        "System.RevisedDate": {
+          "oldValue": "2020-12-04T22:42:24.23Z",
+          "newValue": "2020-12-28T05:55:03.01Z"
+        },
+        "System.AssignedTo": {
+          "newValue": {
+            "displayName": "Pankaj Bhambhani",
+            "url": "https://spsprodwus22.vssps.visualstudio.com/A28f31532-b635-4501-ab58-7eb1d27f889d/_apis/Identities/eed46342-b5fc-45ec-b2ce-2e65cf894136",
+            "_links": { "avatar": { "href": "https://dev.azure.com/O365Exchange/_apis/GraphProfile/MemberAvatars/aad.YTUyMWRjOTctMDdlMS03ODlmLThjNGQtN2MyM2RjMDg0ZmFl" } },
+            "id": "eed46342-b5fc-45ec-b2ce-2e65cf894136",
+            "uniqueName": "panbha@microsoft.com",
+            "imageUrl": "https://dev.azure.com/O365Exchange/_apis/GraphProfile/MemberAvatars/aad.YTUyMWRjOTctMDdlMS03ODlmLThjNGQtN2MyM2RjMDg0ZmFl",
+            "descriptor": "aad.YTUyMWRjOTctMDdlMS03ODlmLThjNGQtN2MyM2RjMDg0ZmFl"
+          }
+        },
+        "System.ChangedDate": {
+          "oldValue": "2020-12-03T00:35:45.107Z",
+          "newValue": "2020-12-04T22:42:24.23Z"
+        },
+        "System.ChangedBy": {
+          "oldValue": {
+            "displayName": "Ginna Groover 🚧",
+            "url": "https://spsprodwus22.vssps.visualstudio.com/A28f31532-b635-4501-ab58-7eb1d27f889d/_apis/Identities/e79397a6-a19a-617b-be47-ad1dda39556e",
+            "_links": { "avatar": { "href": "https://dev.azure.com/O365Exchange/_apis/GraphProfile/MemberAvatars/aad.ZTc5Mzk3YTYtYTE5YS03MTdiLWJlNDctYWQxZGRhMzk1NTZl" } },
+            "id": "e79397a6-a19a-617b-be47-ad1dda39556e",
+            "uniqueName": "gigroove@microsoft.com",
+            "imageUrl": "https://dev.azure.com/O365Exchange/_apis/GraphProfile/MemberAvatars/aad.ZTc5Mzk3YTYtYTE5YS03MTdiLWJlNDctYWQxZGRhMzk1NTZl",
+            "descriptor": "aad.ZTc5Mzk3YTYtYTE5YS03MTdiLWJlNDctYWQxZGRhMzk1NTZl"
+          },
+          "newValue": {
+            "displayName": "George Li",
+            "url": "https://spsprodwus22.vssps.visualstudio.com/A28f31532-b635-4501-ab58-7eb1d27f889d/_apis/Identities/4124bfc9-8295-4903-b96e-ea7c4eeaf2f1",
+            "_links": { "avatar": { "href": "https://dev.azure.com/O365Exchange/_apis/GraphProfile/MemberAvatars/aad.MjA3MzAxYmYtMDlmMC03ZDI0LWFiZGUtOGU1NGQ0NDFkZmVh" } },
+            "id": "4124bfc9-8295-4903-b96e-ea7c4eeaf2f1",
+            "uniqueName": "georgeli@microsoft.com",
+            "imageUrl": "https://dev.azure.com/O365Exchange/_apis/GraphProfile/MemberAvatars/aad.MjA3MzAxYmYtMDlmMC03ZDI0LWFiZGUtOGU1NGQ0NDFkZmVh",
+            "descriptor": "aad.MjA3MzAxYmYtMDlmMC03ZDI0LWFiZGUtOGU1NGQ0NDFkZmVh"
+          }
+        },
+        "System.AuthorizedAs": {
+          "oldValue": {
+            "displayName": "Ginna Groover 🚧",
+            "url": "https://spsprodwus22.vssps.visualstudio.com/A28f31532-b635-4501-ab58-7eb1d27f889d/_apis/Identities/e79397a6-a19a-617b-be47-ad1dda39556e",
+            "_links": { "avatar": { "href": "https://dev.azure.com/O365Exchange/_apis/GraphProfile/MemberAvatars/aad.ZTc5Mzk3YTYtYTE5YS03MTdiLWJlNDctYWQxZGRhMzk1NTZl" } },
+            "id": "e79397a6-a19a-617b-be47-ad1dda39556e",
+            "uniqueName": "gigroove@microsoft.com",
+            "imageUrl": "https://dev.azure.com/O365Exchange/_apis/GraphProfile/MemberAvatars/aad.ZTc5Mzk3YTYtYTE5YS03MTdiLWJlNDctYWQxZGRhMzk1NTZl",
+            "descriptor": "aad.ZTc5Mzk3YTYtYTE5YS03MTdiLWJlNDctYWQxZGRhMzk1NTZl"
+          },
+          "newValue": {
+            "displayName": "George Li",
+            "url": "https://spsprodwus22.vssps.visualstudio.com/A28f31532-b635-4501-ab58-7eb1d27f889d/_apis/Identities/4124bfc9-8295-4903-b96e-ea7c4eeaf2f1",
+            "_links": { "avatar": { "href": "https://dev.azure.com/O365Exchange/_apis/GraphProfile/MemberAvatars/aad.MjA3MzAxYmYtMDlmMC03ZDI0LWFiZGUtOGU1NGQ0NDFkZmVh" } },
+            "id": "4124bfc9-8295-4903-b96e-ea7c4eeaf2f1",
+            "uniqueName": "georgeli@microsoft.com",
+            "imageUrl": "https://dev.azure.com/O365Exchange/_apis/GraphProfile/MemberAvatars/aad.MjA3MzAxYmYtMDlmMC03ZDI0LWFiZGUtOGU1NGQ0NDFkZmVh",
+            "descriptor": "aad.MjA3MzAxYmYtMDlmMC03ZDI0LWFiZGUtOGU1NGQ0NDFkZmVh"
+          }
+        },
+        "System.PersonId": {
+          "oldValue": 29039930,
+          "newValue": 16986483
+        },
+        "System.Watermark": {
+          "oldValue": 13778809,
+          "newValue": 13812697
+        }
+      },
+      "url": "https://dev.azure.com/O365Exchange/f2b55896-e832-438d-9220-cbc08c545713/_apis/wit/workItems/1565614/updates/15"
+    },
+    {
+      "id": 16,
+      "workItemId": 1565614,
+      "rev": 14,
+      "revisedBy": {
+        "id": "e261cb6e-d727-6de9-8d34-aace8634cca4",
+        "name": "Wei Si(Pactera)🛩🍤❤👍👍 <v-siwe@microsoft.com>",
+        "displayName": "Wei Si(Pactera)🛩🍤❤👍👍",
+        "url": "https://spsprodwus22.vssps.visualstudio.com/A28f31532-b635-4501-ab58-7eb1d27f889d/_apis/Identities/e261cb6e-d727-6de9-8d34-aace8634cca4",
+        "_links": { "avatar": { "href": "https://dev.azure.com/O365Exchange/_apis/GraphProfile/MemberAvatars/aad.ZTI2MWNiNmUtZDcyNy03ZGU5LThkMzQtYWFjZTg2MzRjY2E0" } },
+        "uniqueName": "v-siwe@microsoft.com",
+        "imageUrl": "https://dev.azure.com/O365Exchange/_apis/GraphProfile/MemberAvatars/aad.ZTI2MWNiNmUtZDcyNy03ZGU5LThkMzQtYWFjZTg2MzRjY2E0",
+        "descriptor": "aad.ZTI2MWNiNmUtZDcyNy03ZGU5LThkMzQtYWFjZTg2MzRjY2E0"
+      },
+      "revisedDate": "2020-12-28T08:16:35.09Z",
+      "fields": {
+        "System.Rev": {
+          "oldValue": 13,
+          "newValue": 14
+        },
+        "System.AuthorizedDate": {
+          "oldValue": "2020-12-04T22:42:24.23Z",
+          "newValue": "2020-12-28T05:55:03.01Z"
+        },
+        "System.RevisedDate": {
+          "oldValue": "2020-12-28T05:55:03.01Z",
+          "newValue": "2020-12-28T08:16:35.09Z"
+        },
+        "System.ChangedDate": {
+          "oldValue": "2020-12-04T22:42:24.23Z",
+          "newValue": "2020-12-28T05:55:03.01Z"
+        },
+        "System.ChangedBy": {
+          "oldValue": {
+            "displayName": "George Li",
+            "url": "https://spsprodwus22.vssps.visualstudio.com/A28f31532-b635-4501-ab58-7eb1d27f889d/_apis/Identities/4124bfc9-8295-4903-b96e-ea7c4eeaf2f1",
+            "_links": { "avatar": { "href": "https://dev.azure.com/O365Exchange/_apis/GraphProfile/MemberAvatars/aad.MjA3MzAxYmYtMDlmMC03ZDI0LWFiZGUtOGU1NGQ0NDFkZmVh" } },
+            "id": "4124bfc9-8295-4903-b96e-ea7c4eeaf2f1",
+            "uniqueName": "georgeli@microsoft.com",
+            "imageUrl": "https://dev.azure.com/O365Exchange/_apis/GraphProfile/MemberAvatars/aad.MjA3MzAxYmYtMDlmMC03ZDI0LWFiZGUtOGU1NGQ0NDFkZmVh",
+            "descriptor": "aad.MjA3MzAxYmYtMDlmMC03ZDI0LWFiZGUtOGU1NGQ0NDFkZmVh"
+          },
+          "newValue": {
+            "displayName": "Wei Si(Pactera)🛩🍤❤👍👍",
+            "url": "https://spsprodwus22.vssps.visualstudio.com/A28f31532-b635-4501-ab58-7eb1d27f889d/_apis/Identities/e261cb6e-d727-6de9-8d34-aace8634cca4",
+            "_links": { "avatar": { "href": "https://dev.azure.com/O365Exchange/_apis/GraphProfile/MemberAvatars/aad.ZTI2MWNiNmUtZDcyNy03ZGU5LThkMzQtYWFjZTg2MzRjY2E0" } },
+            "id": "e261cb6e-d727-6de9-8d34-aace8634cca4",
+            "uniqueName": "v-siwe@microsoft.com",
+            "imageUrl": "https://dev.azure.com/O365Exchange/_apis/GraphProfile/MemberAvatars/aad.ZTI2MWNiNmUtZDcyNy03ZGU5LThkMzQtYWFjZTg2MzRjY2E0",
+            "descriptor": "aad.ZTI2MWNiNmUtZDcyNy03ZGU5LThkMzQtYWFjZTg2MzRjY2E0"
+          }
+        },
+        "System.AuthorizedAs": {
+          "oldValue": {
+            "displayName": "George Li",
+            "url": "https://spsprodwus22.vssps.visualstudio.com/A28f31532-b635-4501-ab58-7eb1d27f889d/_apis/Identities/4124bfc9-8295-4903-b96e-ea7c4eeaf2f1",
+            "_links": { "avatar": { "href": "https://dev.azure.com/O365Exchange/_apis/GraphProfile/MemberAvatars/aad.MjA3MzAxYmYtMDlmMC03ZDI0LWFiZGUtOGU1NGQ0NDFkZmVh" } },
+            "id": "4124bfc9-8295-4903-b96e-ea7c4eeaf2f1",
+            "uniqueName": "georgeli@microsoft.com",
+            "imageUrl": "https://dev.azure.com/O365Exchange/_apis/GraphProfile/MemberAvatars/aad.MjA3MzAxYmYtMDlmMC03ZDI0LWFiZGUtOGU1NGQ0NDFkZmVh",
+            "descriptor": "aad.MjA3MzAxYmYtMDlmMC03ZDI0LWFiZGUtOGU1NGQ0NDFkZmVh"
+          },
+          "newValue": {
+            "displayName": "Wei Si(Pactera)🛩🍤❤👍👍",
+            "url": "https://spsprodwus22.vssps.visualstudio.com/A28f31532-b635-4501-ab58-7eb1d27f889d/_apis/Identities/e261cb6e-d727-6de9-8d34-aace8634cca4",
+            "_links": { "avatar": { "href": "https://dev.azure.com/O365Exchange/_apis/GraphProfile/MemberAvatars/aad.ZTI2MWNiNmUtZDcyNy03ZGU5LThkMzQtYWFjZTg2MzRjY2E0" } },
+            "id": "e261cb6e-d727-6de9-8d34-aace8634cca4",
+            "uniqueName": "v-siwe@microsoft.com",
+            "imageUrl": "https://dev.azure.com/O365Exchange/_apis/GraphProfile/MemberAvatars/aad.ZTI2MWNiNmUtZDcyNy03ZGU5LThkMzQtYWFjZTg2MzRjY2E0",
+            "descriptor": "aad.ZTI2MWNiNmUtZDcyNy03ZGU5LThkMzQtYWFjZTg2MzRjY2E0"
+          }
+        },
+        "System.PersonId": {
+          "oldValue": 16986483,
+          "newValue": 29066796
+        },
+        "System.Watermark": {
+          "oldValue": 13812697,
+          "newValue": 14127314
+        },
+        "System.CommentCount": {
+          "oldValue": 3,
+          "newValue": 4
+        },
+        "System.Title": {
+          "oldValue": "[Supporting the platform - M365 Compliance - Viewing an Assessment]: Two -dimensional scrolling (Horizontal and Vertical) is observed in \"Viewing an Assessment\" page when zoom to 400%.",
+          "newValue": "Page Analyzer Run Complete: [M365Scc.WorkbenchPage][Supporting the platform - M365 Compliance - Viewing an Assessment]: Two -dimensional scrolling (Horizontal and Vertical) is observed in \"Viewing an Assessment\" page when zoom to 400%."
+        },
+        "System.Description": {
+          "oldValue": "<div style=\"box-sizing:border-box;margin:0px 0cm 0.000133333px;\"><div style=\"box-sizing:border-box;margin:0px 0cm 0.000133333px;\"><div style=\"box-sizing:border-box;margin:0px 0cm 0.000133333px;\"><div style=\"box-sizing:border-box;margin:0px 0cm 0.000133333px;\"><div style=\"box-sizing:border-box;margin:0px 0cm 0.000133333px;\"><p style=\"font-family:Calibri, sans-serif;font-size:11pt;margin:0in 0in 0.0001pt;background:white;\"><b></b></p><div style=\"margin:0px 0in 0.000133333px;background:white;\"><p style=\"font-family:Calibri, sans-serif;font-size:11pt;margin:0in 0in 0.0001pt;background:white;\"><b><span style=\"color:black;\"></span></b></p></div></div></div></div></div></div><div><div style=\"box-sizing:border-box;\"><b style=\"box-sizing:border-box;\"></b></div></div><p style=\"box-sizing:border-box;font-family:Calibri, sans-serif;font-weight:400;font-size:14.6667px;margin:0cm 0cm 0.0001pt;\"><b style=\"box-sizing:border-box;\"><span style=\"box-sizing:border-box;font-size:12pt;color:black;\">User Experience:</span></b></p><div><span style=\"display:inline !important;\"><span style=\"font-family:Calibri, sans-serif;font-size:16px;display:inline !important;\">Visually impaired users are getting impacted as it is difficult to scroll in two-dimensional.&nbsp;</span></span></div><span style=\"display:inline !important;\"><span style=\"display:inline !important;\"></span></span><div><div style=\"box-sizing:border-box;\"><br style=\"box-sizing:border-box;\"></div><div style=\"box-sizing:border-box;\"><b style=\"box-sizing:border-box;\"></b></div><div style=\"box-sizing:border-box;\"><span style=\"box-sizing:border-box;display:inline !important;\"><p style=\"box-sizing:border-box;font-weight:400;font-family:Calibri, sans-serif;font-size:14.6667px;margin:0cm 0cm 0.0001pt;\"><b style=\"box-sizing:border-box;\"><span style=\"box-sizing:border-box;font-size:12pt;\">Test Environment:</span></b></p><div style=\"box-sizing:border-box;font-weight:400;font-family:Calibri, sans-serif;\">OS : Windows 10</div><div style=\"box-sizing:border-box;font-weight:400;font-family:Calibri, sans-serif;\">Version: 2004(OS Build 19588.1000)</div><div style=\"box-sizing:border-box;font-weight:400;font-family:Calibri, sans-serif;\"><span style=\"font-family:Calibri, sans-serif;display:inline !important;\">Browser : Anaheim Dev (Version 85.0.552.1 (Official build) dev (64-bit))</span><br></div><div style=\"box-sizing:border-box;font-weight:400;font-family:Calibri, sans-serif;\"></div><div style=\"box-sizing:border-box;font-weight:400;font-family:Calibri, sans-serif;\"></div></span></div><div style=\"box-sizing:border-box;\"><span style=\"box-sizing:border-box;display:inline !important;\"><div style=\"box-sizing:border-box;font-family:Calibri, sans-serif;\"><span lang=en-US style=\"box-sizing:border-box;cursor:pointer;font-family:&quot;Segoe UI&quot;;font-size:10.5pt;\"><div style=\"box-sizing:border-box;\">URL:&nbsp;<a href=\"https://df.compliance.microsoft.com/compliancescore?viewid=Assessments\" style=\"box-sizing:border-box;text-decoration:underline;\">https://df.compliance.microsoft.com/compliancescore?viewid=Assessments</a></div><div style=\"box-sizing:border-box;\">Screen Reader:&nbsp;NVDA<span style=\"box-sizing:border-box;\">&nbsp;</span>and Narrator</div><div style=\"box-sizing:border-box;\">Username:<span style=\"box-sizing:border-box;\">&nbsp;</span><a href=\"mailto:tifc@a830edad9050849EQTPWBJZXODQ.onmicrosoft.com\" style=\"box-sizing:border-box;text-decoration:underline;\">tifc@a830edad9050849EQTPWBJZXODQ.onmicrosoft.com</a></div></span></div></span></div><div style=\"box-sizing:border-box;\"><br style=\"box-sizing:border-box;\"></div><div style=\"box-sizing:border-box;\"><b style=\"box-sizing:border-box;\"></b></div><div style=\"box-sizing:border-box;\"><span style=\"box-sizing:border-box;\"><span style=\"box-sizing:border-box;display:inline !important;\"><div style=\"box-sizing:border-box;\"><b style=\"box-sizing:border-box;\">Repro Steps:</b></div><div style=\"box-sizing:border-box;\">Step 1: Open&nbsp;Anaheim Dev browser.</div><div style=\"box-sizing:border-box;\">Step 2: Enter URL and login with valid credentials.</div><div style=\"box-sizing:border-box;\"><div style=\"box-sizing:border-box;\">Step 3: Navigate to Assessments tab and activate it.</div></div></span></span></div><div style=\"box-sizing:border-box;\"><span style=\"box-sizing:border-box;\"><span style=\"box-sizing:border-box;display:inline !important;\"><div style=\"box-sizing:border-box;font-weight:400;\"><div style=\"box-sizing:border-box;\"></div></div><div style=\"box-sizing:border-box;font-weight:400;\"><span style=\"box-sizing:border-box;display:inline !important;\"></span></div><div style=\"box-sizing:border-box;font-weight:400;\">Step 4: Navigate to &quot;Adding a new Assessment&quot; button and activate it using keyboard.</div><div style=\"box-sizing:border-box;font-weight:400;\">Step 5: Create an Assessment here For eg: 'Hello' and click on 'create assessment' button within the 'Review and finish' page.</div><div style=\"box-sizing:border-box;font-weight:400;\">Step 6: 'Hello' assessment page will get open.</div><div style=\"box-sizing:border-box;font-weight:400;\">Step 7: Observe the issue.</div></span></span><br style=\"box-sizing:border-box;\"></div><div style=\"box-sizing:border-box;\"><b></b></div></div><div><b>Actual:</b></div><div></div><div>Two -dimensional scrolling (Horizontal and Vertical) is observed in &quot;Viewing an Assessment&quot; page when zoom to 400%.<div style=\"box-sizing:border-box;\"><div style=\"box-sizing:border-box;\"><br style=\"box-sizing:border-box;\"></div></div><div style=\"box-sizing:border-box;\"><b style=\"box-sizing:border-box;\">Expected Result:</b><span>&nbsp;</span></div><span style=\"font-family:Calibri, sans-serif;font-size:16px;display:inline !important;\">Horizontal scrolling should not available in&nbsp;&quot;Viewing an Assessment&quot; page when zoom to 400%.</span><div style=\"box-sizing:border-box;\"><span style=\"box-sizing:border-box;display:inline !important;\"><br style=\"box-sizing:border-box;\"></span></div><div style=\"box-sizing:border-box;\"><p style=\"box-sizing:border-box;font-family:Calibri, sans-serif;font-size:14.6667px;margin:0cm 0cm 0.0001pt;\"><b style=\"box-sizing:border-box;\"><span style=\"box-sizing:border-box;font-size:12pt;\">MAS Reference:</span></b></p><p style=\"box-sizing:border-box;font-family:Calibri, sans-serif;font-size:14.6667px;margin:0cm 0cm 0.0001pt;\"><b style=\"box-sizing:border-box;\"><span style=\"box-sizing:border-box;font-size:12pt;\">MAS1.4.10</span></b></p><p style=\"box-sizing:border-box;font-family:Calibri, sans-serif;font-size:14.6667px;margin:0cm 0cm 0.0001pt;\"><span style=\"box-sizing:border-box;font-size:12pt;\"><a href=\"https://microsoft.sharepoint.com/teams/msenable/_layouts/15/Doc.aspx?sourcedoc=%7bE12828DF-B35C-4F4D-9289-1F932E19F8CF%7d&amp;file=MAS%201.4.10%20%E2%80%93%20Reflow.docx&amp;action=default&amp;mobileredirect=true&amp;cid=5488f398-d97c-4915-9921-2e870e860e53\" style=\"box-sizing:border-box;text-decoration:underline;cursor:pointer;\">https://microsoft.sharepoint.com/teams/msenable/_layouts/15/Doc.aspx?sourcedoc=%7BE12828DF-B35C-4F4D-9289-1F932E19F8CF%7D&amp;file=MAS%201.4.10%20%E2%80%93%20Reflow.docx&amp;action=default&amp;mobileredirect=true&amp;cid=5488f398-d97c-4915-9921-2e870e860e53</a></span></p></div></div><div style=\"box-sizing:border-box;font-size:14px;font-weight:400;\"><a href=\"https://microsoft.sharepoint.com/:w:/r/teams/msenable/_layouts/15/WopiFrame.aspx?sourcedoc=%7b248054a6-5e68-4771-9e1e-242fb5025730%7d\" style=\"box-sizing:border-box;text-decoration:underline;cursor:pointer;\"></a></div><p style=\"box-sizing:border-box;font-weight:400;background:white;font-size:11pt;font-family:Calibri, sans-serif;margin:0in 0in 0.0001pt;\"><span style=\"box-sizing:border-box;color:black;background:white;\"><span style=\"box-sizing:border-box;\"><span style=\"box-sizing:border-box;color:rgba(0, 0, 0, 0.9);\"><a href=\"https://microsoft.sharepoint.com/teams/msenable/_layouts/15/WopiFrame.aspx?sourcedoc=%7bb69e5ccc-dde2-4406-b550-4deb38648f6d%7d\" style=\"box-sizing:border-box;text-decoration:underline;cursor:pointer;\"></a></span></span></span></p>",
+          "newValue": "<div style=\"box-sizing:border-box;margin:0px 0cm 0.000133333px;\"><div style=\"box-sizing:border-box;margin:0px 0cm 0.000133333px;\"><div style=\"box-sizing:border-box;margin:0px 0cm 0.000133333px;\"><div style=\"box-sizing:border-box;margin:0px 0cm 0.000133333px;\"><div style=\"box-sizing:border-box;margin:0px 0cm 0.000133333px;\"><p style=\"font-family:Calibri, sans-serif;font-size:11pt;margin:0in 0in 0.0001pt;background:white;\"><b></b></p><div style=\"margin:0px 0in 0.000133333px;background:white;\"><p style=\"font-family:Calibri, sans-serif;font-size:11pt;margin:0in 0in 0.0001pt;background:white;\"><b><span style=\"color:black;\"></span></b></p></div></div></div></div></div></div><div><div style=\"box-sizing:border-box;\"><b style=\"box-sizing:border-box;\"></b></div></div><p style=\"box-sizing:border-box;font-family:Calibri, sans-serif;font-weight:400;font-size:14.6667px;margin:0cm 0cm 0.0001pt;\"><b style=\"box-sizing:border-box;\"><span style=\"box-sizing:border-box;font-size:12pt;color:black;\">User Experience:</span></b></p><div><span style=\"display:inline !important;\"><span style=\"font-family:Calibri, sans-serif;font-size:16px;display:inline !important;\">Visually impaired users are getting impacted as it is difficult to scroll in two-dimensional.&nbsp;</span></span></div><span style=\"display:inline !important;\"><span style=\"display:inline !important;\"></span></span><div><div style=\"box-sizing:border-box;\"><br style=\"box-sizing:border-box;\"></div><div style=\"box-sizing:border-box;\"><b style=\"box-sizing:border-box;\"></b></div><div style=\"box-sizing:border-box;\"><span style=\"box-sizing:border-box;display:inline !important;\"><p style=\"box-sizing:border-box;font-weight:400;font-family:Calibri, sans-serif;font-size:14.6667px;margin:0cm 0cm 0.0001pt;\"><b style=\"box-sizing:border-box;\"><span style=\"box-sizing:border-box;font-size:12pt;\">Test Environment:</span></b></p><div style=\"box-sizing:border-box;font-weight:400;font-family:Calibri, sans-serif;\">OS : Windows 10</div><div style=\"box-sizing:border-box;font-weight:400;font-family:Calibri, sans-serif;\">Version: 2004(OS Build 19588.1000)</div><div style=\"box-sizing:border-box;font-weight:400;font-family:Calibri, sans-serif;\"><span style=\"display:inline !important;\">Browser : Anaheim Dev (Version 85.0.552.1 (Official build) dev (64-bit))</span><br></div><div style=\"box-sizing:border-box;font-weight:400;font-family:Calibri, sans-serif;\"></div><div style=\"box-sizing:border-box;font-weight:400;font-family:Calibri, sans-serif;\"></div></span></div><div style=\"box-sizing:border-box;\"><span style=\"box-sizing:border-box;display:inline !important;\"><div style=\"box-sizing:border-box;font-family:Calibri, sans-serif;\"><span lang=en-US style=\"box-sizing:border-box;cursor:pointer;font-family:&quot;Segoe UI&quot;;font-size:10.5pt;\"><div style=\"box-sizing:border-box;\">URL:&nbsp;<a href=\"https://df.compliance.microsoft.com/compliancescore?viewid=Assessments\" style=\"box-sizing:border-box;text-decoration:underline;\">https://df.compliance.microsoft.com/compliancescore?viewid=Assessments</a></div><div style=\"box-sizing:border-box;\">Screen Reader:&nbsp;NVDA<span style=\"box-sizing:border-box;\">&nbsp;</span>and Narrator</div><div style=\"box-sizing:border-box;\">Username:<span style=\"box-sizing:border-box;\">&nbsp;</span><a href=\"mailto:tifc@a830edad9050849EQTPWBJZXODQ.onmicrosoft.com\" style=\"box-sizing:border-box;text-decoration:underline;\">tifc@a830edad9050849EQTPWBJZXODQ.onmicrosoft.com</a></div></span></div></span></div><div style=\"box-sizing:border-box;\"><br style=\"box-sizing:border-box;\"></div><div style=\"box-sizing:border-box;\"><b style=\"box-sizing:border-box;\"></b></div><div style=\"box-sizing:border-box;\"><span style=\"box-sizing:border-box;\"><span style=\"box-sizing:border-box;display:inline !important;\"><div style=\"box-sizing:border-box;\"><b style=\"box-sizing:border-box;\">Repro Steps:</b></div><div style=\"box-sizing:border-box;\">Step 1: Open&nbsp;Anaheim Dev browser.</div><div style=\"box-sizing:border-box;\">Step 2: Enter URL and login with valid credentials.</div><div style=\"box-sizing:border-box;\"><div style=\"box-sizing:border-box;\">Step 3: Navigate to Assessments tab and activate it.</div></div></span></span></div><div style=\"box-sizing:border-box;\"><span style=\"box-sizing:border-box;\"><span style=\"box-sizing:border-box;display:inline !important;\"><div style=\"box-sizing:border-box;font-weight:400;\"><div style=\"box-sizing:border-box;\"></div></div><div style=\"box-sizing:border-box;font-weight:400;\"><span style=\"box-sizing:border-box;display:inline !important;\"></span></div><div style=\"box-sizing:border-box;font-weight:400;\">Step 4: Navigate to &quot;Adding a new Assessment&quot; button and activate it using keyboard.</div><div style=\"box-sizing:border-box;font-weight:400;\">Step 5: Create an Assessment here For eg: 'Hello' and click on 'create assessment' button within the 'Review and finish' page.</div><div style=\"box-sizing:border-box;font-weight:400;\">Step 6: 'Hello' assessment page will get open.</div><div style=\"box-sizing:border-box;font-weight:400;\">Step 7: Observe the issue.</div></span></span><br style=\"box-sizing:border-box;\"></div><div style=\"box-sizing:border-box;\"><b></b></div></div><div><b>Actual:</b></div><div></div><div>Two -dimensional scrolling (Horizontal and Vertical) is observed in &quot;Viewing an Assessment&quot; page when zoom to 400%.<div style=\"box-sizing:border-box;\"><div style=\"box-sizing:border-box;\"><br style=\"box-sizing:border-box;\"></div></div><div style=\"box-sizing:border-box;\"><b style=\"box-sizing:border-box;\">Expected Result:</b><span>&nbsp;</span></div><span style=\"font-family:Calibri, sans-serif;font-size:16px;display:inline !important;\">Horizontal scrolling should not available in&nbsp;&quot;Viewing an Assessment&quot; page when zoom to 400%.</span><div style=\"box-sizing:border-box;\"><span style=\"box-sizing:border-box;display:inline !important;\"><br style=\"box-sizing:border-box;\"></span></div><div style=\"box-sizing:border-box;\"><p style=\"box-sizing:border-box;font-family:Calibri, sans-serif;font-size:14.6667px;margin:0cm 0cm 0.0001pt;\"><b style=\"box-sizing:border-box;\"><span style=\"box-sizing:border-box;font-size:12pt;\">MAS Reference:</span></b></p><p style=\"box-sizing:border-box;font-family:Calibri, sans-serif;font-size:14.6667px;margin:0cm 0cm 0.0001pt;\"><b style=\"box-sizing:border-box;\"><span style=\"box-sizing:border-box;font-size:12pt;\">MAS1.4.10</span></b></p><p style=\"box-sizing:border-box;font-family:Calibri, sans-serif;font-size:14.6667px;margin:0cm 0cm 0.0001pt;\"><span style=\"box-sizing:border-box;font-size:12pt;\"><a href=\"https://microsoft.sharepoint.com/teams/msenable/_layouts/15/Doc.aspx?sourcedoc=%7bE12828DF-B35C-4F4D-9289-1F932E19F8CF%7d&amp;file=MAS%201.4.10%20%E2%80%93%20Reflow.docx&amp;action=default&amp;mobileredirect=true&amp;cid=5488f398-d97c-4915-9921-2e870e860e53\" style=\"box-sizing:border-box;text-decoration:underline;cursor:pointer;\">https://microsoft.sharepoint.com/teams/msenable/_layouts/15/Doc.aspx?sourcedoc=%7BE12828DF-B35C-4F4D-9289-1F932E19F8CF%7D&amp;file=MAS%201.4.10%20%E2%80%93%20Reflow.docx&amp;action=default&amp;mobileredirect=true&amp;cid=5488f398-d97c-4915-9921-2e870e860e53</a></span></p><p style=\"box-sizing:border-box;font-family:Calibri, sans-serif;font-size:14.6667px;margin:0cm 0cm 0.0001pt;\"><br></p><div style=\"box-sizing:border-box;font-family:Calibri, sans-serif;font-size:14.6667px;margin:0px 0cm 0.000133333px;\"><img src=\"https://dev.azure.com/O365Exchange/f2b55896-e832-438d-9220-cbc08c545713/_apis/wit/attachments/b801189b-7069-42b5-b80b-ae11ad3547a8?fileName=image.png\" alt=Image><br></div></div></div><div style=\"box-sizing:border-box;font-size:14px;font-weight:400;\"><a href=\"https://microsoft.sharepoint.com/:w:/r/teams/msenable/_layouts/15/WopiFrame.aspx?sourcedoc=%7b248054a6-5e68-4771-9e1e-242fb5025730%7d\" style=\"box-sizing:border-box;text-decoration:underline;cursor:pointer;\"></a></div><p style=\"box-sizing:border-box;font-weight:400;background:white;font-size:11pt;font-family:Calibri, sans-serif;margin:0in 0in 0.0001pt;\"><span style=\"box-sizing:border-box;color:black;background:white;\"><span style=\"box-sizing:border-box;\"><span style=\"box-sizing:border-box;color:rgba(0, 0, 0, 0.9);\"><a href=\"https://microsoft.sharepoint.com/teams/msenable/_layouts/15/WopiFrame.aspx?sourcedoc=%7bb69e5ccc-dde2-4406-b550-4deb38648f6d%7d\" style=\"box-sizing:border-box;text-decoration:underline;cursor:pointer;\"></a></span></span></span></p>"
+        },
+        "System.History": { "newValue": "<div><a href=\"https://o365exchange.visualstudio.com/O365%20Core/_git/Nibiru?path=/sources/dev/m365scc/src/Client/ReactM365ComplianceScore/app/AssessmentDrilldown/AssessmentDrilldown.tsx&amp;_a=contents&amp;version=GBmaster\" tabindex=0 style=\"box-sizing:border-box;border-radius:2px;cursor:pointer;outline:transparent;transition:color 80ms cubic-bezier(0.165, 0.84, 0.44, 1) 0s, background 80ms linear 0s;font-size:16px;\">AssessmentDrilldown.tsx</a><br></div><div><div style=\"background-color:rgb(255, 255, 254);font-family:Consolas, &quot;Courier New&quot;, monospace;font-weight:normal;font-size:12px;\"><div style=\"\"><span style=\"color:rgb(0, 128, 128);\">IWorkbenchView</span>&nbsp;<span style=\"color:rgb(0, 0, 255);\">from</span><span style=\"color:rgb(0, 0, 0);\">&nbsp;</span><span style=\"color:rgb(163, 21, 21);\">&quot;@m365scc/page-templates&quot;</span></div></div><br></div>" }
+      },
+      "url": "https://dev.azure.com/O365Exchange/f2b55896-e832-438d-9220-cbc08c545713/_apis/wit/workItems/1565614/updates/16"
+    },
+    {
+      "id": 17,
+      "workItemId": 1565614,
+      "rev": 15,
+      "revisedBy": {
+        "id": "e261cb6e-d727-6de9-8d34-aace8634cca4",
+        "name": "Wei Si(Pactera)🛩🍤❤👍👍 <v-siwe@microsoft.com>",
+        "displayName": "Wei Si(Pactera)🛩🍤❤👍👍",
+        "url": "https://spsprodwus22.vssps.visualstudio.com/A28f31532-b635-4501-ab58-7eb1d27f889d/_apis/Identities/e261cb6e-d727-6de9-8d34-aace8634cca4",
+        "_links": { "avatar": { "href": "https://dev.azure.com/O365Exchange/_apis/GraphProfile/MemberAvatars/aad.ZTI2MWNiNmUtZDcyNy03ZGU5LThkMzQtYWFjZTg2MzRjY2E0" } },
+        "uniqueName": "v-siwe@microsoft.com",
+        "imageUrl": "https://dev.azure.com/O365Exchange/_apis/GraphProfile/MemberAvatars/aad.ZTI2MWNiNmUtZDcyNy03ZGU5LThkMzQtYWFjZTg2MzRjY2E0",
+        "descriptor": "aad.ZTI2MWNiNmUtZDcyNy03ZGU5LThkMzQtYWFjZTg2MzRjY2E0"
+      },
+      "revisedDate": "2021-01-07T08:42:57.127Z",
+      "fields": {
+        "System.AreaId": {
+          "oldValue": 4221,
+          "newValue": 684
+        },
+        "System.NodeName": {
+          "oldValue": "Compliance Score",
+          "newValue": "Security and Compliance Center"
+        },
+        "System.AreaLevel2": {
+          "oldValue": "M365 Compliance",
+          "newValue": "Security and Compliance Center"
+        },
+        "System.Rev": {
+          "oldValue": 14,
+          "newValue": 15
+        },
+        "System.AuthorizedDate": {
+          "oldValue": "2020-12-28T05:55:03.01Z",
+          "newValue": "2020-12-28T08:16:35.09Z"
+        },
+        "System.RevisedDate": {
+          "oldValue": "2020-12-28T08:16:35.09Z",
+          "newValue": "2021-01-07T08:42:57.127Z"
+        },
+        "System.AssignedTo": {
+          "oldValue": {
+            "displayName": "Pankaj Bhambhani",
+            "url": "https://spsprodwus22.vssps.visualstudio.com/A28f31532-b635-4501-ab58-7eb1d27f889d/_apis/Identities/eed46342-b5fc-45ec-b2ce-2e65cf894136",
+            "_links": { "avatar": { "href": "https://dev.azure.com/O365Exchange/_apis/GraphProfile/MemberAvatars/aad.YTUyMWRjOTctMDdlMS03ODlmLThjNGQtN2MyM2RjMDg0ZmFl" } },
+            "id": "eed46342-b5fc-45ec-b2ce-2e65cf894136",
+            "uniqueName": "panbha@microsoft.com",
+            "imageUrl": "https://dev.azure.com/O365Exchange/_apis/GraphProfile/MemberAvatars/aad.YTUyMWRjOTctMDdlMS03ODlmLThjNGQtN2MyM2RjMDg0ZmFl",
+            "descriptor": "aad.YTUyMWRjOTctMDdlMS03ODlmLThjNGQtN2MyM2RjMDg0ZmFl"
+          }
+        },
+        "System.ChangedDate": {
+          "oldValue": "2020-12-28T05:55:03.01Z",
+          "newValue": "2020-12-28T08:16:35.09Z"
+        },
+        "System.Watermark": {
+          "oldValue": 14127314,
+          "newValue": 14128258
+        },
+        "System.CommentCount": {
+          "oldValue": 4,
+          "newValue": 5
+        },
+        "System.AreaPath": {
+          "oldValue": "IP Engineering\\M365 Compliance\\Compliance Score",
+          "newValue": "IP Engineering\\Security and Compliance Center"
+        },
+        "System.History": {
+          "oldValue": "<div><a href=\"https://o365exchange.visualstudio.com/O365%20Core/_git/Nibiru?path=/sources/dev/m365scc/src/Client/ReactM365ComplianceScore/app/AssessmentDrilldown/AssessmentDrilldown.tsx&amp;_a=contents&amp;version=GBmaster\" tabindex=0 style=\"box-sizing:border-box;border-radius:2px;cursor:pointer;outline:transparent;transition:color 80ms cubic-bezier(0.165, 0.84, 0.44, 1) 0s, background 80ms linear 0s;font-size:16px;\">AssessmentDrilldown.tsx</a><br></div><div><div style=\"background-color:rgb(255, 255, 254);font-family:Consolas, &quot;Courier New&quot;, monospace;font-weight:normal;font-size:12px;\"><div style=\"\"><span style=\"color:rgb(0, 128, 128);\">IWorkbenchView</span>&nbsp;<span style=\"color:rgb(0, 0, 255);\">from</span><span style=\"color:rgb(0, 0, 0);\">&nbsp;</span><span style=\"color:rgb(163, 21, 21);\">&quot;@m365scc/page-templates&quot;</span></div></div><br></div>",
+          "newValue": "<div>Since this bug is SCC bug, I change area path to 'IP Engineering\\Security and Compliance Center' and unassigned.</div>"
+        }
+      },
+      "url": "https://dev.azure.com/O365Exchange/f2b55896-e832-438d-9220-cbc08c545713/_apis/wit/workItems/1565614/updates/17"
+    },
+    {
+      "id": 18,
+      "workItemId": 1565614,
+      "rev": 16,
+      "revisedBy": {
+        "id": "cbd766cc-7885-6bef-b9f4-4ba9e174ec6e",
+        "name": "Qiang Qiang Guo <v-qguo@microsoft.com>",
+        "displayName": "Qiang Qiang Guo",
+        "url": "https://spsprodwus22.vssps.visualstudio.com/A28f31532-b635-4501-ab58-7eb1d27f889d/_apis/Identities/cbd766cc-7885-6bef-b9f4-4ba9e174ec6e",
+        "_links": { "avatar": { "href": "https://dev.azure.com/O365Exchange/_apis/GraphProfile/MemberAvatars/aad.Y2JkNzY2Y2MtNzg4NS03YmVmLWI5ZjQtNGJhOWUxNzRlYzZl" } },
+        "uniqueName": "v-qguo@microsoft.com",
+        "imageUrl": "https://dev.azure.com/O365Exchange/_apis/GraphProfile/MemberAvatars/aad.Y2JkNzY2Y2MtNzg4NS03YmVmLWI5ZjQtNGJhOWUxNzRlYzZl",
+        "descriptor": "aad.Y2JkNzY2Y2MtNzg4NS03YmVmLWI5ZjQtNGJhOWUxNzRlYzZl"
+      },
+      "revisedDate": "2021-01-07T09:04:57.397Z",
+      "fields": {
+        "System.Rev": {
+          "oldValue": 15,
+          "newValue": 16
+        },
+        "System.AuthorizedDate": {
+          "oldValue": "2020-12-28T08:16:35.09Z",
+          "newValue": "2021-01-07T08:42:57.127Z"
+        },
+        "System.RevisedDate": {
+          "oldValue": "2021-01-07T08:42:57.127Z",
+          "newValue": "2021-01-07T09:04:57.397Z"
+        },
+        "System.State": {
+          "oldValue": "New",
+          "newValue": "Active"
+        },
+        "System.Reason": {
+          "oldValue": "New",
+          "newValue": "Approved"
+        },
+        "System.AssignedTo": {
+          "newValue": {
+            "displayName": "Qiang Qiang Guo",
+            "url": "https://spsprodwus22.vssps.visualstudio.com/A28f31532-b635-4501-ab58-7eb1d27f889d/_apis/Identities/cbd766cc-7885-6bef-b9f4-4ba9e174ec6e",
+            "_links": { "avatar": { "href": "https://dev.azure.com/O365Exchange/_apis/GraphProfile/MemberAvatars/aad.Y2JkNzY2Y2MtNzg4NS03YmVmLWI5ZjQtNGJhOWUxNzRlYzZl" } },
+            "id": "cbd766cc-7885-6bef-b9f4-4ba9e174ec6e",
+            "uniqueName": "v-qguo@microsoft.com",
+            "imageUrl": "https://dev.azure.com/O365Exchange/_apis/GraphProfile/MemberAvatars/aad.Y2JkNzY2Y2MtNzg4NS03YmVmLWI5ZjQtNGJhOWUxNzRlYzZl",
+            "descriptor": "aad.Y2JkNzY2Y2MtNzg4NS03YmVmLWI5ZjQtNGJhOWUxNzRlYzZl"
+          }
+        },
+        "System.ChangedDate": {
+          "oldValue": "2020-12-28T08:16:35.09Z",
+          "newValue": "2021-01-07T08:42:57.127Z"
+        },
+        "System.ChangedBy": {
+          "oldValue": {
+            "displayName": "Wei Si(Pactera)🛩🍤❤👍👍",
+            "url": "https://spsprodwus22.vssps.visualstudio.com/A28f31532-b635-4501-ab58-7eb1d27f889d/_apis/Identities/e261cb6e-d727-6de9-8d34-aace8634cca4",
+            "_links": { "avatar": { "href": "https://dev.azure.com/O365Exchange/_apis/GraphProfile/MemberAvatars/aad.ZTI2MWNiNmUtZDcyNy03ZGU5LThkMzQtYWFjZTg2MzRjY2E0" } },
+            "id": "e261cb6e-d727-6de9-8d34-aace8634cca4",
+            "uniqueName": "v-siwe@microsoft.com",
+            "imageUrl": "https://dev.azure.com/O365Exchange/_apis/GraphProfile/MemberAvatars/aad.ZTI2MWNiNmUtZDcyNy03ZGU5LThkMzQtYWFjZTg2MzRjY2E0",
+            "descriptor": "aad.ZTI2MWNiNmUtZDcyNy03ZGU5LThkMzQtYWFjZTg2MzRjY2E0"
+          },
+          "newValue": {
+            "displayName": "Qiang Qiang Guo",
+            "url": "https://spsprodwus22.vssps.visualstudio.com/A28f31532-b635-4501-ab58-7eb1d27f889d/_apis/Identities/cbd766cc-7885-6bef-b9f4-4ba9e174ec6e",
+            "_links": { "avatar": { "href": "https://dev.azure.com/O365Exchange/_apis/GraphProfile/MemberAvatars/aad.Y2JkNzY2Y2MtNzg4NS03YmVmLWI5ZjQtNGJhOWUxNzRlYzZl" } },
+            "id": "cbd766cc-7885-6bef-b9f4-4ba9e174ec6e",
+            "uniqueName": "v-qguo@microsoft.com",
+            "imageUrl": "https://dev.azure.com/O365Exchange/_apis/GraphProfile/MemberAvatars/aad.Y2JkNzY2Y2MtNzg4NS03YmVmLWI5ZjQtNGJhOWUxNzRlYzZl",
+            "descriptor": "aad.Y2JkNzY2Y2MtNzg4NS03YmVmLWI5ZjQtNGJhOWUxNzRlYzZl"
+          }
+        },
+        "System.AuthorizedAs": {
+          "oldValue": {
+            "displayName": "Wei Si(Pactera)🛩🍤❤👍👍",
+            "url": "https://spsprodwus22.vssps.visualstudio.com/A28f31532-b635-4501-ab58-7eb1d27f889d/_apis/Identities/e261cb6e-d727-6de9-8d34-aace8634cca4",
+            "_links": { "avatar": { "href": "https://dev.azure.com/O365Exchange/_apis/GraphProfile/MemberAvatars/aad.ZTI2MWNiNmUtZDcyNy03ZGU5LThkMzQtYWFjZTg2MzRjY2E0" } },
+            "id": "e261cb6e-d727-6de9-8d34-aace8634cca4",
+            "uniqueName": "v-siwe@microsoft.com",
+            "imageUrl": "https://dev.azure.com/O365Exchange/_apis/GraphProfile/MemberAvatars/aad.ZTI2MWNiNmUtZDcyNy03ZGU5LThkMzQtYWFjZTg2MzRjY2E0",
+            "descriptor": "aad.ZTI2MWNiNmUtZDcyNy03ZGU5LThkMzQtYWFjZTg2MzRjY2E0"
+          },
+          "newValue": {
+            "displayName": "Qiang Qiang Guo",
+            "url": "https://spsprodwus22.vssps.visualstudio.com/A28f31532-b635-4501-ab58-7eb1d27f889d/_apis/Identities/cbd766cc-7885-6bef-b9f4-4ba9e174ec6e",
+            "_links": { "avatar": { "href": "https://dev.azure.com/O365Exchange/_apis/GraphProfile/MemberAvatars/aad.Y2JkNzY2Y2MtNzg4NS03YmVmLWI5ZjQtNGJhOWUxNzRlYzZl" } },
+            "id": "cbd766cc-7885-6bef-b9f4-4ba9e174ec6e",
+            "uniqueName": "v-qguo@microsoft.com",
+            "imageUrl": "https://dev.azure.com/O365Exchange/_apis/GraphProfile/MemberAvatars/aad.Y2JkNzY2Y2MtNzg4NS03YmVmLWI5ZjQtNGJhOWUxNzRlYzZl",
+            "descriptor": "aad.Y2JkNzY2Y2MtNzg4NS03YmVmLWI5ZjQtNGJhOWUxNzRlYzZl"
+          }
+        },
+        "System.PersonId": {
+          "oldValue": 29066796,
+          "newValue": 29082572
+        },
+        "System.Watermark": {
+          "oldValue": 14128258,
+          "newValue": 14298420
+        },
+        "Microsoft.VSTS.Common.StateChangeDate": {
+          "oldValue": "2020-07-03T13:21:31.267Z",
+          "newValue": "2021-01-07T08:42:57.127Z"
+        },
+        "Microsoft.VSTS.Common.ActivatedDate": { "newValue": "2021-01-07T08:42:57.127Z" },
+        "Microsoft.VSTS.Common.ActivatedBy": {
+          "newValue": {
+            "displayName": "Qiang Qiang Guo",
+            "url": "https://spsprodwus22.vssps.visualstudio.com/A28f31532-b635-4501-ab58-7eb1d27f889d/_apis/Identities/cbd766cc-7885-6bef-b9f4-4ba9e174ec6e",
+            "_links": { "avatar": { "href": "https://dev.azure.com/O365Exchange/_apis/GraphProfile/MemberAvatars/aad.Y2JkNzY2Y2MtNzg4NS03YmVmLWI5ZjQtNGJhOWUxNzRlYzZl" } },
+            "id": "cbd766cc-7885-6bef-b9f4-4ba9e174ec6e",
+            "uniqueName": "v-qguo@microsoft.com",
+            "imageUrl": "https://dev.azure.com/O365Exchange/_apis/GraphProfile/MemberAvatars/aad.Y2JkNzY2Y2MtNzg4NS03YmVmLWI5ZjQtNGJhOWUxNzRlYzZl",
+            "descriptor": "aad.Y2JkNzY2Y2MtNzg4NS03YmVmLWI5ZjQtNGJhOWUxNzRlYzZl"
+          }
+        }
+      },
+      "url": "https://dev.azure.com/O365Exchange/f2b55896-e832-438d-9220-cbc08c545713/_apis/wit/workItems/1565614/updates/18"
+    },
+    {
+      "id": 19,
+      "workItemId": 1565614,
+      "rev": 17,
+      "revisedBy": {
+        "id": "cbd766cc-7885-6bef-b9f4-4ba9e174ec6e",
+        "name": "Qiang Qiang Guo <v-qguo@microsoft.com>",
+        "displayName": "Qiang Qiang Guo",
+        "url": "https://spsprodwus22.vssps.visualstudio.com/A28f31532-b635-4501-ab58-7eb1d27f889d/_apis/Identities/cbd766cc-7885-6bef-b9f4-4ba9e174ec6e",
+        "_links": { "avatar": { "href": "https://dev.azure.com/O365Exchange/_apis/GraphProfile/MemberAvatars/aad.Y2JkNzY2Y2MtNzg4NS03YmVmLWI5ZjQtNGJhOWUxNzRlYzZl" } },
+        "uniqueName": "v-qguo@microsoft.com",
+        "imageUrl": "https://dev.azure.com/O365Exchange/_apis/GraphProfile/MemberAvatars/aad.Y2JkNzY2Y2MtNzg4NS03YmVmLWI5ZjQtNGJhOWUxNzRlYzZl",
+        "descriptor": "aad.Y2JkNzY2Y2MtNzg4NS03YmVmLWI5ZjQtNGJhOWUxNzRlYzZl"
+      },
+      "revisedDate": "2021-01-07T09:41:17.457Z",
+      "fields": {
+        "System.Rev": {
+          "oldValue": 16,
+          "newValue": 17
+        },
+        "System.AuthorizedDate": {
+          "oldValue": "2021-01-07T08:42:57.127Z",
+          "newValue": "2021-01-07T09:04:57.397Z"
+        },
+        "System.RevisedDate": {
+          "oldValue": "2021-01-07T09:04:57.397Z",
+          "newValue": "2021-01-07T09:41:17.457Z"
+        },
+        "System.State": {
+          "oldValue": "Active",
+          "newValue": "New"
+        },
+        "System.Reason": {
+          "oldValue": "Approved",
+          "newValue": "Investigation Complete"
+        },
+        "System.ChangedDate": {
+          "oldValue": "2021-01-07T08:42:57.127Z",
+          "newValue": "2021-01-07T09:04:57.397Z"
+        },
+        "System.Watermark": {
+          "oldValue": 14298420,
+          "newValue": 14298751
+        },
+        "Microsoft.VSTS.Common.StateChangeDate": {
+          "oldValue": "2021-01-07T08:42:57.127Z",
+          "newValue": "2021-01-07T09:04:57.397Z"
+        },
+        "Microsoft.VSTS.Common.ActivatedDate": { "oldValue": "2021-01-07T08:42:57.127Z" },
+        "Microsoft.VSTS.Common.ActivatedBy": {
+          "oldValue": {
+            "displayName": "Qiang Qiang Guo",
+            "url": "https://spsprodwus22.vssps.visualstudio.com/A28f31532-b635-4501-ab58-7eb1d27f889d/_apis/Identities/cbd766cc-7885-6bef-b9f4-4ba9e174ec6e",
+            "_links": { "avatar": { "href": "https://dev.azure.com/O365Exchange/_apis/GraphProfile/MemberAvatars/aad.Y2JkNzY2Y2MtNzg4NS03YmVmLWI5ZjQtNGJhOWUxNzRlYzZl" } },
+            "id": "cbd766cc-7885-6bef-b9f4-4ba9e174ec6e",
+            "uniqueName": "v-qguo@microsoft.com",
+            "imageUrl": "https://dev.azure.com/O365Exchange/_apis/GraphProfile/MemberAvatars/aad.Y2JkNzY2Y2MtNzg4NS03YmVmLWI5ZjQtNGJhOWUxNzRlYzZl",
+            "descriptor": "aad.Y2JkNzY2Y2MtNzg4NS03YmVmLWI5ZjQtNGJhOWUxNzRlYzZl"
+          }
+        }
+      },
+      "url": "https://dev.azure.com/O365Exchange/f2b55896-e832-438d-9220-cbc08c545713/_apis/wit/workItems/1565614/updates/19"
+    },
+    {
+      "id": 20,
+      "workItemId": 1565614,
+      "rev": 18,
+      "revisedBy": {
+        "id": "cbd766cc-7885-6bef-b9f4-4ba9e174ec6e",
+        "name": "Qiang Qiang Guo <v-qguo@microsoft.com>",
+        "displayName": "Qiang Qiang Guo",
+        "url": "https://spsprodwus22.vssps.visualstudio.com/A28f31532-b635-4501-ab58-7eb1d27f889d/_apis/Identities/cbd766cc-7885-6bef-b9f4-4ba9e174ec6e",
+        "_links": { "avatar": { "href": "https://dev.azure.com/O365Exchange/_apis/GraphProfile/MemberAvatars/aad.Y2JkNzY2Y2MtNzg4NS03YmVmLWI5ZjQtNGJhOWUxNzRlYzZl" } },
+        "uniqueName": "v-qguo@microsoft.com",
+        "imageUrl": "https://dev.azure.com/O365Exchange/_apis/GraphProfile/MemberAvatars/aad.Y2JkNzY2Y2MtNzg4NS03YmVmLWI5ZjQtNGJhOWUxNzRlYzZl",
+        "descriptor": "aad.Y2JkNzY2Y2MtNzg4NS03YmVmLWI5ZjQtNGJhOWUxNzRlYzZl"
+      },
+      "revisedDate": "2021-01-07T09:53:56.113Z",
+      "fields": {
+        "System.Rev": {
+          "oldValue": 17,
+          "newValue": 18
+        },
+        "System.AuthorizedDate": {
+          "oldValue": "2021-01-07T09:04:57.397Z",
+          "newValue": "2021-01-07T09:41:17.457Z"
+        },
+        "System.RevisedDate": {
+          "oldValue": "2021-01-07T09:41:17.457Z",
+          "newValue": "2021-01-07T09:53:56.113Z"
+        },
+        "System.ChangedDate": {
+          "oldValue": "2021-01-07T09:04:57.397Z",
+          "newValue": "2021-01-07T09:41:17.457Z"
+        },
+        "System.Watermark": {
+          "oldValue": 14298751,
+          "newValue": 14299349
+        },
+        "Microsoft.VSTS.Scheduling.StartDate": { "newValue": "2021-01-08T01:50:00Z" }
+      },
+      "url": "https://dev.azure.com/O365Exchange/f2b55896-e832-438d-9220-cbc08c545713/_apis/wit/workItems/1565614/updates/20"
+    },
+    {
+      "id": 21,
+      "workItemId": 1565614,
+      "rev": 19,
+      "revisedBy": {
+        "id": "cbd766cc-7885-6bef-b9f4-4ba9e174ec6e",
+        "name": "Qiang Qiang Guo <v-qguo@microsoft.com>",
+        "displayName": "Qiang Qiang Guo",
+        "url": "https://spsprodwus22.vssps.visualstudio.com/A28f31532-b635-4501-ab58-7eb1d27f889d/_apis/Identities/cbd766cc-7885-6bef-b9f4-4ba9e174ec6e",
+        "_links": { "avatar": { "href": "https://dev.azure.com/O365Exchange/_apis/GraphProfile/MemberAvatars/aad.Y2JkNzY2Y2MtNzg4NS03YmVmLWI5ZjQtNGJhOWUxNzRlYzZl" } },
+        "uniqueName": "v-qguo@microsoft.com",
+        "imageUrl": "https://dev.azure.com/O365Exchange/_apis/GraphProfile/MemberAvatars/aad.Y2JkNzY2Y2MtNzg4NS03YmVmLWI5ZjQtNGJhOWUxNzRlYzZl",
+        "descriptor": "aad.Y2JkNzY2Y2MtNzg4NS03YmVmLWI5ZjQtNGJhOWUxNzRlYzZl"
+      },
+      "revisedDate": "2021-01-18T08:43:25.677Z",
+      "fields": {
+        "System.Rev": {
+          "oldValue": 18,
+          "newValue": 19
+        },
+        "System.AuthorizedDate": {
+          "oldValue": "2021-01-07T09:41:17.457Z",
+          "newValue": "2021-01-07T09:53:56.113Z"
+        },
+        "System.RevisedDate": {
+          "oldValue": "2021-01-07T09:53:56.113Z",
+          "newValue": "2021-01-18T08:43:25.677Z"
+        },
+        "System.ChangedDate": {
+          "oldValue": "2021-01-07T09:41:17.457Z",
+          "newValue": "2021-01-07T09:53:56.113Z"
+        },
+        "System.Watermark": {
+          "oldValue": 14299349,
+          "newValue": 14299494
+        },
+        "Microsoft.VSTS.Scheduling.StartDate": {
+          "oldValue": "2021-01-08T01:50:00Z",
+          "newValue": "2021-01-08T01:00:00Z"
+        }
+      },
+      "url": "https://dev.azure.com/O365Exchange/f2b55896-e832-438d-9220-cbc08c545713/_apis/wit/workItems/1565614/updates/21"
+    },
+    {
+      "id": 22,
+      "workItemId": 1565614,
+      "rev": 20,
+      "revisedBy": {
+        "id": "cbd766cc-7885-6bef-b9f4-4ba9e174ec6e",
+        "name": "Qiang Qiang Guo <v-qguo@microsoft.com>",
+        "displayName": "Qiang Qiang Guo",
+        "url": "https://spsprodwus22.vssps.visualstudio.com/A28f31532-b635-4501-ab58-7eb1d27f889d/_apis/Identities/cbd766cc-7885-6bef-b9f4-4ba9e174ec6e",
+        "_links": { "avatar": { "href": "https://dev.azure.com/O365Exchange/_apis/GraphProfile/MemberAvatars/aad.Y2JkNzY2Y2MtNzg4NS03YmVmLWI5ZjQtNGJhOWUxNzRlYzZl" } },
+        "uniqueName": "v-qguo@microsoft.com",
+        "imageUrl": "https://dev.azure.com/O365Exchange/_apis/GraphProfile/MemberAvatars/aad.Y2JkNzY2Y2MtNzg4NS03YmVmLWI5ZjQtNGJhOWUxNzRlYzZl",
+        "descriptor": "aad.Y2JkNzY2Y2MtNzg4NS03YmVmLWI5ZjQtNGJhOWUxNzRlYzZl"
+      },
+      "revisedDate": "2021-01-18T08:44:40.733Z",
+      "fields": {
+        "System.Rev": {
+          "oldValue": 19,
+          "newValue": 20
+        },
+        "System.AuthorizedDate": {
+          "oldValue": "2021-01-07T09:53:56.113Z",
+          "newValue": "2021-01-18T08:43:25.677Z"
+        },
+        "System.RevisedDate": {
+          "oldValue": "2021-01-18T08:43:25.677Z",
+          "newValue": "2021-01-18T08:44:40.733Z"
+        },
+        "System.State": {
+          "oldValue": "New",
+          "newValue": "Active"
+        },
+        "System.Reason": {
+          "oldValue": "Investigation Complete",
+          "newValue": "Approved"
+        },
+        "System.ChangedDate": {
+          "oldValue": "2021-01-07T09:53:56.113Z",
+          "newValue": "2021-01-18T08:43:25.677Z"
+        },
+        "System.Watermark": {
+          "oldValue": 14299494,
+          "newValue": 14529685
+        },
+        "Microsoft.VSTS.Common.ActivatedDate": { "newValue": "2021-01-18T08:43:25.677Z" },
+        "Microsoft.VSTS.Common.ActivatedBy": {
+          "newValue": {
+            "displayName": "Qiang Qiang Guo",
+            "url": "https://spsprodwus22.vssps.visualstudio.com/A28f31532-b635-4501-ab58-7eb1d27f889d/_apis/Identities/cbd766cc-7885-6bef-b9f4-4ba9e174ec6e",
+            "_links": { "avatar": { "href": "https://dev.azure.com/O365Exchange/_apis/GraphProfile/MemberAvatars/aad.Y2JkNzY2Y2MtNzg4NS03YmVmLWI5ZjQtNGJhOWUxNzRlYzZl" } },
+            "id": "cbd766cc-7885-6bef-b9f4-4ba9e174ec6e",
+            "uniqueName": "v-qguo@microsoft.com",
+            "imageUrl": "https://dev.azure.com/O365Exchange/_apis/GraphProfile/MemberAvatars/aad.Y2JkNzY2Y2MtNzg4NS03YmVmLWI5ZjQtNGJhOWUxNzRlYzZl",
+            "descriptor": "aad.Y2JkNzY2Y2MtNzg4NS03YmVmLWI5ZjQtNGJhOWUxNzRlYzZl"
+          }
+        },
+        "Microsoft.VSTS.Scheduling.FinishDate": { "newValue": "2021-01-19T01:00:00Z" },
+        "Microsoft.VSTS.Common.StateChangeDate": {
+          "oldValue": "2021-01-07T09:04:57.397Z",
+          "newValue": "2021-01-18T08:43:25.677Z"
+        }
+      },
+      "url": "https://dev.azure.com/O365Exchange/f2b55896-e832-438d-9220-cbc08c545713/_apis/wit/workItems/1565614/updates/22"
+    },
+    {
+      "id": 23,
+      "workItemId": 1565614,
+      "rev": 21,
+      "revisedBy": {
+        "id": "cbd766cc-7885-6bef-b9f4-4ba9e174ec6e",
+        "name": "Qiang Qiang Guo <v-qguo@microsoft.com>",
+        "displayName": "Qiang Qiang Guo",
+        "url": "https://spsprodwus22.vssps.visualstudio.com/A28f31532-b635-4501-ab58-7eb1d27f889d/_apis/Identities/cbd766cc-7885-6bef-b9f4-4ba9e174ec6e",
+        "_links": { "avatar": { "href": "https://dev.azure.com/O365Exchange/_apis/GraphProfile/MemberAvatars/aad.Y2JkNzY2Y2MtNzg4NS03YmVmLWI5ZjQtNGJhOWUxNzRlYzZl" } },
+        "uniqueName": "v-qguo@microsoft.com",
+        "imageUrl": "https://dev.azure.com/O365Exchange/_apis/GraphProfile/MemberAvatars/aad.Y2JkNzY2Y2MtNzg4NS03YmVmLWI5ZjQtNGJhOWUxNzRlYzZl",
+        "descriptor": "aad.Y2JkNzY2Y2MtNzg4NS03YmVmLWI5ZjQtNGJhOWUxNzRlYzZl"
+      },
+      "revisedDate": "2021-01-19T02:39:20Z",
+      "fields": {
+        "System.Rev": {
+          "oldValue": 20,
+          "newValue": 21
+        },
+        "System.AuthorizedDate": {
+          "oldValue": "2021-01-18T08:43:25.677Z",
+          "newValue": "2021-01-18T08:44:40.733Z"
+        },
+        "System.RevisedDate": {
+          "oldValue": "2021-01-18T08:44:40.733Z",
+          "newValue": "2021-01-19T02:39:20Z"
+        },
+        "System.ChangedDate": {
+          "oldValue": "2021-01-18T08:43:25.677Z",
+          "newValue": "2021-01-18T08:44:40.733Z"
+        },
+        "System.Watermark": {
+          "oldValue": 14529685,
+          "newValue": 14529702
+        }
+      },
+      "relations": {
+        "added": [
+          {
+            "rel": "ArtifactLink",
+            "url": "vstfs:///Git/Ref/f2b55896-e832-438d-9220-cbc08c545713%2Fcb274bb6-3339-491a-804d-e2a4f615ad4b%2FGBusers%2Fv-qguo%2Ffixbug1565614",
+            "attributes": {
+              "authorizedDate": "2021-01-18T08:44:40.733Z",
+              "id": 3389143,
+              "resourceCreatedDate": "2021-01-18T08:44:40.733Z",
+              "resourceModifiedDate": "2021-01-18T08:44:40.733Z",
+              "revisedDate": "9999-01-01T00:00:00Z",
+              "name": "Branch"
+            }
+          }
+        ]
+      },
+      "url": "https://dev.azure.com/O365Exchange/f2b55896-e832-438d-9220-cbc08c545713/_apis/wit/workItems/1565614/updates/23"
+    },
+    {
+      "id": 24,
+      "workItemId": 1565614,
+      "rev": 22,
+      "revisedBy": {
+        "id": "cbd766cc-7885-6bef-b9f4-4ba9e174ec6e",
+        "name": "Qiang Qiang Guo <v-qguo@microsoft.com>",
+        "displayName": "Qiang Qiang Guo",
+        "url": "https://spsprodwus22.vssps.visualstudio.com/A28f31532-b635-4501-ab58-7eb1d27f889d/_apis/Identities/cbd766cc-7885-6bef-b9f4-4ba9e174ec6e",
+        "_links": { "avatar": { "href": "https://dev.azure.com/O365Exchange/_apis/GraphProfile/MemberAvatars/aad.Y2JkNzY2Y2MtNzg4NS03YmVmLWI5ZjQtNGJhOWUxNzRlYzZl" } },
+        "uniqueName": "v-qguo@microsoft.com",
+        "imageUrl": "https://dev.azure.com/O365Exchange/_apis/GraphProfile/MemberAvatars/aad.Y2JkNzY2Y2MtNzg4NS03YmVmLWI5ZjQtNGJhOWUxNzRlYzZl",
+        "descriptor": "aad.Y2JkNzY2Y2MtNzg4NS03YmVmLWI5ZjQtNGJhOWUxNzRlYzZl"
+      },
+      "revisedDate": "2021-01-19T03:32:33.957Z",
+      "fields": {
+        "System.Rev": {
+          "oldValue": 21,
+          "newValue": 22
+        },
+        "System.AuthorizedDate": {
+          "oldValue": "2021-01-18T08:44:40.733Z",
+          "newValue": "2021-01-19T02:39:20Z"
+        },
+        "System.RevisedDate": {
+          "oldValue": "2021-01-19T02:39:20Z",
+          "newValue": "2021-01-19T03:32:33.957Z"
+        },
+        "System.ChangedDate": {
+          "oldValue": "2021-01-18T08:44:40.733Z",
+          "newValue": "2021-01-19T02:39:20Z"
+        },
+        "System.Watermark": {
+          "oldValue": 14529702,
+          "newValue": 14538379
+        }
+      },
+      "relations": {
+        "added": [
+          {
+            "rel": "ArtifactLink",
+            "url": "vstfs:///Git/PullRequestId/f2b55896-e832-438d-9220-cbc08c545713%2fcb274bb6-3339-491a-804d-e2a4f615ad4b%2f1153168",
+            "attributes": {
+              "authorizedDate": "2021-01-19T02:39:20Z",
+              "id": 3391047,
+              "resourceCreatedDate": "2021-01-19T02:39:20Z",
+              "resourceModifiedDate": "2021-01-19T02:39:20Z",
+              "revisedDate": "9999-01-01T00:00:00Z",
+              "name": "Pull Request"
+            }
+          }
+        ]
+      },
+      "url": "https://dev.azure.com/O365Exchange/f2b55896-e832-438d-9220-cbc08c545713/_apis/wit/workItems/1565614/updates/24"
+    },
+    {
+      "id": 25,
+      "workItemId": 1565614,
+      "rev": 23,
+      "revisedBy": {
+        "id": "cbd766cc-7885-6bef-b9f4-4ba9e174ec6e",
+        "name": "Qiang Qiang Guo <v-qguo@microsoft.com>",
+        "displayName": "Qiang Qiang Guo",
+        "url": "https://spsprodwus22.vssps.visualstudio.com/A28f31532-b635-4501-ab58-7eb1d27f889d/_apis/Identities/cbd766cc-7885-6bef-b9f4-4ba9e174ec6e",
+        "_links": { "avatar": { "href": "https://dev.azure.com/O365Exchange/_apis/GraphProfile/MemberAvatars/aad.Y2JkNzY2Y2MtNzg4NS03YmVmLWI5ZjQtNGJhOWUxNzRlYzZl" } },
+        "uniqueName": "v-qguo@microsoft.com",
+        "imageUrl": "https://dev.azure.com/O365Exchange/_apis/GraphProfile/MemberAvatars/aad.Y2JkNzY2Y2MtNzg4NS03YmVmLWI5ZjQtNGJhOWUxNzRlYzZl",
+        "descriptor": "aad.Y2JkNzY2Y2MtNzg4NS03YmVmLWI5ZjQtNGJhOWUxNzRlYzZl"
+      },
+      "revisedDate": "2021-01-19T22:54:27.86Z",
+      "fields": {
+        "System.Rev": {
+          "oldValue": 22,
+          "newValue": 23
+        },
+        "System.AuthorizedDate": {
+          "oldValue": "2021-01-19T02:39:20Z",
+          "newValue": "2021-01-19T03:32:33.957Z"
+        },
+        "System.RevisedDate": {
+          "oldValue": "2021-01-19T03:32:33.957Z",
+          "newValue": "2021-01-19T22:54:27.86Z"
+        },
+        "System.ChangedDate": {
+          "oldValue": "2021-01-19T02:39:20Z",
+          "newValue": "2021-01-19T03:32:33.957Z"
+        },
+        "System.Watermark": {
+          "oldValue": 14538379,
+          "newValue": 14539525
+        }
+      },
+      "relations": {
+        "added": [
+          {
+            "rel": "ArtifactLink",
+            "url": "vstfs:///Git/PullRequestId/f2b55896-e832-438d-9220-cbc08c545713%2fcb274bb6-3339-491a-804d-e2a4f615ad4b%2f1153226",
+            "attributes": {
+              "authorizedDate": "2021-01-19T03:32:33.957Z",
+              "id": 3391116,
+              "resourceCreatedDate": "2021-01-19T03:32:33.957Z",
+              "resourceModifiedDate": "2021-01-19T03:32:33.957Z",
+              "revisedDate": "9999-01-01T00:00:00Z",
+              "name": "Pull Request"
+            }
+          }
+        ]
+      },
+      "url": "https://dev.azure.com/O365Exchange/f2b55896-e832-438d-9220-cbc08c545713/_apis/wit/workItems/1565614/updates/25"
+    },
+    {
+      "id": 26,
+      "workItemId": 1565614,
+      "rev": 24,
+      "revisedBy": {
+        "id": "e79397a6-a19a-617b-be47-ad1dda39556e",
+        "name": "Ginna Groover 🚧 <gigroove@microsoft.com>",
+        "displayName": "Ginna Groover 🚧",
+        "url": "https://spsprodwus22.vssps.visualstudio.com/A28f31532-b635-4501-ab58-7eb1d27f889d/_apis/Identities/e79397a6-a19a-617b-be47-ad1dda39556e",
+        "_links": { "avatar": { "href": "https://dev.azure.com/O365Exchange/_apis/GraphProfile/MemberAvatars/aad.ZTc5Mzk3YTYtYTE5YS03MTdiLWJlNDctYWQxZGRhMzk1NTZl" } },
+        "uniqueName": "gigroove@microsoft.com",
+        "imageUrl": "https://dev.azure.com/O365Exchange/_apis/GraphProfile/MemberAvatars/aad.ZTc5Mzk3YTYtYTE5YS03MTdiLWJlNDctYWQxZGRhMzk1NTZl",
+        "descriptor": "aad.ZTc5Mzk3YTYtYTE5YS03MTdiLWJlNDctYWQxZGRhMzk1NTZl"
+      },
+      "revisedDate": "9999-01-01T00:00:00Z",
+      "fields": {
+        "System.Rev": {
+          "oldValue": 23,
+          "newValue": 24
+        },
+        "System.AuthorizedDate": {
+          "oldValue": "2021-01-19T03:32:33.957Z",
+          "newValue": "2021-01-19T22:54:27.86Z"
+        },
+        "System.RevisedDate": {
+          "oldValue": "2021-01-19T22:54:27.86Z",
+          "newValue": "9999-01-01T00:00:00Z"
+        },
+        "System.State": {
+          "oldValue": "Active",
+          "newValue": "Resolved"
+        },
+        "System.Reason": {
+          "oldValue": "Approved",
+          "newValue": "Deferred"
+        },
+        "System.AssignedTo": {
+          "oldValue": {
+            "displayName": "Qiang Qiang Guo",
+            "url": "https://spsprodwus22.vssps.visualstudio.com/A28f31532-b635-4501-ab58-7eb1d27f889d/_apis/Identities/cbd766cc-7885-6bef-b9f4-4ba9e174ec6e",
+            "_links": { "avatar": { "href": "https://dev.azure.com/O365Exchange/_apis/GraphProfile/MemberAvatars/aad.Y2JkNzY2Y2MtNzg4NS03YmVmLWI5ZjQtNGJhOWUxNzRlYzZl" } },
+            "id": "cbd766cc-7885-6bef-b9f4-4ba9e174ec6e",
+            "uniqueName": "v-qguo@microsoft.com",
+            "imageUrl": "https://dev.azure.com/O365Exchange/_apis/GraphProfile/MemberAvatars/aad.Y2JkNzY2Y2MtNzg4NS03YmVmLWI5ZjQtNGJhOWUxNzRlYzZl",
+            "descriptor": "aad.Y2JkNzY2Y2MtNzg4NS03YmVmLWI5ZjQtNGJhOWUxNzRlYzZl"
+          },
+          "newValue": {
+            "displayName": "Vadakasai Sudheerkumar",
+            "url": "https://spsprodwus22.vssps.visualstudio.com/A28f31532-b635-4501-ab58-7eb1d27f889d/_apis/Identities/598ee4ea-9e57-6963-9315-cff4bfa570b5",
+            "_links": { "avatar": { "href": "https://dev.azure.com/O365Exchange/_apis/GraphProfile/MemberAvatars/aad.NTk4ZWU0ZWEtOWU1Ny03OTYzLTkzMTUtY2ZmNGJmYTU3MGI1" } },
+            "id": "598ee4ea-9e57-6963-9315-cff4bfa570b5",
+            "uniqueName": "v-vasud@microsoft.com",
+            "imageUrl": "https://dev.azure.com/O365Exchange/_apis/GraphProfile/MemberAvatars/aad.NTk4ZWU0ZWEtOWU1Ny03OTYzLTkzMTUtY2ZmNGJmYTU3MGI1",
+            "descriptor": "aad.NTk4ZWU0ZWEtOWU1Ny03OTYzLTkzMTUtY2ZmNGJmYTU3MGI1"
+          }
+        },
+        "System.ChangedDate": {
+          "oldValue": "2021-01-19T03:32:33.957Z",
+          "newValue": "2021-01-19T22:54:27.86Z"
+        },
+        "System.ChangedBy": {
+          "oldValue": {
+            "displayName": "Qiang Qiang Guo",
+            "url": "https://spsprodwus22.vssps.visualstudio.com/A28f31532-b635-4501-ab58-7eb1d27f889d/_apis/Identities/cbd766cc-7885-6bef-b9f4-4ba9e174ec6e",
+            "_links": { "avatar": { "href": "https://dev.azure.com/O365Exchange/_apis/GraphProfile/MemberAvatars/aad.Y2JkNzY2Y2MtNzg4NS03YmVmLWI5ZjQtNGJhOWUxNzRlYzZl" } },
+            "id": "cbd766cc-7885-6bef-b9f4-4ba9e174ec6e",
+            "uniqueName": "v-qguo@microsoft.com",
+            "imageUrl": "https://dev.azure.com/O365Exchange/_apis/GraphProfile/MemberAvatars/aad.Y2JkNzY2Y2MtNzg4NS03YmVmLWI5ZjQtNGJhOWUxNzRlYzZl",
+            "descriptor": "aad.Y2JkNzY2Y2MtNzg4NS03YmVmLWI5ZjQtNGJhOWUxNzRlYzZl"
+          },
+          "newValue": {
+            "displayName": "Ginna Groover 🚧",
+            "url": "https://spsprodwus22.vssps.visualstudio.com/A28f31532-b635-4501-ab58-7eb1d27f889d/_apis/Identities/e79397a6-a19a-617b-be47-ad1dda39556e",
+            "_links": { "avatar": { "href": "https://dev.azure.com/O365Exchange/_apis/GraphProfile/MemberAvatars/aad.ZTc5Mzk3YTYtYTE5YS03MTdiLWJlNDctYWQxZGRhMzk1NTZl" } },
+            "id": "e79397a6-a19a-617b-be47-ad1dda39556e",
+            "uniqueName": "gigroove@microsoft.com",
+            "imageUrl": "https://dev.azure.com/O365Exchange/_apis/GraphProfile/MemberAvatars/aad.ZTc5Mzk3YTYtYTE5YS03MTdiLWJlNDctYWQxZGRhMzk1NTZl",
+            "descriptor": "aad.ZTc5Mzk3YTYtYTE5YS03MTdiLWJlNDctYWQxZGRhMzk1NTZl"
+          }
+        },
+        "System.AuthorizedAs": {
+          "oldValue": {
+            "displayName": "Qiang Qiang Guo",
+            "url": "https://spsprodwus22.vssps.visualstudio.com/A28f31532-b635-4501-ab58-7eb1d27f889d/_apis/Identities/cbd766cc-7885-6bef-b9f4-4ba9e174ec6e",
+            "_links": { "avatar": { "href": "https://dev.azure.com/O365Exchange/_apis/GraphProfile/MemberAvatars/aad.Y2JkNzY2Y2MtNzg4NS03YmVmLWI5ZjQtNGJhOWUxNzRlYzZl" } },
+            "id": "cbd766cc-7885-6bef-b9f4-4ba9e174ec6e",
+            "uniqueName": "v-qguo@microsoft.com",
+            "imageUrl": "https://dev.azure.com/O365Exchange/_apis/GraphProfile/MemberAvatars/aad.Y2JkNzY2Y2MtNzg4NS03YmVmLWI5ZjQtNGJhOWUxNzRlYzZl",
+            "descriptor": "aad.Y2JkNzY2Y2MtNzg4NS03YmVmLWI5ZjQtNGJhOWUxNzRlYzZl"
+          },
+          "newValue": {
+            "displayName": "Ginna Groover 🚧",
+            "url": "https://spsprodwus22.vssps.visualstudio.com/A28f31532-b635-4501-ab58-7eb1d27f889d/_apis/Identities/e79397a6-a19a-617b-be47-ad1dda39556e",
+            "_links": { "avatar": { "href": "https://dev.azure.com/O365Exchange/_apis/GraphProfile/MemberAvatars/aad.ZTc5Mzk3YTYtYTE5YS03MTdiLWJlNDctYWQxZGRhMzk1NTZl" } },
+            "id": "e79397a6-a19a-617b-be47-ad1dda39556e",
+            "uniqueName": "gigroove@microsoft.com",
+            "imageUrl": "https://dev.azure.com/O365Exchange/_apis/GraphProfile/MemberAvatars/aad.ZTc5Mzk3YTYtYTE5YS03MTdiLWJlNDctYWQxZGRhMzk1NTZl",
+            "descriptor": "aad.ZTc5Mzk3YTYtYTE5YS03MTdiLWJlNDctYWQxZGRhMzk1NTZl"
+          }
+        },
+        "System.PersonId": {
+          "oldValue": 29082572,
+          "newValue": 29039930
+        },
+        "System.Watermark": {
+          "oldValue": 14539525,
+          "newValue": 14563114
+        },
+        "System.CommentCount": {
+          "oldValue": 5,
+          "newValue": 6
+        },
+        "Microsoft.VSTS.Common.StateChangeDate": {
+          "oldValue": "2021-01-18T08:43:25.677Z",
+          "newValue": "2021-01-19T22:54:27.86Z"
+        },
+        "Microsoft.VSTS.Common.ResolvedDate": { "newValue": "2021-01-19T22:54:27.86Z" },
+        "Microsoft.VSTS.Common.ResolvedBy": {
+          "newValue": {
+            "displayName": "Ginna Groover 🚧",
+            "url": "https://spsprodwus22.vssps.visualstudio.com/A28f31532-b635-4501-ab58-7eb1d27f889d/_apis/Identities/e79397a6-a19a-617b-be47-ad1dda39556e",
+            "_links": { "avatar": { "href": "https://dev.azure.com/O365Exchange/_apis/GraphProfile/MemberAvatars/aad.ZTc5Mzk3YTYtYTE5YS03MTdiLWJlNDctYWQxZGRhMzk1NTZl" } },
+            "id": "e79397a6-a19a-617b-be47-ad1dda39556e",
+            "uniqueName": "gigroove@microsoft.com",
+            "imageUrl": "https://dev.azure.com/O365Exchange/_apis/GraphProfile/MemberAvatars/aad.ZTc5Mzk3YTYtYTE5YS03MTdiLWJlNDctYWQxZGRhMzk1NTZl",
+            "descriptor": "aad.ZTc5Mzk3YTYtYTE5YS03MTdiLWJlNDctYWQxZGRhMzk1NTZl"
+          }
+        },
+        "Microsoft.VSTS.Common.ResolvedReason": { "newValue": "Deferred" },
+        "System.History": { "newValue": "<div>This is a Fabric/Fluent UI bug with the Pivot control, since it has no reflow behavior. Please file the bug to them. Our SCC pivots, used in beta version of workbench page template, do have reflow. You can try it here:&nbsp;<a href=\"https://page-templates.azurewebsites.net/#M365Scc.WorkbenchPage\">M365 SCC Page Templates Demo Page (page-templates.azurewebsites.net)</a>. To get the benefit of this beta workbench page, FT can opt in to the new template. Please reach out to m365sccengdisc@microsoft.com for details on how to opt-in, or join us at SCC office hours</div><div><br></div><div>You can see that Fabric Pivot has no reflow in their demo:&nbsp;<a href=\"https://developer.microsoft.com/en-us/fluentui#/controls/web/pivot\">Home - Fluent UI (microsoft.com)</a></div>" }
+      },
+      "url": "https://dev.azure.com/O365Exchange/f2b55896-e832-438d-9220-cbc08c545713/_apis/wit/workItems/1565614/updates/26"
+    }
+  ]
+}
