@@ -4,3 +4,5 @@ obj/
 Properties/
 data.json
 appsettings.Development.json
+appsettings.Production.json
+

@@ -33,6 +33,7 @@ namespace PMS.Controllers
 
         public HomeController(ILogger<HomeController> logger, IConfiguration configration, PMSDBContext context)
         {
+            /*
             _logger = logger;
             _configuration = configration;
             _context = context;
@@ -45,11 +46,11 @@ namespace PMS.Controllers
                     b.Status = "Fixed";
                 else
                     b.Status = "Active";
-            }
+            }*/
         }
 
         public IActionResult Index(DateTime? startdate, DateTime? enddate)
-        {
+        {   /*
             if (!startdate.HasValue) startdate = new DateTime(2020, 1, 1);
             if (!enddate.HasValue) enddate = new DateTime(2030, 1, 1);
 
@@ -61,8 +62,8 @@ namespace PMS.Controllers
             SetQualityChart(bugs);
             SetEfficiencyChart(bugs);
             SetBugCommentsChart(bugs);
-            SetPRCommentsChart(bugs);
-            return View();
+            SetPRCommentsChart(bugs);*/
+            return View("Test");
         }
 
         public IActionResult ByDeveloper()
