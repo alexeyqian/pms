@@ -8,16 +8,16 @@
 
         @using (Html.BeginForm("Index", "Home", FormMethod.Get))
         {
-        <fieldset>
-            @Html.Label("StartDate", "Start Date:")
-            <input class="startdate" id="startdate" name="startdate" type="date" value="">
-            @Html.Label("enddate", "End Date:")
-            <input class="startdate" id="enddate" name="enddate" type="date" value="">
-            <input type="submit" value="Apply" />
-            @*<input type="submit" value="By Week" />
-            <input type="submit" value="By Month" />
-            <input type="submit" value="By Year" />*@
-        </fieldset>
+            <fieldset>
+                @Html.Label("StartDate", "Start Date:")
+                <input class="startdate" id="startdate" name="startdate" type="date" value="">
+                @Html.Label("enddate", "End Date:")
+                <input class="startdate" id="enddate" name="enddate" type="date" value="">
+                <input type="submit" value="Apply" />
+                @*<input type="submit" value="By Week" />
+                    <input type="submit" value="By Month" />
+                    <input type="submit" value="By Year" />*@
+            </fieldset>
         }
 
     </div>
@@ -88,14 +88,16 @@
         <h6>Counting tags (>= 20)</h6>
         <canvas id="tagChart"></canvas>
     </div>
+</div>
 
-    <div class="col-md-12">
+<div class="row">
+    <div class="col-md-6">
         <h3>Severity Chart</h3>
         <h6>Bug severity</h6>
         <canvas id="severityChart"></canvas>
     </div>
 
-    <div class="col-md-12">
+    <div class="col-md-6">
         <h3>Priority Chart</h3>
         <h6>Bug Priority</h6>
         <canvas id="priorityChart"></canvas>
@@ -104,266 +106,37 @@
 
 
 @section Scripts {
+    <script src="~/js/home.js" asp-append-version="true"></script>
     <script>
-
-    function getRandomColor() {
-        var letters = '0123456789ABCDEF';
-        var color = '#';
-        for (var i = 0; i < 6; i++) {
-            color += letters[Math.floor(Math.random() * 16)];
-        }
-        return color;
-    }
-
-    function createOverviewChart() {
         var ctx = document.getElementById('categoryChart').getContext('2d');
-        var chart = new Chart(ctx, {
-            type: 'pie',
-            data: {
-                datasets: [{
-                    data: [@ViewData["CategoryValues"]],
-                    backgroundColor: [
-                        'red',
-                        'blue',
-                        'green',
-                        'black',
-                        'grey',
-                        'orange',
-                        'purple'
-                    ],
-                    //borderColor: 'green'
-                }],
+        createOverviewChart(ctx, [@Html.Raw(ViewData["CategoryLabels"])], [@ViewData["CategoryValues"]]);
 
-                labels: [@Html.Raw(ViewData["CategoryLabels"])]
-            },
-            options: {
-                legend: {
-                    position: 'right'
-                },
-                plugins: {
-                    labels: {
-                        render: 'value',
-                        fontSize: 20,
-                        fontColor: 'white'
-                    }
-                }
-            }
-        });
-    }
+        ctx = document.getElementById('productivityChart').getContext('2d');
+        createLineChart(ctx, [@Html.Raw(ViewData["ProductivityLabels"])], [@ViewData["ProductivityValues"]], 'Productivity');
 
-    function createProductivityChart() {
-        var ctx = document.getElementById('productivityChart').getContext('2d');
-        var chart = new Chart(ctx, {
-            type: 'line',
+        ctx = document.getElementById('qualityChart').getContext('2d');
+        createLineChart(ctx, [@Html.Raw(ViewData["QualityLabels"])], [@ViewData["QualityValues"]], 'Quality');
 
-            data: {
-                labels: [@Html.Raw(ViewData["ProductivityLabels"])],
-                datasets: [{
-                    label: 'Productivity dataset',
-                    backgroundColor: '' + getRandomColor(),
-                    borderColor: 'green',
-                    data: [@ViewData["ProductivityValues"]]
-                }]
-            },
+        ctx = document.getElementById('efficencyChart').getContext('2d');
+        createLineChart(ctx, [@Html.Raw(ViewData["EfficiencyLabels"])], [@ViewData["EfficiencyValues"]], 'Efficiency');
 
-            options: {
-                legend: {
-                    display: false,
-                    }
-            }
-        });
-    }
+        ctx = document.getElementById('bugCommentsChart').getContext('2d');
+        createLineChart(ctx, [@Html.Raw(ViewData["bugCommentsLabels"])], [@ViewData["bugCommentsValues"]], 'Bug Comments');
 
-    function createQualityChart() {
-        var ctx = document.getElementById('qualityChart').getContext('2d');
-        var chart = new Chart(ctx, {
-            type: 'line',
+        ctx = document.getElementById('prCommentsChart').getContext('2d');
+        createLineChart(ctx, [@Html.Raw(ViewData["prCommentsLabels"])], [@ViewData["prCommentsValues"]], 'PR Comments');
 
-            data: {
-                labels: [@Html.Raw(ViewData["QualityLabels"])],
-                datasets: [{
-                    label: 'Quality dataset',
-                    backgroundColor: '' + getRandomColor(),
-                    borderColor: '' + getRandomColor(),
-                    data: [@ViewData["QualityValues"]]
-                }]
-            },
+        ctx = document.getElementById('prEngagementChart').getContext('2d');
+        createLineChart(ctx, [@Html.Raw(ViewData["prEngagementLabels"])], [@ViewData["prEngagementValues"]], 'PR Engagement');
 
-            options: {
-                legend: {
-                    display: false,
-                }
-            }
-        });
-    }
+        ctx = document.getElementById('tagChart').getContext('2d');
+        createHorizontalBarChart(ctx, [@Html.Raw(ViewData["TagLabels"])], [@ViewData["TagValues"]], 'Tag');
 
-    function createEfficiencyChart() {
-        var ctx = document.getElementById('efficencyChart').getContext('2d');
-        var chart = new Chart(ctx, {
-            type: 'line',
+        ctx = document.getElementById('severityChart').getContext('2d');
+        createHorizontalBarChart(ctx, [@Html.Raw(ViewData["SeverityLabels"])], [@ViewData["SeverityValues"]], 'Severity');
 
-            data: {
-                labels: [@Html.Raw(ViewData["EfficiencyLabels"])],
-                datasets: [{
-                    label: 'Efficiency dataset',
-                    backgroundColor: '' + getRandomColor(),
-                    borderColor: '' + getRandomColor(),
-                    data: [@ViewData["EfficiencyValues"]]
-                }]
-            },
-
-            options: {
-            legend: {
-                display: false,
-                }
-            }
-        });
-    }
-
-    function createBugCommentsChart() {
-        var ctx = document.getElementById('bugCommentsChart').getContext('2d');
-        var chart = new Chart(ctx, {
-            type: 'line',
-
-            data: {
-                labels: [@Html.Raw(ViewData["bugCommentsLabels"])],
-                datasets: [{
-                    label: 'Bug Comments Dataset',
-                    backgroundColor: '' + getRandomColor(),
-                    borderColor: '' + getRandomColor(),
-                    data: [@ViewData["bugCommentsValues"]]
-                }]
-            },
-
-            options: {
-                legend: {
-                    display: false,
-                }
-            }
-        });
-    }
-
-    function createPRCommentsChart() {
-        var ctx = document.getElementById('prCommentsChart').getContext('2d');
-        var chart = new Chart(ctx, {
-            type: 'line',
-
-            data: {
-                labels: [@Html.Raw(ViewData["prCommentsLabels"])],
-                datasets: [{
-                    label: 'PR Comments Dataset',
-                    backgroundColor: '' + getRandomColor(),
-                    borderColor: '' + getRandomColor(),
-                    data: [@ViewData["prCommentsValues"]]
-                }]
-            },
-
-            options: {
-                legend: {
-                    display: false,
-                }
-            }
-        });
-        }
-
-    function createPREngagementChart() {
-        var ctx = document.getElementById('prEngagementChart').getContext('2d');
-        var chart = new Chart(ctx, {
-            type: 'line',
-
-            data: {
-                labels: [@Html.Raw(ViewData["prEngagementLabels"])],
-                datasets: [{
-                    label: 'PR Engagement Dataset',
-                    backgroundColor: '' + getRandomColor(),
-                    borderColor: '' + getRandomColor(),
-                    data: [@ViewData["prEngagementValues"]]
-                }]
-            },
-            options: {
-                legend: {
-                    display: false,
-                }
-            }
-        });
-        }
-
-    function createTagChart() {
-        var ctx = document.getElementById('tagChart').getContext('2d');
-        var chart = new Chart(ctx, {
-            type: 'horizontalBar',
-
-            data: {
-                labels: [@Html.Raw(ViewData["TagLabels"])],
-                datasets: [{
-                    label: 'Tags',
-                    backgroundColor: '' + getRandomColor(),
-                    borderColor: '' + getRandomColor(),
-                    data: [@ViewData["TagValues"]]
-                }]
-            },
-            options: {
-                legend: {
-                    display: false,
-                }
-            }
-        });
-        }
-
-    function createSeverityChart() {
-        var ctx = document.getElementById('severityChart').getContext('2d');
-        var chart = new Chart(ctx, {
-            type: 'horizontalBar',
-
-            data: {
-                labels: [@Html.Raw(ViewData["SeverityLabels"])],
-                datasets: [{
-                    label: 'Severity',
-                    backgroundColor: '' + getRandomColor(),
-                    borderColor: '' + getRandomColor(),
-                    data: [@ViewData["SeverityValues"]]
-                }]
-            },
-            options: {
-                legend: {
-                    display: false,
-                }
-            }
-        });
-
-    function createPriorityChart() {
-        var ctx = document.getElementById('priorityChart').getContext('2d');
-        var chart = new Chart(ctx, {
-            type: 'horizontalBar',
-
-            data: {
-                labels: [@Html.Raw(ViewData["PriorityLabels"])],
-                datasets: [{
-                    label: 'Priority',
-                    backgroundColor: '' + getRandomColor(),
-                    borderColor: '' + getRandomColor(),
-                    data: [@ViewData["PriorityValues"]]
-                }]
-            },
-            options: {
-                legend: {
-                    display: false,
-                }
-            }
-        });
-    }
-
-    createOverviewChart();
-    createProductivityChart();
-    createEfficiencyChart();
-    createQualityChart();
-    createBugCommentsChart();
-    createPRCommentsChart();
-        createPREngagementChart();
-        createTagChart();
-        createSeverityChart();
-        createPriorityChart();
-
+        ctx = document.getElementById('priorityChart').getContext('2d');
+        createHorizontalBarChart(ctx, [@Html.Raw(ViewData["PriorityLabels"])], [@ViewData["PriorityValues"]], 'Severity');
 
     </script>
 }

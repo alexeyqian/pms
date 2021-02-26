@@ -119,7 +119,7 @@ namespace PMS.Controllers
         private void SetSeverityChart(List<Bug> bugs)
         {
             var analyzer = new DataAnalyzer();
-            var chartData = analyzer.GetTagData(bugs);
+            var chartData = analyzer.GetSeverityData(bugs);
 
             ViewData["TotalSeverity"] = chartData.Total;
             ViewData["SeverityLabels"] = chartData.CategoryLabels;
@@ -129,7 +129,7 @@ namespace PMS.Controllers
         private void SetPriorityChart(List<Bug> bugs)
         {
             var analyzer = new DataAnalyzer();
-            var chartData = analyzer.GetTagData(bugs);
+            var chartData = analyzer.GetPriorityData(bugs);
 
             ViewData["TotalPriority"] = chartData.Total;
             ViewData["PriorityLabels"] = chartData.CategoryLabels;
