@@ -10,9 +10,9 @@
         {
             <fieldset>
                 @Html.Label("StartDate", "Start Date:")
-                <input class="startdate" id="startdate" name="startdate" type="date" value="">
+                <input class="startdate" id="startdate" name="startdate" type="date" value="@ViewBag.StartDate">
                 @Html.Label("enddate", "End Date:")
-                <input class="startdate" id="enddate" name="enddate" type="date" value="">
+                <input class="startdate" id="enddate" name="enddate" type="date" value="@ViewBag.EndDate">
                 <input type="submit" value="Apply" />
                 @*<input type="submit" value="By Week" />
                     <input type="submit" value="By Month" />
