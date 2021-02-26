@@ -86,8 +86,8 @@ namespace PMS.Controllers
             SetStatusChart(bugs);
             SetPriorityChart(bugs);
 
-            ViewBag.StartDate = startdate.HasValue ? startdate.Value.ToShortDateString() : "";
-            ViewBag.EndDate = enddate.HasValue? enddate.Value.ToShortDateString() : "";
+            ViewBag.StartDate = startdate.HasValue ? startdate.Value.ToString("yyyy-MM-dd") : "";
+            ViewBag.EndDate = enddate.HasValue? enddate.Value.ToString("yyyy-MM-dd") : "";
 
             return View(bugs);
         }

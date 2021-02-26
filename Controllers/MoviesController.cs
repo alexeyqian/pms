@@ -46,6 +46,8 @@ namespace PMS.Controllers
                 Movies = await movies.ToListAsync()
             };
 
+            ViewBag.SearchString = searchString;
+
             return View(movieGenreVM);
         }
 
