@@ -51,7 +51,7 @@ namespace PMS.Controllers
         public IActionResult Index(DateTime? startdate, DateTime? enddate)
         {   
             if (!startdate.HasValue) startdate = new DateTime(2020, 1, 1);
-            if (!enddate.HasValue) enddate = new DateTime(2030, 1, 1);
+            if (!enddate.HasValue) enddate = DateTime.Now.AddDays(1);
 
             var bugs = _bugs.Where(b => !b.FixedDate.HasValue 
                 || ( b.FixedDate >= startdate && b.FixedDate <= enddate.Value.AddDays(1))).ToList();
@@ -81,8 +81,8 @@ namespace PMS.Controllers
 
         public IActionResult WeeklyReport(DateTime? startdate, DateTime? enddate)
         {
-            if (!startdate.HasValue) startdate = new DateTime(2020, 1, 1);
-            if (!enddate.HasValue) enddate = new DateTime(2030, 1, 1);
+            if (!startdate.HasValue) startdate = DateTime.Now.StartOfWeek(DayOfWeek.Monday);
+            if (!enddate.HasValue) enddate = DateTime.Now.AddDays(1);
 
             var bugs = _bugs.Where(b => !string.IsNullOrEmpty(b.StatusInVS) && b.FixedDate >= startdate && b.FixedDate <= enddate.Value.AddDays(1)).ToList();
 
@@ -362,6 +362,15 @@ namespace PMS.Controllers
         public IActionResult Error()
         {
             return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
+        }
+    }
+
+    public static class DateTimeExtensions
+    {
+        public static DateTime StartOfWeek(this DateTime dt, DayOfWeek startOfWeek)
+        {
+            int diff = (7 + (dt.DayOfWeek - startOfWeek)) % 7;
+            return dt.AddDays(-1 * diff).Date;
         }
     }
 }
