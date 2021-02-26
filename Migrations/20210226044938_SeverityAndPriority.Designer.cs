@@ -3,15 +3,17 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using PMS.Data;
 
 namespace PMS.Migrations
 {
     [DbContext(typeof(PMSDBContext))]
-    partial class PMSDBContextModelSnapshot : ModelSnapshot
+    [Migration("20210226044938_SeverityAndPriority")]
+    partial class SeverityAndPriority
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -71,9 +73,6 @@ namespace PMS.Migrations
                     b.Property<string>("Note")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("Priority")
-                        .HasColumnType("nvarchar(max)");
-
                     b.Property<int>("PullRequestCount")
                         .HasColumnType("int");
 
@@ -85,9 +84,6 @@ namespace PMS.Migrations
 
                     b.Property<DateTime?>("ResovedDate")
                         .HasColumnType("datetime2");
-
-                    b.Property<string>("Severity")
-                        .HasColumnType("nvarchar(max)");
 
                     b.Property<DateTime?>("StartedDate")
                         .HasColumnType("datetime2");

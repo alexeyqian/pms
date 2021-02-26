@@ -34,6 +34,11 @@ namespace PMS.VSDTO
         public string SystemDescription { get; set; }
         [JsonProperty(PropertyName = "System.Tags")]
         public string SystemTags { get; set; }
+        [JsonProperty(PropertyName = "Microsoft.VSTS.Common.Severity")]
+        public string MicrosoftVSTSCommonSeverity { get; set; }
+
+        [JsonProperty(PropertyName = "Microsoft.VSTS.Common.Priority")]
+        public string MicrosoftVSTSCommonPriority { get; set; }
     }
 
     public class SystemAssignedto

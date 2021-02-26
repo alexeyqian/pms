@@ -84,7 +84,21 @@
 
 <div class="row">
     <div class="col-md-12">
-        <h2> Bug Tags Analysis -  Coming Soon</h2>
+        <h3>Tags Chart</h3>
+        <h6>Counting tags (>= 20)</h6>
+        <canvas id="tagChart"></canvas>
+    </div>
+
+    <div class="col-md-12">
+        <h3>Severity Chart</h3>
+        <h6>Bug severity</h6>
+        <canvas id="severityChart"></canvas>
+    </div>
+
+    <div class="col-md-12">
+        <h3>Priority Chart</h3>
+        <h6>Bug Priority</h6>
+        <canvas id="priorityChart"></canvas>
     </div>
 </div>
 
@@ -272,6 +286,71 @@
                 }
             }
         });
+        }
+
+    function createTagChart() {
+        var ctx = document.getElementById('tagChart').getContext('2d');
+        var chart = new Chart(ctx, {
+            type: 'horizontalBar',
+
+            data: {
+                labels: [@Html.Raw(ViewData["TagLabels"])],
+                datasets: [{
+                    label: 'Tags',
+                    backgroundColor: '' + getRandomColor(),
+                    borderColor: '' + getRandomColor(),
+                    data: [@ViewData["TagValues"]]
+                }]
+            },
+            options: {
+                legend: {
+                    display: false,
+                }
+            }
+        });
+        }
+
+    function createSeverityChart() {
+        var ctx = document.getElementById('severityChart').getContext('2d');
+        var chart = new Chart(ctx, {
+            type: 'horizontalBar',
+
+            data: {
+                labels: [@Html.Raw(ViewData["SeverityLabels"])],
+                datasets: [{
+                    label: 'Severity',
+                    backgroundColor: '' + getRandomColor(),
+                    borderColor: '' + getRandomColor(),
+                    data: [@ViewData["SeverityValues"]]
+                }]
+            },
+            options: {
+                legend: {
+                    display: false,
+                }
+            }
+        });
+
+    function createPriorityChart() {
+        var ctx = document.getElementById('priorityChart').getContext('2d');
+        var chart = new Chart(ctx, {
+            type: 'horizontalBar',
+
+            data: {
+                labels: [@Html.Raw(ViewData["PriorityLabels"])],
+                datasets: [{
+                    label: 'Priority',
+                    backgroundColor: '' + getRandomColor(),
+                    borderColor: '' + getRandomColor(),
+                    data: [@ViewData["PriorityValues"]]
+                }]
+            },
+            options: {
+                legend: {
+                    display: false,
+                }
+            }
+        });
     }
 
     createOverviewChart();
@@ -280,7 +359,10 @@
     createQualityChart();
     createBugCommentsChart();
     createPRCommentsChart();
-    createPREngagementChart();
+        createPREngagementChart();
+        createTagChart();
+        createSeverityChart();
+        createPriorityChart();
 
 
     </script>

@@ -88,6 +88,8 @@ namespace PMS.Controllers
             //bug.Reason = workitem.fields.SystemReason;
             bug.Title = workitem.fields.SystemTitle;
             bug.Tags = workitem.fields.SystemTags;
+            bug.Severity = workitem.fields.MicrosoftVSTSCommonSeverity;
+            bug.Priority = workitem.fields.MicrosoftVSTSCommonPriority;
 
             bug.CommentCount = workitem.fields.SystemCommentCount;
 

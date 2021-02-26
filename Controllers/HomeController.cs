@@ -63,6 +63,9 @@ namespace PMS.Controllers
             SetBugCommentsChart(bugs);
             SetPRCommentsChart(bugs);
             SetPREngagementChart(bugs);
+            SetTagChart(bugs);
+            SetSeverityChart(bugs);
+            SetPriorityChart(bugs);
 
             return View();
         }
@@ -101,6 +104,36 @@ namespace PMS.Controllers
             ViewData["TotalBugs"] = bugs.Count();
             ViewData["CategoryLabels"] = "\"" + String.Join("\",\"", labelList.ToArray()) + "\"";
             ViewData["CategoryValues"] = String.Join(",", valueList.ToArray());
+        }
+
+        private void SetTagChart(List<Bug> bugs)
+        {
+            var analyzer = new DataAnalyzer();
+            var chartData = analyzer.GetTagData(bugs);
+
+            ViewData["TotalTags"] = chartData.Total;
+            ViewData["TagLabels"] = chartData.CategoryLabels;
+            ViewData["TagValues"] = chartData.CategoryValues;
+        }
+
+        private void SetSeverityChart(List<Bug> bugs)
+        {
+            var analyzer = new DataAnalyzer();
+            var chartData = analyzer.GetTagData(bugs);
+
+            ViewData["TotalSeverity"] = chartData.Total;
+            ViewData["SeverityLabels"] = chartData.CategoryLabels;
+            ViewData["SeverityValues"] = chartData.CategoryValues;
+        }
+
+        private void SetPriorityChart(List<Bug> bugs)
+        {
+            var analyzer = new DataAnalyzer();
+            var chartData = analyzer.GetTagData(bugs);
+
+            ViewData["TotalPriority"] = chartData.Total;
+            ViewData["PriorityLabels"] = chartData.CategoryLabels;
+            ViewData["PriorityValues"] = chartData.CategoryValues;
         }
 
         private void SetProductivityChart(List<Bug> bugs)

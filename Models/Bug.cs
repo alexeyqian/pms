@@ -29,7 +29,8 @@ namespace PMS.Models
         public int FirstPullRequestIterationCount { get; set; }
         public int FirstPullRequestCommentCount { get; internal set; }
         public int FirstPullRequestCommitCount { get; internal set; }
-
+        public string Severity { get; set; }
+        public string Priority { get; set; }
        
         // manual maintained fields
         public string Status { get; set; } // CSI Status
