@@ -76,6 +76,24 @@ namespace PMS.Controllers
             return getChartDataFromDict(sortedDict);
         }
 
+        public ChartData GetStatusInVSData(List<Bug> bugs)
+        {
+            var dict = new Dictionary<string, int>();
+
+            foreach (var bug in bugs)
+            {
+                if (string.IsNullOrEmpty(bug.StatusInVS)) continue;
+
+                var key = bug.StatusInVS;
+                if (dict.Keys.Contains(key))
+                    dict[key]++;
+                else
+                    dict.Add(key, 1);
+            }
+
+            var sortedDict = dict.OrderByDescending(kv => kv.Value);
+            return getChartDataFromDict(sortedDict);
+        }
         private ChartData getChartDataFromDict(IOrderedEnumerable<KeyValuePair<string, int>> sortedDict)
         {
             if (sortedDict.Count() <= 0) throw new Exception("Dictionary cannot be empty.");

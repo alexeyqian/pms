@@ -81,10 +81,27 @@ namespace PMS.Controllers
             if (!startdate.HasValue) startdate = new DateTime(2020, 1, 1);
             if (!enddate.HasValue) enddate = new DateTime(2030, 1, 1);
 
-            var bugs = _bugs.Where(b => b.FixedDate >= startdate && b.FixedDate <= enddate.Value.AddDays(1)).ToList();
-            SetCategoryChart(bugs);
+            var bugs = _bugs.Where(b => !string.IsNullOrEmpty(b.StatusInVS) && b.FixedDate >= startdate && b.FixedDate <= enddate.Value.AddDays(1)).ToList();
+
+            SetStatusChart(bugs);
+            SetPriorityChart(bugs);
+
+            ViewBag.StartDate = startdate.HasValue ? startdate.Value.ToShortDateString() : "";
+            ViewBag.EndDate = enddate.HasValue? enddate.Value.ToShortDateString() : "";
+
             return View(bugs);
         }
+
+        private void SetStatusChart(List<Bug> bugs)
+        {
+            var analyzer = new DataAnalyzer();
+            var chartData = analyzer.GetStatusInVSData(bugs);
+
+            ViewData["StatusTotal"] = chartData.Total;
+            ViewData["StatusLabels"] = chartData.CategoryLabels;
+            ViewData["StatusValues"] = chartData.CategoryValues;
+        }
+
 
         private void SetCategoryChart(List<Bug> bugs)
         {

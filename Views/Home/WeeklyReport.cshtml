@@ -4,6 +4,27 @@
     var index = 1;
 }
 
+<style>
+    .bug-title {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        max-width: 400px;
+    }
+    .developer{
+        white-space: nowrap;
+    }
+    .table{
+        font-size: 0.8rem;
+    }
+    .table tr{
+        height: 20px;
+    }
+        .table td {
+            white-space: nowrap;
+        }
+</style>
+
 <h2>Weekly Report</h2>
 
 
@@ -15,57 +36,60 @@
             <fieldset>
                 <legend>Search criteria</legend>
                 @Html.Label("StartDate", "Start Date:")
-                <input class="startdate" id="startdate" name="startdate" type="date" value="">
+                <input class="startdate" id="startdate" name="startdate" type="date" value="@ViewBag.StartDate">
                 @Html.Label("enddate", "End Date:")
-                <input class="startdate" id="enddate" name="enddate" type="date" value="">
+                <input class="startdate" id="enddate" name="enddate" type="date" value="@ViewBag.EndDate">
                 <input type="submit" value="Generate Weekly Report" />
             </fieldset>
         }
 
     </div>
-
 </div>
+
+<br />
+
 <div class="row">
     <div class="col-md-6">
-        <canvas id="categoryChart"></canvas>
+        <h3>Status Chart</h3>
+        <h6>Bug Status</h6>
+        <canvas id="statusChart"></canvas>
     </div>
-    <div class="col-md-6"></div>
+    <div class="col-md-6">
+        <h3>Priority Chart</h3>
+        <h6>Bug Priority</h6>
+        <canvas id="priorityChart"></canvas>
+    </div>
 </div>
-
+<br />
 <div class="row">
-    <table class="table table-bordered" id="detailTable">
+    <table class="table" id="detailTable">
         <thead>
             <tr>
                 <th>#</th>
                 <th>NO</th>
-                <th>Status</th>
-                <th>Fixed Date</th>
-
-                <th width="150">Developer</th>
-                <th>Team</th>
+                <th>StatusInVS</th>
+                <th width="200">Developer</th>
+                <th>Severity</th>
+                <th>Priority</th>
+                <th>PR Iterations</th>
+                <th>PR Comments</th>
+                <th>Title</th>
             </tr>
         </thead>
         <tbody>
             @foreach (var m in Model)
             {
-                var rowClass = "";
-                @if (m.Status == "FixedAndWaitingForApproval")
-                {
-                    rowClass = "warning";
-                }
-                else if (m.Status == "FixedAndApproved")
-                {
-                    rowClass = "success";
-                }
-                <tr class="@rowClass">
-                    <th scope="row">@(index++)</th>
-                    <td><a href="https://o365exchange.visualstudio.com/DefaultCollection/IP%20Engineering/_workitems/edit/@m.NO" target="_blank">@m.NO</a></td>
-                    <td>@m.Status</td>
-                    <td>@(m.FixedDate.HasValue ? m.FixedDate.Value.ToShortDateString(): "")</td>
-
-                    <td>@m.Developer</td>
-                    <td>@m.Team</td>
-                </tr>
+            <tr>
+                <th scope="row">@(index++)</th>
+                <td><a href="https://o365exchange.visualstudio.com/DefaultCollection/IP%20Engineering/_workitems/edit/@m.NO" target="_blank">@m.NO</a></td>
+                <td>@m.StatusInVS</td>
+                <td><div class="developer">@m.Developer</div></td>
+                <td>@m.Severity</td>
+                <td>@m.Priority</td>
+                <td>@m.FirstPullRequestIterationCount</td>
+                <td>@m.FirstPullRequestCommentCount</td>
+                <td><div class="bug-title">@m.Title</div></td>
+            </tr>
             }
 
         </tbody>
@@ -73,52 +97,20 @@
 </div>
 
 @section Scripts {
-<script>
-    function createOverviewChart() {
-        var ctx = document.getElementById('categoryChart').getContext('2d');
-        var chart = new Chart(ctx, {
-            type: 'pie',
-            data: {
-                datasets: [{
-                    data: [@ViewData["CategoryValues"]],
-                    backgroundColor: [
-                        'red',
-                        'blue',
-                        'green',
-                        'black',
-                        'grey',
-                        'orange',
-                        'purple'
-                    ],
-                    //borderColor: 'green'
-                }],
+    <script>
+        var ctx = document.getElementById('statusChart').getContext('2d');
+        createPieChart(ctx, [@Html.Raw(ViewData["StatusLabels"])], [@ViewData["StatusValues"]], 'Status');
 
-                labels: [@Html.Raw(ViewData["CategoryLabels"])]
-            },
-            options: {
-                legend: {
-                    position: 'right'
-                },
-                plugins: {
-                    labels: {
-                        render: 'value',
-                        fontSize: 20,
-                        fontColor: 'white'
-                    }
-                }
-            }
-        });
-    }
-
-    createOverviewChart();
-</script>
+         ctx = document.getElementById('priorityChart').getContext('2d');
+        createHorizontalBarChart(ctx, [@Html.Raw(ViewData["PriorityLabels"])], [@ViewData["PriorityValues"]], 'Priority');
+    </script>
 
     <script src="//cdn.datatables.net/1.10.23/js/jquery.dataTables.min.js"></script>
     <script>
         $(document).ready(function () {
-            $('#detailTable').DataTable({
-                paging: false
-            });
+            //$('#detailTable').DataTable({
+            //    paging: false
+            //});
         });
     </script>
 }

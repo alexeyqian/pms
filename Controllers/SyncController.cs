@@ -57,7 +57,7 @@ namespace PMS.Controllers
                 }
                 else // data already exist
                 {
-                    if (bug.StatusInVS.ToLower() == "closed") continue; // ignore closed bugs
+                    if (!string.IsNullOrEmpty(bug.StatusInVS) && bug.StatusInVS.ToLower() == "closed") continue; // ignore closed bugs
                     if (bug.SyncedOn.HasValue && DateTime.Now.Subtract(bug.SyncedOn.Value).Hours <= 2)
                         continue; // ignore recent synced data
                     UpdateFields(b, bug);
@@ -70,7 +70,7 @@ namespace PMS.Controllers
             var syncHelper = new SyncHelper(_configuration, _context);
             foreach (var bug in bugsPartial)
             {
-                if (bug.StatusInVS.ToLower() == "closed") continue; // ignore closed bugs
+                if (!string.IsNullOrEmpty(bug.StatusInVS) && bug.StatusInVS.ToLower() == "closed") continue; // ignore closed bugs
                 if (bug.SyncedOn.HasValue && DateTime.Now.Subtract(bug.SyncedOn.Value).Hours <= 2)
                     continue; // ignore recent synced data
                 await syncHelper.SyncBug(bug.NO);
