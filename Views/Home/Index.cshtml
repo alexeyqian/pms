@@ -133,10 +133,10 @@
         createHorizontalBarChart(ctx, [@Html.Raw(ViewData["TagLabels"])], [@ViewData["TagValues"]], 'Tag');
 
         ctx = document.getElementById('severityChart').getContext('2d');
-        createHorizontalBarChart(ctx, [@Html.Raw(ViewData["SeverityLabels"])], [@ViewData["SeverityValues"]], 'Severity');
+        createHorizontalBarChart(ctx, [@Html.Raw(ViewData["SeverityLabels"]), "Dummy"], [@ViewData["SeverityValues"], "1"], 'Severity');
 
         ctx = document.getElementById('priorityChart').getContext('2d');
-        createHorizontalBarChart(ctx, [@Html.Raw(ViewData["PriorityLabels"])], [@ViewData["PriorityValues"]], 'Severity');
+        createHorizontalBarChart(ctx, [@Html.Raw(ViewData["PriorityLabels"])], [@ViewData["PriorityValues"]], 'Priority');
 
     </script>
 }
