@@ -47,17 +47,17 @@ namespace PMS.Controllers
             _context = context;
         }
 
-        public async Task SyncBug(int bugId)
+        public async Task SyncBug(int bugNo)
         {
             string json = string.Empty;
 
             try
             {
-                json = await GetWorkItem(bugId);
+                json = await GetWorkItem(bugNo);
                 var workitem = JsonConvert.DeserializeObject<VSWorkItem>(json, _jsonSettings);
                 if (workitem.fields.SystemWorkItemType != "Bug") throw new Exception("Workitem type should be bug");
 
-                var bug = await _context.Bug.Where(r => r.NO == bugId).FirstOrDefaultAsync();
+                var bug = await _context.Bug.Where(r => r.NO == bugNo).FirstOrDefaultAsync();
                 if (bug == null) // create new record
                 {
                     bug = new Models.Bug();
@@ -70,6 +70,7 @@ namespace PMS.Controllers
                     await UpdateBugFields(bug, workitem, false);
                     _context.Update(bug);
                 }
+                bug.SyncedOn = DateTime.Now;
                 await _context.SaveChangesAsync();
             }
             catch (Exception ex)
@@ -85,7 +86,7 @@ namespace PMS.Controllers
             bug.CreatedDate = workitem.fields.SystemCreatedDate;
 
             bug.StatusInVS = workitem.fields.SystemState;
-            //bug.Reason = workitem.fields.SystemReason;
+            //bug.StatusReason = workitem.fields.SystemReason;
             bug.Title = workitem.fields.SystemTitle;
             bug.Tags = workitem.fields.SystemTags;
             bug.Severity = workitem.fields.MicrosoftVSTSCommonSeverity;
@@ -177,8 +178,7 @@ namespace PMS.Controllers
                 }
 
                 bug.FirstPullRequestCommentDate = firstPRHumanCommentDate;
-                bug.FirstPullRequestCommentCount = pullRequestCommentCount;
-                bug.SyncedOn = DateTime.Now;
+                bug.FirstPullRequestCommentCount = pullRequestCommentCount;                
             }
         }
 

@@ -35,13 +35,17 @@ namespace PMS.Controllers
             return View();
         }
 
-        public async Task<string> Sync()
+        public async Task<string> Sync(bool clearAll = false)
         {
             // read data from data.json
             string fileName = "data.json";
             string jsonString = System.IO.File.ReadAllText(fileName);
             var bugsPartial = JsonConvert.DeserializeObject<List<Bug>>(jsonString,
                     new JsonSerializerSettings { NullValueHandling = NullValueHandling.Ignore }).ToList();
+
+            // clean existing data
+            if(clearAll)
+                _context.Database.ExecuteSqlRaw("TRUNCATE TABLE [Bug]");
 
             // sync data from excel/json file
             foreach (var b in bugsPartial)
@@ -70,7 +74,7 @@ namespace PMS.Controllers
             var syncHelper = new SyncHelper(_configuration, _context);
             foreach (var bug in bugsPartial)
             {
-                if (!string.IsNullOrEmpty(bug.StatusInVS) && bug.StatusInVS.ToLower() == "closed") continue; // ignore closed bugs
+                //if (!string.IsNullOrEmpty(bug.StatusInVS) && bug.StatusInVS.ToLower() == "closed") continue; // ignore closed bugs
                 if (bug.SyncedOn.HasValue && DateTime.Now.Subtract(bug.SyncedOn.Value).Hours <= 2)
                     continue; // ignore recent synced data
                 await syncHelper.SyncBug(bug.NO);

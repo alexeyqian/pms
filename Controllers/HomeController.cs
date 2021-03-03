@@ -38,6 +38,7 @@ namespace PMS.Controllers
             _context = context;
                     
             _bugs = _context.Bug.ToList();
+            /*
             foreach (var b in _bugs){
                 if (b.ResovedDate.HasValue)
                     b.Status = "Resolved";
@@ -46,6 +47,7 @@ namespace PMS.Controllers
                 else
                     b.Status = "Active";
             }
+            */
         }
 
         public IActionResult Index(DateTime? startdate, DateTime? enddate)
@@ -111,7 +113,7 @@ namespace PMS.Controllers
             var labelList = new List<string>();
             var valueList = new List<int>();
 
-            var groups = bugs.GroupBy(b => b.Status);
+            var groups = bugs.GroupBy(b => b.StatusInVS);
 
             foreach (var grp in groups)
             {

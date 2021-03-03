@@ -17,17 +17,18 @@
             @Html.DisplayFor(model => model.NO)
         </dd>
         <dt class="col-sm-2">
-            @Html.DisplayNameFor(model => model.Status)
-        </dt>
-        <dd class="col-sm-10">
-            @Html.DisplayFor(model => model.Status)
-        </dd>
-        <dt class="col-sm-2">
             @Html.DisplayNameFor(model => model.StatusInVS)
         </dt>
         <dd class="col-sm-10">
             @Html.DisplayFor(model => model.StatusInVS)
         </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Status)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Status)
+        </dd>
+
         <dt class="col-sm-2">
             @Html.DisplayNameFor(model => model.Title)
         </dt>
@@ -148,9 +149,16 @@
         <dd class="col-sm-10">
             @Html.DisplayFor(model => model.Note)
         </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.SyncedOn)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.SyncedOn)
+        </dd>
     </dl>
 </div>
 <div>
     @*<a asp-action="Edit" asp-route-id="@Model.Id">Edit</a> |*@
+    <a asp-action="Sync" asp-route-id="@Model.NO"><i class="bi bi-arrow-clockwise"></i>Sync with DevOps</a> |
     <a asp-action="Index">Back to List</a>
 </div>

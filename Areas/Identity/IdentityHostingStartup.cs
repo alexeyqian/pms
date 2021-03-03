@@ -14,13 +14,14 @@ namespace PMS.Areas.Identity
     {
         public void Configure(IWebHostBuilder builder)
         {
+         
             builder.ConfigureServices((context, services) => {
                 services.AddDbContext<PMSContext>(options =>
                     options.UseSqlServer(
                         context.Configuration.GetConnectionString("PMSDBContext")));
 
-                services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)
-                    .AddEntityFrameworkStores<PMSContext>();
+                //services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)
+                //    .AddEntityFrameworkStores<PMSContext>();
             });
         }
     }

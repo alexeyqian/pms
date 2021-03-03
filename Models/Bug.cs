@@ -9,6 +9,7 @@ namespace PMS.Models
         public int Id { get; set; }
         public int NO{get;set;}       
         public string StatusInVS{get;set;}
+        //public string StatusReason { get; set; }
         public string Title { get; set; }
         public string Tags { get; set; }
         [DataType(DataType.Date)]

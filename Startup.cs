@@ -10,15 +10,10 @@ using Microsoft.Extensions.Hosting;
 
 using PMS.Data;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.AspNetCore.Identity;
 
 namespace PMS
 {
-    public class MyConfigration
-    {
-        public string VSOrg { get; set; }
-        public string PAT { get; set; }
-    }
-
     public class Startup
     {
         public Startup(IConfiguration configuration)
@@ -32,9 +27,10 @@ namespace PMS
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllersWithViews();
-            //services.Configure<MyConfigration>(Configuration.GetSection("MyConfiguration"));
             services.AddDbContext<PMSDBContext>(options =>
                 options.UseSqlServer(Configuration.GetConnectionString("PMSDBContext")));
+            services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)
+                    .AddEntityFrameworkStores<PMSDBContext>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -51,7 +47,7 @@ namespace PMS
             app.UseStaticFiles();
 
             app.UseRouting();
-
+            app.UseAuthentication();
             app.UseAuthorization();
 
             app.UseEndpoints(endpoints =>

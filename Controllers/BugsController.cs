@@ -168,7 +168,8 @@ namespace PMS.Controllers
                
         public async Task<IActionResult> Sync(int id)
         {
-            if (id <= 0)
+            int no = id;
+            if (no <= 0)
             {
                 return NotFound();
             }
@@ -176,7 +177,7 @@ namespace PMS.Controllers
             try
             {
                 var syncHelper = new SyncHelper(_configuration, _context);
-                await syncHelper.SyncBug(id);
+                await syncHelper.SyncBug(no);
             }
             catch 
             {
