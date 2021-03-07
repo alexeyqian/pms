@@ -64,32 +64,25 @@ namespace PMS.Controllers
         {
             string json = string.Empty;
 
-            try
-            {
-                json = await GetWorkItem(bugNo);
-                var workitem = JsonConvert.DeserializeObject<VSWorkItem>(json, _jsonSettings);
-                if (workitem.fields.SystemWorkItemType != "Bug") throw new Exception("Workitem type should be bug");
+            json = await GetWorkItem(bugNo);
+            var workitem = JsonConvert.DeserializeObject<VSWorkItem>(json, _jsonSettings);
+            if (workitem.fields.SystemWorkItemType != "Bug") throw new Exception("Workitem type should be bug");
 
-                var bug = await _context.Bug.Where(r => r.NO == bugNo).FirstOrDefaultAsync();
-                if (bug == null) // create new record
-                {
-                    bug = new Models.Bug();
-                    await UpdateBugFields(bug, workitem, true);
-                    _context.Add(bug);
-
-                }
-                else // update existing record
-                {
-                    await UpdateBugFields(bug, workitem, false);
-                    _context.Update(bug);
-                }
-                bug.SyncedOn = DateTime.Now;
-                await _context.SaveChangesAsync();
-            }
-            catch (Exception ex)
+            var bug = await _context.Bug.Where(r => r.NO == bugNo).FirstOrDefaultAsync();
+            if (bug == null) // create new record
             {
-                throw ex;
+                bug = new Models.Bug();
+                await UpdateBugFields(bug, workitem, true);
+                _context.Add(bug);
+
             }
+            else // update existing record
+            {
+                await UpdateBugFields(bug, workitem, false);
+                _context.Update(bug);
+            }
+            bug.SyncedOn = DateTime.Now;
+            await _context.SaveChangesAsync();
         }
 
         // TODO: find Resolved Date
@@ -191,7 +184,7 @@ namespace PMS.Controllers
                 }
 
                 bug.FirstPullRequestCommentDate = firstPRHumanCommentDate;
-                bug.FirstPullRequestCommentCount = pullRequestCommentCount;                
+                bug.FirstPullRequestCommentCount = pullRequestCommentCount;
             }
         }
 

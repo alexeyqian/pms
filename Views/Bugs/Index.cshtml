@@ -50,19 +50,9 @@
             </th>
             <th>
                 StatusInVS
-            </th>
-
-            <th>
-                @Html.DisplayNameFor(model => model.FixedDate)
-            </th>
+            </th>          
             <th>
                 @Html.DisplayNameFor(model => model.ResovedDate)
-            </th>
-            <th>
-                BC
-            </th>
-            <th>
-                PR
             </th>
             <th>
                 PRD
@@ -78,10 +68,8 @@
             </th>
             <th>
                 PRCM
-            </th>          
-            <th>
-                Severity
-            </th>
+            </th>         
+           
             <th>Synced</th>
             <th>Actions</th>
         </tr>
@@ -99,19 +87,11 @@
             <td>
                 @Html.DisplayFor(modelItem => item.StatusInVS)
             </td>
-
-            <td>
-                @Html.DisplayFor(modelItem => item.FixedDate)
-            </td>
             <td>
                 @Html.DisplayFor(modelItem => item.ResovedDate)
             </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.CommentCount)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.PullRequestCount)
-            </td>
+           
+          
             <td>
                 @Html.DisplayFor(modelItem => item.FirstPullRequestDate)
             </td>
@@ -127,9 +107,7 @@
             <td>
                 @Html.DisplayFor(modelItem => item.FirstPullRequestCommitCount)
             </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Severity)
-            </td>           
+                     
             <td>
                 @Html.DisplayFor(modelItem => item.SyncedOn)
             </td>
@@ -151,8 +129,8 @@
     <script>
         $(document).ready(function () {
             $('#bugTable').DataTable({
-                //paging: false,
-                scrollY: 1000,
+                paging: false,
+                scrollY: 30000,
                 scrollCollapse: true,
                 scroller: true
             });
