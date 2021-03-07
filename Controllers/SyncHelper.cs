@@ -47,6 +47,19 @@ namespace PMS.Controllers
             _context = context;
         }
 
+        public async Task<List<int>> SyncBugList()
+        {
+            const string projectId = "f2b55896-e832-438d-9220-cbc08c545713";
+            // QUERY NAME: CSI A11y Dashboard - Overview
+            const string queryId = "53ec1a7f-b190-4f44-b361-8e4e58018fd1";
+
+            string json = string.Empty;
+            json = await GetWorkItemsOfQuery(projectId, queryId);
+            var queryResponse = JsonConvert.DeserializeObject<VSQueryResponse>(json, _jsonSettings);
+
+            return queryResponse.workItems.Select(w => w.id).ToList();
+        }
+
         public async Task SyncBug(int bugNo)
         {
             string json = string.Empty;
@@ -192,6 +205,13 @@ namespace PMS.Controllers
             //GET https://dev.azure.com/{organization}/_apis/wit/workitems/{workitem}?api-version={apiversion}&$expand=all
             //EX: https://dev.azure.com/O365Exchange/_apis/wit/workitems/1937102?api-version=6.1-preview.3&$expand=all
             return await GetDataFromVS(string.Format("_apis/wit/workitems/{0}?api-version={1}&$expand=all", id, _apiVersion));
+        }
+
+        private async Task<string> GetWorkItemsOfQuery(string projectId, string queryId)
+        {
+            //GET: https://dev.azure.com/{organization}/{project}/_apis/wit/wiql/{query}?api-version=6.0            
+            //EX:  https://dev.azure.com/O365Exchange/f2b55896-e832-438d-9220-cbc08c545713/_apis/wit/wiql/53ec1a7f-b190-4f44-b361-8e4e58018fd1
+            return await GetDataFromVS(string.Format("{0}/_apis/wit/wiql/{1}", projectId, queryId));
         }
 
         private async Task<string> GetWorkItemUpdates(string url)

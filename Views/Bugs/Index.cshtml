@@ -2,6 +2,15 @@
 
 @{
     ViewData["Title"] = "Index";
+
+    var description = "hello";//Strings.SecurityPageDescription;
+    if (!string.IsNullOrEmpty(Context.Request.Query["isCompliance"])){
+        var isCompliance = false;
+        if (bool.TryParse(Context.Request.Query["isCompliance"], out isCompliance))
+        {
+            description = "hello 2"; // Strings.CompliancePageDescrition;   // Add this key=value pair in resource file
+        }
+    }
 }
 
 <form asp-controller="Bugs" asp-action="Sync" method="get" class="row">
@@ -14,6 +23,7 @@
     <div class="col-auto">
         <input type="submit" value="Quick Add" class="btn btn-primary" />
     </div>
+    <div>@description</div>
     @*<div class="col-auto">
             <a asp-action="Create" class="btn btn-link">Create New</a>
         </div>*@
