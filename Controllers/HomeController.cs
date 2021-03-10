@@ -38,16 +38,26 @@ namespace PMS.Controllers
             _context = context;
                     
             _bugs = _context.Bug.ToList();
-            /*
+
+            // clean fixed types
+            
+            string status = "Active";
             foreach (var b in _bugs){
-                if (b.ResovedDate.HasValue)
-                    b.Status = "Resolved";
-                else if (b.FixedDate.HasValue)
-                    b.Status = "Fixed";
-                else
-                    b.Status = "Active";
+                if (!string.IsNullOrEmpty(b.Status))
+                {
+                    string s = b.Status.ToLower();
+                    if (s == "fixedwithoutcodechange")
+                        status = "FixedWithoutCodeChange";
+                    else if (s == "fixedandapproved" || s.Contains("waitingforapproval"))
+                        status = "FixedWithCodeChange";
+                    else if (b.Status.ToLower().Contains("continue"))
+                        status = "Active";
+                    else
+                        status = b.Status;
+                }
+
+                b.Status = status;
             }
-            */
         }
 
         public IActionResult Index(DateTime? startdate, DateTime? enddate)
@@ -59,6 +69,7 @@ namespace PMS.Controllers
                 || ( b.FixedDate >= startdate && b.FixedDate <= enddate.Value.AddDays(1))).ToList();
 
             SetCategoryChart(bugs);
+            SetFixedTypeChart(bugs);
             SetProductivityChart(bugs);
             SetQualityChart(bugs);
             SetEfficiencyChart(bugs);
@@ -86,7 +97,9 @@ namespace PMS.Controllers
             if (!startdate.HasValue) startdate = DateTime.Now.StartOfWeek(DayOfWeek.Monday);
             if (!enddate.HasValue) enddate = DateTime.Now.AddDays(1);
 
-            var bugs = _bugs.Where(b => !string.IsNullOrEmpty(b.StatusInVS) && b.FixedDate >= startdate && b.FixedDate <= enddate.Value.AddDays(1)).ToList();
+            var bugs = _bugs.Where(b => !string.IsNullOrEmpty(b.StatusInVS) 
+                && b.FixedDate >= startdate && b.FixedDate <= enddate.Value.AddDays(1))
+                .ToList();
 
             SetStatusChart(bugs);
             SetPriorityChart(bugs);
@@ -126,6 +139,26 @@ namespace PMS.Controllers
             ViewData["TotalBugs"] = bugs.Count();
             ViewData["CategoryLabels"] = "\"" + String.Join("\",\"", labelList.ToArray()) + "\"";
             ViewData["CategoryValues"] = String.Join(",", valueList.ToArray());
+        }
+
+        private void SetFixedTypeChart(List<Bug> bugs)
+        {
+            var labelList = new List<string>();
+            var valueList = new List<int>();
+
+            var groups = bugs.GroupBy(b => b.Status);
+
+            foreach (var grp in groups)
+            {
+                if (String.IsNullOrEmpty(grp.Key)) continue;
+
+                labelList.Add(grp.Key);
+                valueList.Add(grp.Count());
+            }
+
+            ViewData["TotalBugs"] = bugs.Count();
+            ViewData["FixedTypeLabels"] = "\"" + String.Join("\",\"", labelList.ToArray()) + "\"";
+            ViewData["FixedTypeValues"] = String.Join(",", valueList.ToArray());
         }
 
         private void SetTagChart(List<Bug> bugs)
@@ -280,7 +313,9 @@ namespace PMS.Controllers
             for (int i = _beginYear; i <= _endYear; i++)
             {
                 var groups = from b in bugs
-                             where b.FirstPullRequestDate.HasValue && b.FirstPullRequestCommentDate.HasValue && b.FirstPullRequestDate.Value.Year == i && b.PullRequestCount > 0 
+                             where b.PullRequestCount > 0 
+                                   && b.FirstPullRequestDate.HasValue && b.FirstPullRequestDate.Value.Year == i
+                                   && b.FirstPullRequestCommentDate.HasValue && b.FirstPullRequestCommentDate >= b.FirstPullRequestDate
                              group b by weekProjector(b.FirstPullRequestDate.Value);
 
                 foreach (var grp in groups)

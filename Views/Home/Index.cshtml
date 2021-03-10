@@ -32,16 +32,20 @@
         <canvas id="categoryChart"></canvas>
     </div>
     <div class="col-md-6">
-        <h3>Description</h3>
-        <div>
-            <ul>
-                <li>Category: How many bugs completed by category.</li>
-                <li>Productivity: How many bugs completed.</li>
-                <li>Quality: How many avg PR iterations per PR.</li>
-                <li>Efficency: Average hours per bug.</li>
-            </ul>
-        </div>
+        <h3>SubType</h3>
+        <canvas id="fixedTypeChart"></canvas>
     </div>
+    @*<div class="col-md-6">
+            <h3>Description</h3>
+            <div>
+                <ul>
+                    <li>Category: How many bugs completed by category.</li>
+                    <li>Productivity: How many bugs completed.</li>
+                    <li>Quality: How many avg PR iterations per PR.</li>
+                    <li>Efficency: Average hours per bug.</li>
+                </ul>
+            </div>
+        </div>*@
 </div>
 
 <hr />
@@ -76,7 +80,7 @@
         <canvas id="prCommentsChart"></canvas>
     </div>
     <div class="col-md-4">
-        <h3>PR Engagement [NOT READY]</h3>
+        <h3>PR Engagement</h3>
         <h6>Avg. PR response hours</h6>
         <canvas id="prEngagementChart"></canvas>
     </div>
@@ -110,6 +114,9 @@
     <script>
         var ctx = document.getElementById('categoryChart').getContext('2d');
         createOverviewChart(ctx, [@Html.Raw(ViewData["CategoryLabels"])], [@ViewData["CategoryValues"]]);
+
+        var ctx = document.getElementById('fixedTypeChart').getContext('2d');
+        createOverviewChart(ctx, [@Html.Raw(ViewData["FixedTypeLabels"])], [@ViewData["FixedTypeValues"]]);
 
         ctx = document.getElementById('productivityChart').getContext('2d');
         createLineChart(ctx, [@Html.Raw(ViewData["ProductivityLabels"])], [@ViewData["ProductivityValues"]], 'Productivity');
